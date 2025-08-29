@@ -3191,343 +3191,343 @@
 			}
 		},
 		{
-			"name": "Colorless Weapon",
+			"name": "Weapon",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Artifact — Equipment",
 			"collector_number": "33",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/33_Colorless Weapon.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/33_Weapon.jpg"
 			}
 		},
 		{
-			"name": "Colorless Chart",
+			"name": "Chart",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Artifact — Chart",
 			"collector_number": "30",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/30_Colorless Chart.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/30_Chart.jpg"
 			}
 		},
 		{
-			"name": "2/2 Black Hound",
+			"name": "Hound",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Hound",
 			"collector_number": "14",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/14_2/2 Black Hound.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/14_Hound.jpg"
 			}
 		},
 		{
-			"name": "Colorless Treasure",
+			"name": "Treasure",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Artifact — Treasure",
 			"collector_number": "31",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/31_Colorless Treasure.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/31_Treasure.jpg"
 			}
 		},
 		{
-			"name": "3/3 Red Beast",
+			"name": "Beast",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Beast",
 			"collector_number": "18",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/18_3/3 Red Beast.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/18_Beast.jpg"
 			}
 		},
 		{
-			"name": "Green 9/6 Wolf Spirit",
+			"name": "Wolf Spirit",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Wolf Spirit",
 			"collector_number": "28",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/28_Green 9/6 Wolf Spirit.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/28_Wolf Spirit.jpg"
 			}
 		},
 		{
-			"name": "1/1 Red Spirit",
+			"name": "Spirit",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Spirit",
 			"collector_number": "21",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/21_1/1 Red Spirit.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/21_Spirit.jpg"
 			}
 		},
 		{
-			"name": "Colorless 0/4 Wall",
+			"name": "Wall",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Artifact Creature — Wall",
 			"collector_number": "32",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/32_Colorless 0/4 Wall.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/32_Wall.jpg"
 			}
 		},
 		{
-			"name": "4/4 Black Dragon Spirit",
+			"name": "Dragon",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Dragon",
 			"collector_number": "10",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/10_4/4 Black Dragon Spirit.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/10_Dragon.jpg"
 			}
 		},
 		{
-			"name": "1/1 White Bird",
+			"name": "Bird",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Bird",
 			"collector_number": "2",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/2_1/1 White Bird.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/2_Bird.jpg"
 			}
 		},
 		{
-			"name": "2/1 Blue Fish",
+			"name": "Fish",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Fish",
 			"collector_number": "8",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/8_2/1 Blue Fish.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/8_Fish.jpg"
 			}
 		},
 		{
-			"name": "1/1 Blue Jellyfish",
+			"name": "Jellyfish",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Jellyfish",
 			"collector_number": "9",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/9_1/1 Blue Jellyfish.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/9_Jellyfish.jpg"
 			}
 		},
 		{
-			"name": "3/2 Blue Beast",
+			"name": "Beast",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Beast",
 			"collector_number": "6",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/6_3/2 Blue Beast.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/6_Beast.jpg"
 			}
 		},
 		{
-			"name": "1/1 Black Elemental",
+			"name": "Elemental",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Elemental",
 			"collector_number": "11",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/11_1/1 Black Elemental.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/11_Elemental.jpg"
 			}
 		},
 		{
-			"name": "1/1 White Spirit",
+			"name": "Spirit",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Spirit",
 			"collector_number": "5",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/5_1/1 White Spirit.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/5_Spirit.jpg"
 			}
 		},
 		{
-			"name": "5/5 Blue Fish Spirit",
+			"name": "Fish Spirit",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Fish Spirit",
 			"collector_number": "7",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/7_5/5 Blue Fish Spirit.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/7_Fish Spirit.jpg"
 			}
 		},
 		{
-			"name": "1/0 Black Orb",
+			"name": "Orb",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Orb",
 			"collector_number": "16",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/16_1/0 Black Orb.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/16_Orb.jpg"
 			}
 		},
 		{
-			"name": "1/1 White Elemental",
+			"name": "Elemental",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Elemental",
 			"collector_number": "3",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/3_1/1 White Elemental.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/3_Elemental.jpg"
 			}
 		},
 		{
-			"name": "Black Oblivion",
+			"name": "Oblivion",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Enchantment",
 			"collector_number": "15",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/15_Black Oblivion.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/15_Oblivion.jpg"
 			}
 		},
 		{
-			"name": "Black Entropy",
+			"name": "Entropy",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Enchantment",
 			"collector_number": "13",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/13_Black Entropy.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/13_Entropy.jpg"
 			}
 		},
 		{
-			"name": "3/1 Red Elemental",
+			"name": "Elemental",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Elemental",
 			"collector_number": "20",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/20_3/1 Red Elemental.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/20_Elemental.jpg"
 			}
 		},
 		{
-			"name": "1/1 Red Elemental",
+			"name": "Elemental",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Elemental",
 			"collector_number": "19",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/19_1/1 Red Elemental.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/19_Elemental.jpg"
 			}
 		},
 		{
-			"name": "3/2 Black Elemental",
+			"name": "Elemental",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Elemental",
 			"collector_number": "12",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/12_3/2 Black Elemental.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/12_Elemental.jpg"
 			}
 		},
 		{
-			"name": "Colorless Lotus Spring",
+			"name": "Lotus Spring",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Land",
 			"collector_number": "34",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/34_Colorless Lotus Spring.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/34_Lotus Spring.jpg"
 			}
 		},
 		{
-			"name": "1/1 Black Spirit",
+			"name": "Spirit",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Spirit",
 			"collector_number": "17",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/17_1/1 Black Spirit.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/17_Spirit.jpg"
 			}
 		},
 		{
-			"name": "1/1 White Elf",
+			"name": "Elf",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Elf",
 			"collector_number": "4",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/4_1/1 White Elf.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/4_Elf.jpg"
 			}
 		},
 		{
-			"name": "1/1 Green Elf",
+			"name": "Elf",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Elf",
 			"collector_number": "26",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/26_1/1 Green Elf.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/26_Elf.jpg"
 			}
 		},
 		{
-			"name": "4/4 Green Bear",
+			"name": "Bear",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Bear",
 			"collector_number": "23",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/23_4/4 Green Bear.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/23_Bear.jpg"
 			}
 		},
 		{
-			"name": "X/X Green Spirit",
+			"name": "Spirit",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Spirit",
 			"collector_number": "27",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/27_X/X Green Spirit.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/27_Spirit.jpg"
 			}
 		},
 		{
-			"name": "2/2 Green Elf Druid",
+			"name": "Elf Druid",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Elf Druid",
 			"collector_number": "24",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/24_2/2 Green Elf Druid.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/24_Elf Druid.jpg"
 			}
 		},
 		{
-			"name": "3/3 Green Elf Horror",
+			"name": "Elf Horror",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Elf Horror",
 			"collector_number": "25",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/25_3/3 Green Elf Horror.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/25_Elf Horror.jpg"
 			}
 		},
 		{
-			"name": "2/1 Red Spirit",
+			"name": "Spirit",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Spirit",
 			"collector_number": "22",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/22_2/1 Red Spirit.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/22_Spirit.jpg"
 			}
 		},
 		{
-			"name": "White and Black Turelion Gospel",
+			"name": "Turelion Gospel",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Enchantment",
 			"collector_number": "29",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/29_White and Black Turelion Gospel.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/29_Turelion Gospel.jpg"
 			}
 		},
 		{
-			"name": "Colorless Adventure",
+			"name": "On An Adventure",
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Reminder",
 			"collector_number": "1",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/1_Colorless Adventure.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/1_On An Adventure.jpg"
 			}
 		},
 	]

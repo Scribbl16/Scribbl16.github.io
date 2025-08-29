@@ -6148,7 +6148,7 @@
             "notes": ""
         },
         {
-            "card_name": "Colorless Weapon",
+            "card_name": "Weapon",
             "color": "",
             "rarity": "common",
             "type": "Token Artifact \u2014 Equipment",
@@ -6163,10 +6163,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Stephanie Folse",
-            "notes": "!related Blinded Herald;Light-Pierced Envoy\n\n!exportname Colorless Weapon"
+            "notes": "!related Blinded Herald;Light-Pierced Envoy"
         },
         {
-            "card_name": "Colorless Chart",
+            "card_name": "Chart",
             "color": "",
             "rarity": "common",
             "type": "Token Artifact \u2014 Chart",
@@ -6181,10 +6181,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Arturo Gutierrez",
-            "notes": "!related Acolyte of the Beyond;Starlit Sanctuary;Astral Prison;Renounce the Worldly;Evangel of the Void;Chart the Cosmos;Unveil;Tune of the Multiverse;Rift Tracing;Master of Null;Oblivion Surveyor;Caress of the Stars;Starless Night;Dwindling Light;Darkstar Envoy<2>;Fateful Ascent;Caersol Valiant;Frenetic Astronomer;Nova Ravager;Starsquall;Perilous Sojourn;Glimmermare;Scintillating Vista;Vista Chronicler;Chasing Stars;Anhamei, Star Sower;Gorion Refuge\n\n!exportname Colorless Chart"
+            "notes": "!related Acolyte of the Beyond;Starlit Sanctuary;Astral Prison;Renounce the Worldly;Evangel of the Void;Chart the Cosmos;Unveil;Tune of the Multiverse;Rift Tracing;Master of Null;Oblivion Surveyor;Caress of the Stars;Starless Night;Dwindling Light;Darkstar Envoy<2>;Fateful Ascent;Caersol Valiant;Frenetic Astronomer;Nova Ravager;Starsquall;Perilous Sojourn;Glimmermare;Scintillating Vista;Vista Chronicler;Chasing Stars;Anhamei, Star Sower;Gorion Refuge"
         },
         {
-            "card_name": "2/2 Black Hound",
+            "card_name": "Hound",
             "color": "B",
             "rarity": "common",
             "type": "Token Creature \u2014 Hound",
@@ -6199,10 +6199,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Mariya Sviridova",
-            "notes": "!related Sarsupei Houndmaster;Relentless Huntmaster\n\n!exportname 2/2 Black Hound"
+            "notes": "!related Sarsupei Houndmaster;Relentless Huntmaster"
         },
         {
-            "card_name": "Colorless Treasure",
+            "card_name": "Treasure",
             "color": "",
             "rarity": "common",
             "type": "Token Artifact \u2014 Treasure",
@@ -6217,10 +6217,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Bastien Grivet",
-            "notes": "!related Scintillation Scion;Cosmic Bounty;Comet Conduit;Rex Cerveste;Heaven's Reach\n\n!exportname Colorless Treasure"
+            "notes": "!related Scintillation Scion;Cosmic Bounty;Comet Conduit;Rex Cerveste;Heaven's Reach"
         },
         {
-            "card_name": "3/3 Red Beast",
+            "card_name": "Beast",
             "color": "R",
             "rarity": "common",
             "type": "Token Creature \u2014 Beast",
@@ -6235,10 +6235,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Art Engineer",
-            "notes": "!related Invasive Progenitor;Invasive Progenitor<X>\n\n!exportname 3/3 Red Beast"
+            "notes": "!related Invasive Progenitor;Invasive Progenitor<X>"
         },
         {
-            "card_name": "Green 9/6 Wolf Spirit",
+            "card_name": "Wolf Spirit",
             "color": "G",
             "rarity": "common",
             "type": "Token Creature \u2014 Wolf Spirit",
@@ -6253,10 +6253,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Louise Goalby",
-            "notes": "!related Moonsworn Vassal;Heaven's Reach\n\n!exportname Green 9/6 Wolf Spirit"
+            "notes": "!related Moonsworn Vassal;Heaven's Reach"
         },
         {
-            "card_name": "1/1 Red Spirit",
+            "card_name": "Spirit",
             "color": "R",
             "rarity": "common",
             "type": "Token Creature \u2014 Spirit",
@@ -6271,10 +6271,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Tencent Pictures",
-            "notes": "!related Radiant Pilgrim;Caphella, Endlight Catalyst<2>;Star-Touched Devout;Awakened Aberration;Star-Touched Host\n\n!exportname 1/1 Red Spirit"
+            "notes": "!related Radiant Pilgrim;Caphella, Endlight Catalyst<2>;Star-Touched Devout;Awakened Aberration;Star-Touched Host"
         },
         {
-            "card_name": "Colorless 0/4 Wall",
+            "card_name": "Wall",
             "color": "",
             "rarity": "common",
             "type": "Token Artifact Creature \u2014 Wall",
@@ -6289,10 +6289,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Jelena Pjevic",
-            "notes": "!related Oberys, Ley-Pilgrim;Noctere Ascentus;Ley-Tower Convergence\n\n!exportname Colorless 0/4 Wall"
+            "notes": "!related Oberys, Ley-Pilgrim;Noctere Ascentus;Ley-Tower Convergence"
         },
         {
-            "card_name": "4/4 Black Dragon Spirit",
+            "card_name": "Dragon",
             "color": "B",
             "rarity": "common",
             "type": "Token Creature \u2014 Dragon",
@@ -6307,10 +6307,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Aster Clarke",
-            "notes": "!related Evangel of the Long Night;Evangel of the Long Night<X>;Nightfall\n\n!exportname 4/4 Black Dragon Spirit"
+            "notes": "!related Evangel of the Long Night;Evangel of the Long Night<X>;Nightfall"
         },
         {
-            "card_name": "1/1 White Bird",
+            "card_name": "Bird",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Bird",
@@ -6325,10 +6325,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Ryan Bittner",
-            "notes": "!related Lightless Vigil<2>;Zymith Windreader;Dire Visionary;Aureleth the Sun Shard;Aureleth the Sun Shard<X>\n\n!exportname 1/1 White Bird"
+            "notes": "!related Lightless Vigil<2>;Zymith Windreader;Dire Visionary;Aureleth the Sun Shard;Aureleth the Sun Shard<X>"
         },
         {
-            "card_name": "2/1 Blue Fish",
+            "card_name": "Fish",
             "color": "U",
             "rarity": "common",
             "type": "Token Creature \u2014 Fish",
@@ -6343,10 +6343,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Ryan Bittner",
-            "notes": "!related Skyray Tender\n\n!exportname 2/1 Blue Fish"
+            "notes": "!related Skyray Tender"
         },
         {
-            "card_name": "1/1 Blue Jellyfish",
+            "card_name": "Jellyfish",
             "color": "U",
             "rarity": "common",
             "type": "Token Creature \u2014 Jellyfish",
@@ -6361,10 +6361,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Oleg Proshin",
-            "notes": "!related Turelion Ley-Tower<2>;Rift Tracing<2>;Olfven Ley-Tower;Olfven Ley-Tower<X>;Ethereal Exodus<2>\n\n!exportname 1/1 Blue Jellyfish"
+            "notes": "!related Turelion Ley-Tower<2>;Rift Tracing<2>;Olfven Ley-Tower;Olfven Ley-Tower<X>;Ethereal Exodus<2>"
         },
         {
-            "card_name": "3/2 Blue Beast",
+            "card_name": "Beast",
             "color": "U",
             "rarity": "common",
             "type": "Token Creature \u2014 Beast",
@@ -6379,10 +6379,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Grimae",
-            "notes": "!related Humbled Invoker;Nascent Vessel\n\n!exportname 3/2 Blue Beast"
+            "notes": "!related Humbled Invoker;Nascent Vessel"
         },
         {
-            "card_name": "1/1 Black Elemental",
+            "card_name": "Elemental",
             "color": "B",
             "rarity": "common",
             "type": "Token Creature \u2014 Elemental",
@@ -6397,10 +6397,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Mark Erskine",
-            "notes": "!related Stardust Behemoth\n\n!exportname 1/1 Black Elemental"
+            "notes": "!related Stardust Behemoth"
         },
         {
-            "card_name": "1/1 White Spirit",
+            "card_name": "Spirit",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Spirit",
@@ -6415,10 +6415,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Tencent Pictures",
-            "notes": "!related Oblivion's Escort;Leonis Excirtus<2>;Foreign Frontiers<4>;Aureola Crusaris<4>;Orbital Vacuum<2>;Celestial Insight;Stalking Delver;Stellar Migration<1>;Stellar Migration<X>;Glimmermare;Anhamei, Star Sower;Zymith Skyguide;Starcrossed Vessel;Wayfinder Ibex<2>;Cereus Aegosa;Cereus Aegosa<X>;Waypoint Armillary;Skyfall Sunderer;Lacufae Refuge\n\n!exportname 1/1 White Spirit"
+            "notes": "!related Oblivion's Escort;Leonis Excirtus<2>;Foreign Frontiers<4>;Aureola Crusaris<4>;Orbital Vacuum<2>;Celestial Insight;Stalking Delver;Stellar Migration<1>;Stellar Migration<X>;Glimmermare;Anhamei, Star Sower;Zymith Skyguide;Starcrossed Vessel;Wayfinder Ibex<2>;Cereus Aegosa;Cereus Aegosa<X>;Waypoint Armillary;Skyfall Sunderer;Lacufae Refuge"
         },
         {
-            "card_name": "5/5 Blue Fish Spirit",
+            "card_name": "Fish Spirit",
             "color": "U",
             "rarity": "common",
             "type": "Token Creature \u2014 Fish Spirit",
@@ -6433,10 +6433,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Masaki Hsu",
-            "notes": "!related Piscus Duosia\n\n!exportname 5/5 Blue Fish Spirit"
+            "notes": "!related Piscus Duosia"
         },
         {
-            "card_name": "1/0 Black Orb",
+            "card_name": "Orb",
             "color": "B",
             "rarity": "common",
             "type": "Token Creature \u2014 Orb",
@@ -6451,10 +6451,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "HoDaRaKe",
-            "notes": "!related Master of Null\n\n!exportname 1/0 Black Orb"
+            "notes": "!related Master of Null"
         },
         {
-            "card_name": "1/1 White Elemental",
+            "card_name": "Elemental",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Elemental",
@@ -6469,10 +6469,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Mark Erskine",
-            "notes": "!related Lightless Conquest;Lightless Conquest<2>\n\n!exportname 1/1 White Elemental"
+            "notes": "!related Lightless Conquest;Lightless Conquest<2>"
         },
         {
-            "card_name": "Black Oblivion",
+            "card_name": "Oblivion",
             "color": "B",
             "rarity": "common",
             "type": "Token Enchantment",
@@ -6487,10 +6487,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "V\u00e1radi Paszk\u00e1l",
-            "notes": "!related Zukar, Null Champion\n\n!exportname Black Oblivion"
+            "notes": "!related Zukar, Null Champion"
         },
         {
-            "card_name": "Black Entropy",
+            "card_name": "Entropy",
             "color": "B",
             "rarity": "common",
             "type": "Token Enchantment",
@@ -6505,10 +6505,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Xu Tianhua",
-            "notes": "!related Zukar, Null Champion\n\n!exportname Black Entropy"
+            "notes": "!related Zukar, Null Champion"
         },
         {
-            "card_name": "3/1 Red Elemental",
+            "card_name": "Elemental",
             "color": "R",
             "rarity": "common",
             "type": "Token Creature \u2014 Elemental",
@@ -6523,10 +6523,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Anato Finnstark",
-            "notes": "!related Helia Extinguisher\n\n!exportname 3/1 Red Elemental"
+            "notes": "!related Helia Extinguisher"
         },
         {
-            "card_name": "1/1 Red Elemental",
+            "card_name": "Elemental",
             "color": "R",
             "rarity": "common",
             "type": "Token Creature \u2014 Elemental",
@@ -6541,10 +6541,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Mark Erskine",
-            "notes": "!related Darkstar Envoy<2>;Endlight Crusade<X>;Split the Sky<2>\n\n!exportname 1/1 Red Elemental"
+            "notes": "!related Darkstar Envoy<2>;Endlight Crusade<X>;Split the Sky<2>"
         },
         {
-            "card_name": "3/2 Black Elemental",
+            "card_name": "Elemental",
             "color": "B",
             "rarity": "common",
             "type": "Token Creature \u2014 Elemental",
@@ -6559,10 +6559,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Dave Greco",
-            "notes": "!related Invasion Campaign\n\n!exportname 3/2 Black Elemental"
+            "notes": "!related Invasion Campaign"
         },
         {
-            "card_name": "Colorless Lotus Spring",
+            "card_name": "Lotus Spring",
             "color": "",
             "rarity": "common",
             "type": "Token Land",
@@ -6577,10 +6577,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Wax Eye",
-            "notes": "!related Manticos Expurgis;Loam-Treader Titan;Blooming Scar<2>\n\n!exportname Colorless Lotus Spring"
+            "notes": "!related Manticos Expurgis;Loam-Treader Titan;Blooming Scar<2>"
         },
         {
-            "card_name": "1/1 Black Spirit",
+            "card_name": "Spirit",
             "color": "B",
             "rarity": "common",
             "type": "Token Creature \u2014 Spirit",
@@ -6595,10 +6595,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Alexander Elichev",
-            "notes": "!related Blightseer\n\n!exportname 1/1 Black Spirit"
+            "notes": "!related Blightseer"
         },
         {
-            "card_name": "1/1 White Elf",
+            "card_name": "Elf",
             "color": "W",
             "rarity": "common",
             "type": "Token Creature \u2014 Elf",
@@ -6613,10 +6613,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Nipuni",
-            "notes": "!related One Night of Serenity<2>;Elorys, the Pathfinder\n\n!exportname 1/1 White Elf"
+            "notes": "!related One Night of Serenity<2>;Elorys, the Pathfinder"
         },
         {
-            "card_name": "1/1 Green Elf",
+            "card_name": "Elf",
             "color": "G",
             "rarity": "common",
             "type": "Token Creature \u2014 Elf",
@@ -6631,10 +6631,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Nick Grey",
-            "notes": "!related Alwanor, the Humbled Star\n\n!exportname 1/1 Green Elf"
+            "notes": "!related Alwanor, the Humbled Star"
         },
         {
-            "card_name": "4/4 Green Bear",
+            "card_name": "Bear",
             "color": "G",
             "rarity": "common",
             "type": "Token Creature \u2014 Bear",
@@ -6649,10 +6649,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "murtzart",
-            "notes": "!related Chasing Stars\n\n!exportname 4/4 Green Bear"
+            "notes": "!related Chasing Stars"
         },
         {
-            "card_name": "X/X Green Spirit",
+            "card_name": "Spirit",
             "color": "G",
             "rarity": "common",
             "type": "Token Creature \u2014 Spirit",
@@ -6667,10 +6667,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Caym Artworks",
-            "notes": "!related Elorys, the Pathfinder\n\n!exportname X/X Green Spirit"
+            "notes": "!related Elorys, the Pathfinder"
         },
         {
-            "card_name": "2/2 Green Elf Druid",
+            "card_name": "Elf Druid",
             "color": "G",
             "rarity": "common",
             "type": "Token Creature \u2014 Elf Druid",
@@ -6685,10 +6685,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "India-Lee Crews",
-            "notes": "!related Reclaimed Cultivator\n\n!exportname 2/2 Green Elf Druid"
+            "notes": "!related Reclaimed Cultivator"
         },
         {
-            "card_name": "3/3 Green Elf Horror",
+            "card_name": "Elf Horror",
             "color": "G",
             "rarity": "common",
             "type": "Token Creature \u2014 Elf Horror",
@@ -6703,10 +6703,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Like Ice",
-            "notes": "!related Reclaimed Cultivator;2/2 Green Elf Druid\n\n!exportname 3/3 Green Elf Horror"
+            "notes": "!related Reclaimed Cultivator;2/2 Green Elf Druid"
         },
         {
-            "card_name": "2/1 Red Spirit",
+            "card_name": "Spirit",
             "color": "R",
             "rarity": "common",
             "type": "Token Creature \u2014 Spirit",
@@ -6721,10 +6721,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Johnson Ting",
-            "notes": "!related Ecosa of the Old Blood\n\n!exportname 2/1 Red Spirit"
+            "notes": "!related Ecosa of the Old Blood"
         },
         {
-            "card_name": "White and Black Turelion Gospel",
+            "card_name": "Turelion Gospel",
             "color": "WB",
             "rarity": "common",
             "type": "Token Enchantment",
@@ -6739,10 +6739,10 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Bastien Lecouffe Deharme",
-            "notes": "!related Turelion Gospel\n\n!exportname White and Black Turelion Gospel"
+            "notes": "!related Turelion Gospel"
         },
         {
-            "card_name": "Colorless Adventure",
+            "card_name": "On An Adventure",
             "color": "",
             "rarity": "common",
             "type": "Reminder",
@@ -6757,7 +6757,7 @@
             "set": "SOL",
             "loyalty": "",
             "artist": "Rutger van de Steeg",
-            "notes": "!related Serpens Orbis;Leonis Excirtus;Aureola Crusaris;Eltanaan, the Silent Star;Balaenos Cresetis;Piscus Duosia;Draconos Magistus;Asulio, the Watchful Star;Aspus Venefir;Daemos Letheus;Nuillae Exidus;Rastabahl, the Enduring Star;Cancri Asellos;Draconos Tyrannos;Manticos Expurgis;Thubaran, the Fervent Star;Lupensi Purseus;Ursus Majora;Rex Tyrannos;Alwanor, the Humbled Star;Cepheos Delugo;Coria Portenus;Daemos Tormandus;Cornus Asarei;Leonis Concitare;Noctere Ascentus;Serpens Surectus;Turintos Fulgeos;Gomada Lumenos;Tigros Purseus;Levicta Visio;Lutra Inquisos;Ignavis ImmatusMatauros Tyrannos;Cereus Aegosa;Umbrus Surectus;Lupensi Tyrannos;Saureus Duplixi;Draconos Iracus;Uquus Crusaris\n\n!exportname Colorless Adventure"
+            "notes": "!related Serpens Orbis;Leonis Excirtus;Aureola Crusaris;Eltanaan, the Silent Star;Balaenos Cresetis;Piscus Duosia;Draconos Magistus;Asulio, the Watchful Star;Aspus Venefir;Daemos Letheus;Nuillae Exidus;Rastabahl, the Enduring Star;Cancri Asellos;Draconos Tyrannos;Manticos Expurgis;Thubaran, the Fervent Star;Lupensi Purseus;Ursus Majora;Rex Tyrannos;Alwanor, the Humbled Star;Cepheos Delugo;Coria Portenus;Daemos Tormandus;Cornus Asarei;Leonis Concitare;Noctere Ascentus;Serpens Surectus;Turintos Fulgeos;Gomada Lumenos;Tigros Purseus;Levicta Visio;Lutra Inquisos;Ignavis ImmatusMatauros Tyrannos;Cereus Aegosa;Umbrus Surectus;Lupensi Tyrannos;Saureus Duplixi;Draconos Iracus;Uquus Crusaris"
         }
     ]
 }
