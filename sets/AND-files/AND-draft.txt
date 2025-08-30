@@ -1,0 +1,4002 @@
+[CustomCards]
+	[
+		{
+			"name": "Chilling Grudge",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Enchantment — Aura Curse",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/7_Chilling Grudge.jpg"
+			}
+		},
+		{
+			"name": "Thoramar Anvilwright",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Dwarf Artificer",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/26_Thoramar Anvilwright.jpg"
+			}
+		},
+		{
+			"name": "Wayward Luminoceros",
+			"rarity": "common",
+			"mana_cost": "{3}{W}",
+			"type": "Creature — Dinosaur",
+			"collector_number": "30",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/30_Wayward Luminoceros.jpg"
+			}
+		},
+		{
+			"name": "Heirloom Empath",
+			"rarity": "common",
+			"mana_cost": "{4}{W}",
+			"type": "Creature — Angel Cleric",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/14_Heirloom Empath.jpg"
+			}
+		},
+		{
+			"name": "Truelight Vindicator",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Soldier",
+			"collector_number": "27",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/27_Truelight Vindicator_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/27_Truelight Vindicator_front.jpg"
+			}
+		},
+		{
+			"name": "Goldhearth Taurean",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Creature — Ox",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/13_Goldhearth Taurean.jpg"
+			}
+		},
+		{
+			"name": "Calcify",
+			"rarity": "common",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment — Aura",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/5_Calcify.jpg"
+			}
+		},
+		{
+			"name": "Purging Light",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/21_Purging Light.jpg"
+			}
+		},
+		{
+			"name": "Martyrize",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/17_Martyrize.jpg"
+			}
+		},
+		{
+			"name": "Fiery Cradle",
+			"rarity": "common",
+			"mana_cost": "{W}",
+			"type": "Enchantment",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/12_Fiery Cradle.jpg"
+			}
+		},
+		{
+			"name": "Bewitched Hexhunters",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Skeleton Soldier",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/4_Bewitched Hexhunters.jpg"
+			}
+		},
+		{
+			"name": "Champion of the Paragon",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Human Soldier Cleric",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/6_Champion of the Paragon.jpg"
+			}
+		},
+		{
+			"name": "Moment of Respite",
+			"rarity": "common",
+			"mana_cost": "{1}{W}",
+			"type": "Instant",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/19_Moment of Respite.jpg"
+			}
+		},
+		{
+			"name": "Dungeon Architect",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Creature — Dwarf Artificer",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/9_Dungeon Architect.jpg"
+			}
+		},
+		{
+			"name": "Beckoner of the Damned",
+			"rarity": "uncommon",
+			"mana_cost": "{W}",
+			"type": "Creature — Spirit",
+			"collector_number": "3",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/3_Beckoner of the Damned_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/3_Beckoner of the Damned_front.jpg"
+			}
+		},
+		{
+			"name": "Invoker of Angelfire",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Angel Shaman",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/15_Invoker of Angelfire.jpg"
+			}
+		},
+		{
+			"name": "Orator of Redemption",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Human Soldier Cleric",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/20_Orator of Redemption.jpg"
+			}
+		},
+		{
+			"name": "Molten Masterwork",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{W}",
+			"type": "Enchantment",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/18_Molten Masterwork.jpg"
+			}
+		},
+		{
+			"name": "Dungeon Fatigue",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment — Aura Curse",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/10_Dungeon Fatigue.jpg"
+			}
+		},
+		{
+			"name": "Seraph of Condemnation",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{W}{W}",
+			"type": "Creature — Angel Soldier",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/23_Seraph of Condemnation.jpg"
+			}
+		},
+		{
+			"name": "Domesticated Snubhorn",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Creature — Dinosaur",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/8_Domesticated Snubhorn.jpg"
+			}
+		},
+		{
+			"name": "Antiquate",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Sorcery",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/2_Antiquate.jpg"
+			}
+		},
+		{
+			"name": "Resplendent Tether",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Instant",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/22_Resplendent Tether.jpg"
+			}
+		},
+		{
+			"name": "Unfettered Magister",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}{W}",
+			"type": "Creature — Angel Soldier",
+			"collector_number": "29",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/29_Unfettered Magister_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/29_Unfettered Magister_front.jpg"
+			}
+		},
+		{
+			"name": "Turret Welder",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}",
+			"type": "Creature — Dwarf Artificer",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/28_Turret Welder.jpg"
+			}
+		},
+		{
+			"name": "Executor Algaz",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Legendary Creature — Dwarf Warrior",
+			"collector_number": "11",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/11_Executor Algaz_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/11_Executor Algaz_front.jpg"
+			}
+		},
+		{
+			"name": "Soul Embargo",
+			"rarity": "rare",
+			"mana_cost": "{2}{W}",
+			"type": "Enchantment — Aura Curse",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/25_Soul Embargo.jpg"
+			}
+		},
+		{
+			"name": "Shepherd of Atonement",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}",
+			"type": "Creature — Angel Soldier Cleric",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/24_Shepherd of Atonement.jpg"
+			}
+		},
+		{
+			"name": "Anariel, Brimstone Paragon",
+			"rarity": "mythic",
+			"mana_cost": "{4}{W}{W}{W}",
+			"type": "Legendary Creature — Elder Angel",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/1_Anariel, Brimstone Paragon.jpg"
+			}
+		},
+		{
+			"name": "The Lunarch Inquisition",
+			"rarity": "mythic",
+			"mana_cost": "{3}{W}{W}",
+			"type": "Legendary Enchantment — Saga",
+			"collector_number": "16",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/16_The Lunarch Inquisition_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/16_The Lunarch Inquisition_front.jpg"
+			}
+		},
+		{
+			"name": "Owl of the Oubliette",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Dwarf Rogue",
+			"collector_number": "54",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/54_Owl of the Oubliette.jpg"
+			}
+		},
+		{
+			"name": "Maritime Archaeologist",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Human Scout",
+			"collector_number": "53",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/53_Maritime Archaeologist.jpg"
+			}
+		},
+		{
+			"name": "Glacier Diviner",
+			"rarity": "common",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Djinn",
+			"collector_number": "42",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/42_Glacier Diviner.jpg"
+			}
+		},
+		{
+			"name": "Chasmal Lochmere",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Creature — Dinosaur",
+			"collector_number": "33",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/33_Chasmal Lochmere.jpg"
+			}
+		},
+		{
+			"name": "Hypnotic Pteron",
+			"rarity": "common",
+			"mana_cost": "{4}{U}",
+			"type": "Creature — Dinosaur Horror",
+			"collector_number": "47",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/47_Hypnotic Pteron.jpg"
+			}
+		},
+		{
+			"name": "Crystallized Chelidae",
+			"rarity": "common",
+			"mana_cost": "{4}{U}{U}",
+			"type": "Creature — Turtle",
+			"collector_number": "36",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/36_Crystallized Chelidae.jpg"
+			}
+		},
+		{
+			"name": "Forge Coolant",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Enchantment — Aura",
+			"collector_number": "40",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/40_Forge Coolant.jpg"
+			}
+		},
+		{
+			"name": "Interrogate",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Sorcery",
+			"collector_number": "49",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/49_Interrogate.jpg"
+			}
+		},
+		{
+			"name": "Syncopate",
+			"rarity": "common",
+			"mana_cost": "{X}{U}",
+			"type": "Instant",
+			"collector_number": "59",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/59_Syncopate.jpg"
+			}
+		},
+		{
+			"name": "Scrap for Parts",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "57",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/57_Scrap for Parts.jpg"
+			}
+		},
+		{
+			"name": "Ancient Schematics",
+			"rarity": "common",
+			"mana_cost": "{3}{U}",
+			"type": "Instant",
+			"collector_number": "31",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/31_Ancient Schematics.jpg"
+			}
+		},
+		{
+			"name": "Historical Recovery",
+			"rarity": "common",
+			"mana_cost": "{1}{U}",
+			"type": "Sorcery",
+			"collector_number": "45",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/45_Historical Recovery.jpg"
+			}
+		},
+		{
+			"name": "Perished Pilferer",
+			"rarity": "common",
+			"mana_cost": "{U}",
+			"type": "Creature — Spirit Rogue",
+			"collector_number": "55",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/55_Perished Pilferer_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/55_Perished Pilferer_front.jpg"
+			}
+		},
+		{
+			"name": "Fettered Figment",
+			"rarity": "uncommon",
+			"mana_cost": "{U}",
+			"type": "Creature — Spirit Rogue",
+			"collector_number": "39",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/39_Fettered Figment.jpg"
+			}
+		},
+		{
+			"name": "Excavation Embezzler",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Creature — Human Rogue",
+			"collector_number": "38",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/38_Excavation Embezzler.jpg"
+			}
+		},
+		{
+			"name": "Gold-Shackled Wyrm",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{U}{U}",
+			"type": "Creature — Dragon Skeleton",
+			"collector_number": "43",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/43_Gold-Shackled Wyrm.jpg"
+			}
+		},
+		{
+			"name": "Iterative Engineering",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment",
+			"collector_number": "51",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/51_Iterative Engineering.jpg"
+			}
+		},
+		{
+			"name": "Consign to History",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}",
+			"type": "Instant",
+			"collector_number": "34",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/34_Consign to History.jpg"
+			}
+		},
+		{
+			"name": "Salvage Technician",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Creature — Human Artificer",
+			"collector_number": "56",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/56_Salvage Technician.jpg"
+			}
+		},
+		{
+			"name": "Beguiling Greed",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Enchantment",
+			"collector_number": "32",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/32_Beguiling Greed.jpg"
+			}
+		},
+		{
+			"name": "Transit Mage",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{U}",
+			"type": "Creature — Human Wizard",
+			"collector_number": "60",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/60_Transit Mage.jpg"
+			}
+		},
+		{
+			"name": "Into the Labyrinth",
+			"rarity": "uncommon",
+			"mana_cost": "{U}",
+			"type": "Instant",
+			"collector_number": "50",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/50_Into the Labyrinth.jpg"
+			}
+		},
+		{
+			"name": "Inescapable Sentence",
+			"rarity": "rare",
+			"mana_cost": "{1}{U}",
+			"type": "Enchantment",
+			"collector_number": "48",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/48_Inescapable Sentence.jpg"
+			}
+		},
+		{
+			"name": "Covetous Curator",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}{U}",
+			"type": "Creature — Sphinx",
+			"collector_number": "35",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/35_Covetous Curator.jpg"
+			}
+		},
+		{
+			"name": "Engineered Extraction",
+			"rarity": "rare",
+			"mana_cost": "{X}{X}{U}{U}",
+			"type": "Instant",
+			"collector_number": "37",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/37_Engineered Extraction.jpg"
+			}
+		},
+		{
+			"name": "History Unburied",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}",
+			"type": "Instant",
+			"collector_number": "46",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/46_History Unburied.jpg"
+			}
+		},
+		{
+			"name": "Loreto, Chief Archaeologist",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}",
+			"type": "Legendary Creature — Human Wizard",
+			"collector_number": "52",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/52_Loreto, Chief Archaeologist.jpg"
+			}
+		},
+		{
+			"name": "Forge the Future",
+			"rarity": "rare",
+			"mana_cost": "{3}{U}",
+			"type": "Enchantment",
+			"collector_number": "41",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/41_Forge the Future.jpg"
+			}
+		},
+		{
+			"name": "Hazia the Chronicler",
+			"rarity": "mythic",
+			"mana_cost": "{2}{U}{U}",
+			"type": "Legendary Planeswalker — Hazia",
+			"collector_number": "44",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/44_Hazia the Chronicler.jpg"
+			}
+		},
+		{
+			"name": "Search for Meaning",
+			"rarity": "mythic",
+			"mana_cost": "{1}{U}",
+			"type": "Legendary Enchantment — Saga",
+			"collector_number": "58",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/58_Search for Meaning_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/58_Search for Meaning_front.jpg"
+			}
+		},
+		{
+			"name": "Grisly Butcher",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Demon Warrior",
+			"collector_number": "76",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/76_Grisly Butcher_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/76_Grisly Butcher_front.jpg"
+			}
+		},
+		{
+			"name": "Stalking Sensation",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment — Aura Curse",
+			"collector_number": "88",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/88_Stalking Sensation.jpg"
+			}
+		},
+		{
+			"name": "Infernal Binding",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Sorcery",
+			"collector_number": "78",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/78_Infernal Binding.jpg"
+			}
+		},
+		{
+			"name": "Mourning Banshee",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Spirit",
+			"collector_number": "81",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/81_Mourning Banshee_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/81_Mourning Banshee_front.jpg"
+			}
+		},
+		{
+			"name": "Cadaver Captive",
+			"rarity": "common",
+			"mana_cost": "{B}",
+			"type": "Creature — Zombie",
+			"collector_number": "64",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/64_Cadaver Captive.jpg"
+			}
+		},
+		{
+			"name": "Darkfathom Dungeoneers",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Dwarf Rogue",
+			"collector_number": "68",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/68_Darkfathom Dungeoneers.jpg"
+			}
+		},
+		{
+			"name": "Profane Penitence",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment — Aura",
+			"collector_number": "84",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/84_Profane Penitence.jpg"
+			}
+		},
+		{
+			"name": "Silk Swathe",
+			"rarity": "common",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "87",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/87_Silk Swathe.jpg"
+			}
+		},
+		{
+			"name": "Clawing Grudge",
+			"rarity": "common",
+			"mana_cost": "{2}{B}",
+			"type": "Enchantment — Aura Curse",
+			"collector_number": "66",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/66_Clawing Grudge.jpg"
+			}
+		},
+		{
+			"name": "Shape From Tar",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment",
+			"collector_number": "86",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/86_Shape From Tar.jpg"
+			}
+		},
+		{
+			"name": "Kagaroth Slagshaper",
+			"rarity": "common",
+			"mana_cost": "{3}{B}{B}",
+			"type": "Creature — Minotaur Shaman",
+			"collector_number": "79",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/79_Kagaroth Slagshaper.jpg"
+			}
+		},
+		{
+			"name": "Enraptured Orator",
+			"rarity": "common",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Dwarf Cleric",
+			"collector_number": "72",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/72_Enraptured Orator.jpg"
+			}
+		},
+		{
+			"name": "Endless Maw",
+			"rarity": "common",
+			"mana_cost": "{3}{B}",
+			"type": "Creature — Wurm",
+			"collector_number": "71",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/71_Endless Maw.jpg"
+			}
+		},
+		{
+			"name": "Consecrated Lich",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Spirit Cleric",
+			"collector_number": "67",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/67_Consecrated Lich.jpg"
+			}
+		},
+		{
+			"name": "Deathless Justiciar",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Zombie Soldier",
+			"collector_number": "69",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/69_Deathless Justiciar.jpg"
+			}
+		},
+		{
+			"name": "Baleful Tormentor",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Creature — Zombie Hound",
+			"collector_number": "62",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/62_Baleful Tormentor_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/62_Baleful Tormentor_front.jpg"
+			}
+		},
+		{
+			"name": "Callous Jailer",
+			"rarity": "uncommon",
+			"mana_cost": "{B}",
+			"type": "Creature — Human Soldier",
+			"collector_number": "65",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/65_Callous Jailer.jpg"
+			}
+		},
+		{
+			"name": "Extract Impurity",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{B}",
+			"type": "Enchantment",
+			"collector_number": "73",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/73_Extract Impurity.jpg"
+			}
+		},
+		{
+			"name": "Tyrant's Hunger",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}",
+			"type": "Instant",
+			"collector_number": "90",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/90_Tyrant's Hunger.jpg"
+			}
+		},
+		{
+			"name": "Binding Grudge",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment — Aura Curse",
+			"collector_number": "63",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/63_Binding Grudge.jpg"
+			}
+		},
+		{
+			"name": "Feaster of Forbidden Magics",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Creature — Demon Minotaur",
+			"collector_number": "75",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/75_Feaster of Forbidden Magics.jpg"
+			}
+		},
+		{
+			"name": "Ravenous Marrophax",
+			"rarity": "uncommon",
+			"mana_cost": "{4}{B}{B}",
+			"type": "Creature — Zombie Dinosaur",
+			"collector_number": "85",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/85_Ravenous Marrophax.jpg"
+			}
+		},
+		{
+			"name": "Phylactery Lich",
+			"rarity": "rare",
+			"mana_cost": "{B}{B}{B}",
+			"type": "Creature — Zombie",
+			"collector_number": "83",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/83_Phylactery Lich.jpg"
+			}
+		},
+		{
+			"name": "Hallowflame Scourge",
+			"rarity": "rare",
+			"mana_cost": "{B}",
+			"type": "Creature — Zombie Soldier",
+			"collector_number": "77",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/77_Hallowflame Scourge.jpg"
+			}
+		},
+		{
+			"name": "Fatal Footing",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Enchantment — Aura Curse",
+			"collector_number": "74",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/74_Fatal Footing.jpg"
+			}
+		},
+		{
+			"name": "Maze Stalker",
+			"rarity": "rare",
+			"mana_cost": "{1}{B}",
+			"type": "Creature — Zombie Minotaur Warrior",
+			"collector_number": "80",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/80_Maze Stalker.jpg"
+			}
+		},
+		{
+			"name": "Decarburize",
+			"rarity": "rare",
+			"mana_cost": "{B}",
+			"type": "Instant",
+			"collector_number": "70",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/70_Decarburize.jpg"
+			}
+		},
+		{
+			"name": "Tyrannic Reawakening",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Sorcery",
+			"collector_number": "89",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/89_Tyrannic Reawakening.jpg"
+			}
+		},
+		{
+			"name": "Archaezus, Dark Salvation",
+			"rarity": "mythic",
+			"mana_cost": "{5}{B}{B}",
+			"type": "Legendary Creature — Elder Demon",
+			"collector_number": "61",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/61_Archaezus, Dark Salvation_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/61_Archaezus, Dark Salvation_front.jpg"
+			}
+		},
+		{
+			"name": "The Onakke Massacre",
+			"rarity": "mythic",
+			"mana_cost": "{2}{B}{B}",
+			"type": "Legendary Enchantment — Saga",
+			"collector_number": "82",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/82_The Onakke Massacre_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/82_The Onakke Massacre_front.jpg"
+			}
+		},
+		{
+			"name": "Scoriasaur",
+			"rarity": "common",
+			"mana_cost": "{4}{R}{R}",
+			"type": "Creature — Dinosaur",
+			"collector_number": "113",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/113_Scoriasaur.jpg"
+			}
+		},
+		{
+			"name": "Taukalo Maze-Runner",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Minotaur Warrior",
+			"collector_number": "116",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/116_Taukalo Maze-Runner.jpg"
+			}
+		},
+		{
+			"name": "Hallowflame Outfitter",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Human Soldier Cleric",
+			"collector_number": "103",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/103_Hallowflame Outfitter.jpg"
+			}
+		},
+		{
+			"name": "Furnace Fledgling",
+			"rarity": "common",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Phoenix",
+			"collector_number": "100",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/100_Furnace Fledgling.jpg"
+			}
+		},
+		{
+			"name": "Smoldering Vizier",
+			"rarity": "common",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Zombie Minotaur",
+			"collector_number": "114",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/114_Smoldering Vizier.jpg"
+			}
+		},
+		{
+			"name": "Wax Ignus",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Creature — Spirit",
+			"collector_number": "120",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/120_Wax Ignus_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/120_Wax Ignus_front.jpg"
+			}
+		},
+		{
+			"name": "Consecrating Fire",
+			"rarity": "common",
+			"mana_cost": "{R}",
+			"type": "Sorcery",
+			"collector_number": "96",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/96_Consecrating Fire.jpg"
+			}
+		},
+		{
+			"name": "Magmatic Genesis",
+			"rarity": "common",
+			"mana_cost": "{3}{R}{R}",
+			"type": "Enchantment",
+			"collector_number": "107",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/107_Magmatic Genesis.jpg"
+			}
+		},
+		{
+			"name": "Drill Out",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Sorcery",
+			"collector_number": "97",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/97_Drill Out.jpg"
+			}
+		},
+		{
+			"name": "Candlecleft Prospector",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Dwarf Scout",
+			"collector_number": "94",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/94_Candlecleft Prospector_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/94_Candlecleft Prospector_front.jpg"
+			}
+		},
+		{
+			"name": "Toil the Mines",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Instant",
+			"collector_number": "117",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/117_Toil the Mines.jpg"
+			}
+		},
+		{
+			"name": "Unchained Fury",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Sorcery",
+			"collector_number": "118",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/118_Unchained Fury.jpg"
+			}
+		},
+		{
+			"name": "Lava Spike Trap",
+			"rarity": "common",
+			"mana_cost": "{1}{R}",
+			"type": "Enchantment",
+			"collector_number": "106",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/106_Lava Spike Trap.jpg"
+			}
+		},
+		{
+			"name": "Raptor Roost",
+			"rarity": "uncommon",
+			"mana_cost": "{R}",
+			"type": "Enchantment",
+			"collector_number": "109",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/109_Raptor Roost.jpg"
+			}
+		},
+		{
+			"name": "Invoker of Hellfire",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Demon Shaman",
+			"collector_number": "105",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/105_Invoker of Hellfire.jpg"
+			}
+		},
+		{
+			"name": "Dungeon Liberation",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Sorcery",
+			"collector_number": "98",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/98_Dungeon Liberation.jpg"
+			}
+		},
+		{
+			"name": "Spectacular Engineer",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Dwarf Artificer",
+			"collector_number": "115",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/115_Spectacular Engineer_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/115_Spectacular Engineer_front.jpg"
+			}
+		},
+		{
+			"name": "Voracious Slagmaw",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{R}{R}",
+			"type": "Creature — Dinosaur",
+			"collector_number": "119",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/119_Voracious Slagmaw.jpg"
+			}
+		},
+		{
+			"name": "Extract from Amber",
+			"rarity": "uncommon",
+			"mana_cost": "{X}{R}",
+			"type": "Sorcery",
+			"collector_number": "99",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/99_Extract from Amber.jpg"
+			}
+		},
+		{
+			"name": "Rockslide Rampage",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}",
+			"type": "Enchantment",
+			"collector_number": "111",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/111_Rockslide Rampage.jpg"
+			}
+		},
+		{
+			"name": "Ruinous Rumblings",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Enchantment",
+			"collector_number": "112",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/112_Ruinous Rumblings.jpg"
+			}
+		},
+		{
+			"name": "Purifying Pyre",
+			"rarity": "uncommon",
+			"mana_cost": "{R}",
+			"type": "Sorcery",
+			"collector_number": "108",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/108_Purifying Pyre.jpg"
+			}
+		},
+		{
+			"name": "Amplifying Aegisaur",
+			"rarity": "rare",
+			"mana_cost": "{R}",
+			"type": "Creature — Dinosaur",
+			"collector_number": "92",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/92_Amplifying Aegisaur.jpg"
+			}
+		},
+		{
+			"name": "Anvilwrought Epiphany",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{R}",
+			"type": "Enchantment",
+			"collector_number": "93",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/93_Anvilwrought Epiphany.jpg"
+			}
+		},
+		{
+			"name": "Catacomb Crasher",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}",
+			"type": "Creature — Minotaur Warrior",
+			"collector_number": "95",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/95_Catacomb Crasher.jpg"
+			}
+		},
+		{
+			"name": "Ageless Augurling",
+			"rarity": "rare",
+			"mana_cost": "{3}{R}",
+			"type": "Creature — Phoenix",
+			"collector_number": "91",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/91_Ageless Augurling_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/91_Ageless Augurling_front.jpg"
+			}
+		},
+		{
+			"name": "Resounding Regisaur",
+			"rarity": "rare",
+			"mana_cost": "{1}{R}",
+			"type": "Creature — Dinosaur",
+			"collector_number": "110",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/110_Resounding Regisaur.jpg"
+			}
+		},
+		{
+			"name": "Industry",
+			"rarity": "rare",
+			"mana_cost": "{R}{R}{R}",
+			"type": "Enchantment",
+			"collector_number": "104",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/104_Industry.jpg"
+			}
+		},
+		{
+			"name": "Gildrang, Mercurial Maw",
+			"rarity": "mythic",
+			"mana_cost": "{3}{R}{R}",
+			"type": "Legendary Creature — Dragon",
+			"collector_number": "102",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/102_Gildrang, Mercurial Maw.jpg"
+			}
+		},
+		{
+			"name": "Ghostfire Prophecy",
+			"rarity": "mythic",
+			"mana_cost": "{2}{R}",
+			"type": "Legendary Enchantment — Saga",
+			"collector_number": "101",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/101_Ghostfire Prophecy_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/101_Ghostfire Prophecy_front.jpg"
+			}
+		},
+		{
+			"name": "Bloodthirsty Laceryx",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Dinosaur",
+			"collector_number": "124",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/124_Bloodthirsty Laceryx_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/124_Bloodthirsty Laceryx_front.jpg"
+			}
+		},
+		{
+			"name": "Labyrinth Warden",
+			"rarity": "common",
+			"mana_cost": "{2}{G}{G}",
+			"type": "Creature — Minotaur Warrior",
+			"collector_number": "134",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/134_Labyrinth Warden.jpg"
+			}
+		},
+		{
+			"name": "Antiquary Arachir",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Creature — Spider Shaman",
+			"collector_number": "122",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/122_Antiquary Arachir.jpg"
+			}
+		},
+		{
+			"name": "Covetous Mason",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Gorgon",
+			"collector_number": "127",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/127_Covetous Mason.jpg"
+			}
+		},
+		{
+			"name": "Quarry Carver",
+			"rarity": "common",
+			"mana_cost": "{4}{G}{G}",
+			"type": "Creature — Wurm",
+			"collector_number": "140",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/140_Quarry Carver.jpg"
+			}
+		},
+		{
+			"name": "Mycohulk",
+			"rarity": "common",
+			"mana_cost": "{4}{G}",
+			"type": "Creature — Fungus Giant",
+			"collector_number": "138",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/138_Mycohulk.jpg"
+			}
+		},
+		{
+			"name": "Gilded Greed",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Sorcery",
+			"collector_number": "132",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/132_Gilded Greed.jpg"
+			}
+		},
+		{
+			"name": "Tectonic Shift",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Sorcery",
+			"collector_number": "147",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/147_Tectonic Shift.jpg"
+			}
+		},
+		{
+			"name": "Terraformation",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Enchantment — Aura",
+			"collector_number": "149",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/149_Terraformation.jpg"
+			}
+		},
+		{
+			"name": "Mineral Harvest",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Enchantment — Aura",
+			"collector_number": "137",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/137_Mineral Harvest.jpg"
+			}
+		},
+		{
+			"name": "Fernwyr Geologist",
+			"rarity": "common",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Dwarf Shaman",
+			"collector_number": "129",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/129_Fernwyr Geologist.jpg"
+			}
+		},
+		{
+			"name": "Stone Skin",
+			"rarity": "common",
+			"mana_cost": "{G}",
+			"type": "Instant",
+			"collector_number": "143",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/143_Stone Skin.jpg"
+			}
+		},
+		{
+			"name": "Survivalist Captain",
+			"rarity": "common",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Dwarf Soldier Scout",
+			"collector_number": "144",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/144_Survivalist Captain.jpg"
+			}
+		},
+		{
+			"name": "Taukalo Quartermaster",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}",
+			"type": "Creature — Minotaur Warrior",
+			"collector_number": "146",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/146_Taukalo Quartermaster.jpg"
+			}
+		},
+		{
+			"name": "Stalactite Miner",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Dwarf Scout",
+			"collector_number": "142",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/142_Stalactite Miner.jpg"
+			}
+		},
+		{
+			"name": "Virulent Skulker",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{G}",
+			"type": "Creature — Dwarf Rogue",
+			"collector_number": "150",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/150_Virulent Skulker.jpg"
+			}
+		},
+		{
+			"name": "Carnivorous Frenzy",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}",
+			"type": "Instant",
+			"collector_number": "126",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/126_Carnivorous Frenzy.jpg"
+			}
+		},
+		{
+			"name": "Tectonic Takedown",
+			"rarity": "uncommon",
+			"mana_cost": "{G}",
+			"type": "Enchantment",
+			"collector_number": "148",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/148_Tectonic Takedown.jpg"
+			}
+		},
+		{
+			"name": "Cadaver Cleansers",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Fungus Cleric",
+			"collector_number": "125",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/125_Cadaver Cleansers_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/125_Cadaver Cleansers_front.jpg"
+			}
+		},
+		{
+			"name": "Return to Rubble",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Sorcery",
+			"collector_number": "141",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/141_Return to Rubble.jpg"
+			}
+		},
+		{
+			"name": "Dungeoneering",
+			"rarity": "uncommon",
+			"mana_cost": "{3}{G}{G}",
+			"type": "Sorcery",
+			"collector_number": "128",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/128_Dungeoneering.jpg"
+			}
+		},
+		{
+			"name": "Mesozoology",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}",
+			"type": "Sorcery",
+			"collector_number": "136",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/136_Mesozoology.jpg"
+			}
+		},
+		{
+			"name": "Fertilize",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}",
+			"type": "Instant",
+			"collector_number": "130",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/130_Fertilize.jpg"
+			}
+		},
+		{
+			"name": "Alloy Bloom",
+			"rarity": "rare",
+			"mana_cost": "{3}{G}",
+			"type": "Enchantment",
+			"collector_number": "121",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/121_Alloy Bloom.jpg"
+			}
+		},
+		{
+			"name": "Taukalo Magehunter",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Minotaur Shaman",
+			"collector_number": "145",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/145_Taukalo Magehunter.jpg"
+			}
+		},
+		{
+			"name": "Plated Ankheg",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}{G}",
+			"type": "Creature — Insect Horror",
+			"collector_number": "139",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/139_Plated Ankheg.jpg"
+			}
+		},
+		{
+			"name": "Memory Spiral",
+			"rarity": "rare",
+			"mana_cost": "{2}{G}",
+			"type": "Enchantment",
+			"collector_number": "135",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/135_Memory Spiral.jpg"
+			}
+		},
+		{
+			"name": "Avaricious Widow",
+			"rarity": "rare",
+			"mana_cost": "{1}{G}",
+			"type": "Creature — Spider Shaman",
+			"collector_number": "123",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/123_Avaricious Widow_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/123_Avaricious Widow_front.jpg"
+			}
+		},
+		{
+			"name": "Ghaleia, Apex Progenitor",
+			"rarity": "mythic",
+			"mana_cost": "{6}{G}{G}{G}",
+			"type": "Legendary Creature — Elder Dinosaur",
+			"collector_number": "131",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/131_Ghaleia, Apex Progenitor.jpg"
+			}
+		},
+		{
+			"name": "Itari's Reign of Blossoms",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}",
+			"type": "Legendary Enchantment — Saga",
+			"collector_number": "133",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/133_Itari's Reign of Blossoms_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/133_Itari's Reign of Blossoms_front.jpg"
+			}
+		},
+		{
+			"name": "Tarnished Grail",
+			"rarity": "common",
+			"mana_cost": "{1}",
+			"type": "Artifact",
+			"collector_number": "254",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/254_Tarnished Grail.jpg"
+			}
+		},
+		{
+			"name": "Armillary of Spirit",
+			"rarity": "common",
+			"mana_cost": "{1}",
+			"type": "Artifact",
+			"collector_number": "191",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/191_Armillary of Spirit.jpg"
+			}
+		},
+		{
+			"name": "Iron Sentry",
+			"rarity": "common",
+			"mana_cost": "{1}",
+			"type": "Artifact Creature — Dwarf",
+			"collector_number": "225",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/225_Iron Sentry_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/225_Iron Sentry_front.jpg"
+			}
+		},
+		{
+			"name": "Collapsing Ceiling",
+			"rarity": "common",
+			"mana_cost": "{1}",
+			"type": "Artifact",
+			"collector_number": "202",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/202_Collapsing Ceiling.jpg"
+			}
+		},
+		{
+			"name": "Luminous Latch",
+			"rarity": "common",
+			"mana_cost": "{1}",
+			"type": "Artifact — Equipment Key",
+			"collector_number": "230",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/230_Luminous Latch.jpg"
+			}
+		},
+		{
+			"name": "Armillary of Creation",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "188",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/188_Armillary of Creation.jpg"
+			}
+		},
+		{
+			"name": "Volatile Cinder",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Elemental",
+			"collector_number": "259",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/259_Volatile Cinder.jpg"
+			}
+		},
+		{
+			"name": "Earthwarder",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Dwarf",
+			"collector_number": "208",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/208_Earthwarder.jpg"
+			}
+		},
+		{
+			"name": "Refractor Geode",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Elemental",
+			"collector_number": "243",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/243_Refractor Geode.jpg"
+			}
+		},
+		{
+			"name": "Gilded Servitor",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Spirit",
+			"collector_number": "216",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/216_Gilded Servitor.jpg"
+			}
+		},
+		{
+			"name": "Requisition Rope",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact — Equipment",
+			"collector_number": "244",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/244_Requisition Rope.jpg"
+			}
+		},
+		{
+			"name": "Ichor Wellspring",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "222",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/222_Ichor Wellspring.jpg"
+			}
+		},
+		{
+			"name": "Voltaic Familiar",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Bird",
+			"collector_number": "260",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/260_Voltaic Familiar.jpg"
+			}
+		},
+		{
+			"name": "Dredge Scuttler",
+			"rarity": "common",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Trilobite",
+			"collector_number": "206",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/206_Dredge Scuttler.jpg"
+			}
+		},
+		{
+			"name": "Armillary of Antiquity",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "187",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/187_Armillary of Antiquity.jpg"
+			}
+		},
+		{
+			"name": "Pilgrim's Eye",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact Creature — Thopter",
+			"collector_number": "238",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/238_Pilgrim's Eye.jpg"
+			}
+		},
+		{
+			"name": "Onyx Reaver",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact Creature — Elemental",
+			"collector_number": "236",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/236_Onyx Reaver_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/236_Onyx Reaver_front.jpg"
+			}
+		},
+		{
+			"name": "Furnace Stoker",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact Creature — Elemental",
+			"collector_number": "215",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/215_Furnace Stoker.jpg"
+			}
+		},
+		{
+			"name": "Crux Auger",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact Creature — Soldier",
+			"collector_number": "204",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/204_Crux Auger.jpg"
+			}
+		},
+		{
+			"name": "Truelight Castigator",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact — Equipment",
+			"collector_number": "258",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/258_Truelight Castigator.jpg"
+			}
+		},
+		{
+			"name": "Foreboding Prism",
+			"rarity": "common",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "213",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/213_Foreboding Prism.jpg"
+			}
+		},
+		{
+			"name": "Armory Attendant",
+			"rarity": "common",
+			"mana_cost": "{4}",
+			"type": "Artifact Creature — Soldier",
+			"collector_number": "192",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/192_Armory Attendant.jpg"
+			}
+		},
+		{
+			"name": "Jade Carapace",
+			"rarity": "common",
+			"mana_cost": "{4}",
+			"type": "Artifact — Equipment",
+			"collector_number": "226",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/226_Jade Carapace.jpg"
+			}
+		},
+		{
+			"name": "Chronite Tunneler",
+			"rarity": "common",
+			"mana_cost": "{4}",
+			"type": "Artifact Creature — Wurm",
+			"collector_number": "198",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/198_Chronite Tunneler.jpg"
+			}
+		},
+		{
+			"name": "Salvage Hulk",
+			"rarity": "common",
+			"mana_cost": "{4}",
+			"type": "Artifact Creature — Elemental",
+			"collector_number": "247",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/247_Salvage Hulk.jpg"
+			}
+		},
+		{
+			"name": "Rimethread Recluse",
+			"rarity": "common",
+			"mana_cost": "{4}",
+			"type": "Artifact Creature — Spider",
+			"collector_number": "246",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/246_Rimethread Recluse.jpg"
+			}
+		},
+		{
+			"name": "Clockwork Wyvern",
+			"rarity": "common",
+			"mana_cost": "{4}",
+			"type": "Artifact Creature — Drake",
+			"collector_number": "201",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/201_Clockwork Wyvern.jpg"
+			}
+		},
+		{
+			"name": "Petrified Light",
+			"rarity": "common",
+			"mana_cost": "{5}",
+			"type": "Artifact Creature — Elemental",
+			"collector_number": "237",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/237_Petrified Light.jpg"
+			}
+		},
+		{
+			"name": "Igneous Harbinger",
+			"rarity": "common",
+			"mana_cost": "{5}",
+			"type": "Artifact Creature — Elemental",
+			"collector_number": "223",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/223_Igneous Harbinger.jpg"
+			}
+		},
+		{
+			"name": "Abyssal Shredder",
+			"rarity": "common",
+			"mana_cost": "{5}",
+			"type": "Artifact Creature — Wurm",
+			"collector_number": "186",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/186_Abyssal Shredder.jpg"
+			}
+		},
+		{
+			"name": "Glacial Revenant",
+			"rarity": "common",
+			"mana_cost": "{5}",
+			"type": "Artifact Creature — Elemental Giant",
+			"collector_number": "217",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/217_Glacial Revenant.jpg"
+			}
+		},
+		{
+			"name": "Slag Colossus",
+			"rarity": "common",
+			"mana_cost": "{6}",
+			"type": "Artifact Creature — Elemental Giant",
+			"collector_number": "248",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/248_Slag Colossus.jpg"
+			}
+		},
+		{
+			"name": "Cadaverous Tyrranax",
+			"rarity": "common",
+			"mana_cost": "{6}",
+			"type": "Artifact Creature — Dinosaur Skeleton",
+			"collector_number": "196",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/196_Cadaverous Tyrranax.jpg"
+			}
+		},
+		{
+			"name": "Titansteel Hellion",
+			"rarity": "common",
+			"mana_cost": "{7}",
+			"type": "Artifact Creature — Hellion",
+			"collector_number": "257",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/257_Titansteel Hellion.jpg"
+			}
+		},
+		{
+			"name": "Refractling",
+			"rarity": "uncommon",
+			"mana_cost": "{1}",
+			"type": "Artifact Creature — Elemental",
+			"collector_number": "242",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/242_Refractling.jpg"
+			}
+		},
+		{
+			"name": "Heritage Morningstar",
+			"rarity": "uncommon",
+			"mana_cost": "{1}",
+			"type": "Artifact — Equipment",
+			"collector_number": "220",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/220_Heritage Morningstar.jpg"
+			}
+		},
+		{
+			"name": "Mortal Compass",
+			"rarity": "uncommon",
+			"mana_cost": "{1}",
+			"type": "Artifact",
+			"collector_number": "234",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/234_Mortal Compass.jpg"
+			}
+		},
+		{
+			"name": "Cranial Clasp",
+			"rarity": "uncommon",
+			"mana_cost": "{1}",
+			"type": "Artifact — Equipment Key",
+			"collector_number": "203",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/203_Cranial Clasp.jpg"
+			}
+		},
+		{
+			"name": "Reassembled Orca",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Whale Skeleton",
+			"collector_number": "241",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/241_Reassembled Orca.jpg"
+			}
+		},
+		{
+			"name": "Stonebinder",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Elemental",
+			"collector_number": "251",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/251_Stonebinder_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/251_Stonebinder_front.jpg"
+			}
+		},
+		{
+			"name": "Enigmatic Nautlius",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Nautilus",
+			"collector_number": "211",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/211_Enigmatic Nautlius.jpg"
+			}
+		},
+		{
+			"name": "Drill Rig",
+			"rarity": "uncommon",
+			"mana_cost": "{2}",
+			"type": "Artifact — Vehicle",
+			"collector_number": "207",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/207_Drill Rig.jpg"
+			}
+		},
+		{
+			"name": "Lumbering Mauler",
+			"rarity": "uncommon",
+			"mana_cost": "{3}",
+			"type": "Artifact Creature — Giant",
+			"collector_number": "229",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/229_Lumbering Mauler_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/229_Lumbering Mauler_front.jpg"
+			}
+		},
+		{
+			"name": "Hall of the Titans",
+			"rarity": "uncommon",
+			"mana_cost": "{3}",
+			"type": "Artifact",
+			"collector_number": "219",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/219_Hall of the Titans.jpg"
+			}
+		},
+		{
+			"name": "Burning-Chain Emissary",
+			"rarity": "uncommon",
+			"mana_cost": "{3}",
+			"type": "Artifact Creature — Elemental",
+			"collector_number": "195",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/195_Burning-Chain Emissary.jpg"
+			}
+		},
+		{
+			"name": "Titanholm Marauder",
+			"rarity": "uncommon",
+			"mana_cost": "{3}",
+			"type": "Artifact Creature — Artificer",
+			"collector_number": "256",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/256_Titanholm Marauder.jpg"
+			}
+		},
+		{
+			"name": "Labyrinth Shortcutter",
+			"rarity": "uncommon",
+			"mana_cost": "{4}",
+			"type": "Artifact — Vehicle",
+			"collector_number": "228",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/228_Labyrinth Shortcutter.jpg"
+			}
+		},
+		{
+			"name": "Solemn Simulacrum",
+			"rarity": "uncommon",
+			"mana_cost": "{4}",
+			"type": "Artifact Creature — Golem",
+			"collector_number": "249",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/249_Solemn Simulacrum.jpg"
+			}
+		},
+		{
+			"name": "Armillary of Divinity",
+			"rarity": "uncommon",
+			"mana_cost": "{4}",
+			"type": "Artifact",
+			"collector_number": "189",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/189_Armillary of Divinity.jpg"
+			}
+		},
+		{
+			"name": "Titanholm Anvil",
+			"rarity": "uncommon",
+			"mana_cost": "{4}",
+			"type": "Artifact",
+			"collector_number": "255",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/255_Titanholm Anvil.jpg"
+			}
+		},
+		{
+			"name": "Crystal Ravager",
+			"rarity": "uncommon",
+			"mana_cost": "{5}",
+			"type": "Artifact Creature — Elemental Hydra",
+			"collector_number": "205",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/205_Crystal Ravager.jpg"
+			}
+		},
+		{
+			"name": "Steel Exemplar",
+			"rarity": "uncommon",
+			"mana_cost": "{5}",
+			"type": "Artifact Creature — Wizard",
+			"collector_number": "250",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/250_Steel Exemplar.jpg"
+			}
+		},
+		{
+			"name": "Castigator Warden",
+			"rarity": "uncommon",
+			"mana_cost": "{6}",
+			"type": "Artifact Creature — Cleric",
+			"collector_number": "197",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/197_Castigator Warden.jpg"
+			}
+		},
+		{
+			"name": "Foundry Progenitor",
+			"rarity": "uncommon",
+			"mana_cost": "{6}",
+			"type": "Artifact Creature — Juggernaut",
+			"collector_number": "214",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/214_Foundry Progenitor.jpg"
+			}
+		},
+		{
+			"name": "Morphic Mass",
+			"rarity": "uncommon",
+			"mana_cost": "{7}",
+			"type": "Artifact Creature — Zombie Giant",
+			"collector_number": "233",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/233_Morphic Mass.jpg"
+			}
+		},
+		{
+			"name": "Keening Belltower",
+			"rarity": "rare",
+			"mana_cost": "{4}",
+			"type": "Artifact",
+			"collector_number": "227",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/227_Keening Belltower.jpg"
+			}
+		},
+		{
+			"name": "Assembly Warden",
+			"rarity": "rare",
+			"mana_cost": "{3}",
+			"type": "Artifact Creature — Dwarf",
+			"collector_number": "193",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/193_Assembly Warden.jpg"
+			}
+		},
+		{
+			"name": "Imposing Kilnkite",
+			"rarity": "rare",
+			"mana_cost": "{6}",
+			"type": "Artifact Creature — Dragon",
+			"collector_number": "224",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/224_Imposing Kilnkite.jpg"
+			}
+		},
+		{
+			"name": "Emberling",
+			"rarity": "rare",
+			"mana_cost": "{1}",
+			"type": "Artifact Creature — Elemental",
+			"collector_number": "210",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/210_Emberling.jpg"
+			}
+		},
+		{
+			"name": "Electric Effigy",
+			"rarity": "rare",
+			"mana_cost": "{2}",
+			"type": "Artifact",
+			"collector_number": "209",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/209_Electric Effigy.jpg"
+			}
+		},
+		{
+			"name": "Voltaic Pinion",
+			"rarity": "rare",
+			"mana_cost": "{1}",
+			"type": "Artifact",
+			"collector_number": "261",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/261_Voltaic Pinion.jpg"
+			}
+		},
+		{
+			"name": "Marbled Fusion",
+			"rarity": "rare",
+			"mana_cost": "{2}",
+			"type": "Artifact Creature — Elemental",
+			"collector_number": "232",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/232_Marbled Fusion_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/232_Marbled Fusion_front.jpg"
+			}
+		},
+		{
+			"name": "Synapse Scepter",
+			"rarity": "rare",
+			"mana_cost": "{2}",
+			"type": "Artifact — Equipment",
+			"collector_number": "253",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/253_Synapse Scepter.jpg"
+			}
+		},
+		{
+			"name": "Hoots, Seeker's Guide",
+			"rarity": "rare",
+			"mana_cost": "{1}",
+			"type": "Legendary Artifact Creature — Bird",
+			"collector_number": "221",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/221_Hoots, Seeker's Guide.jpg"
+			}
+		},
+		{
+			"name": "Chronolith Hulk",
+			"rarity": "rare",
+			"mana_cost": "{7}",
+			"type": "Artifact Creature — Elemental Giant",
+			"collector_number": "199",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/199_Chronolith Hulk.jpg"
+			}
+		},
+		{
+			"name": "Armillary of Genesis",
+			"rarity": "rare",
+			"mana_cost": "{5}",
+			"type": "Artifact",
+			"collector_number": "190",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/190_Armillary of Genesis.jpg"
+			}
+		},
+		{
+			"name": "Extraplanar Inhibitor",
+			"rarity": "rare",
+			"mana_cost": "{2}",
+			"type": "Legendary Artifact",
+			"collector_number": "212",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/212_Extraplanar Inhibitor.jpg"
+			}
+		},
+		{
+			"name": "Retrieval Trieste",
+			"rarity": "rare",
+			"mana_cost": "{2}",
+			"type": "Artifact — Vehicle",
+			"collector_number": "245",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/245_Retrieval Trieste.jpg"
+			}
+		},
+		{
+			"name": "The Brimstone Maiden",
+			"rarity": "rare",
+			"mana_cost": "{3}",
+			"type": "Legendary Artifact",
+			"collector_number": "194",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/194_The Brimstone Maiden.jpg"
+			}
+		},
+		{
+			"name": "Glittering Goliath",
+			"rarity": "rare",
+			"mana_cost": "{X}",
+			"type": "Artifact Creature — Elemental Giant",
+			"collector_number": "218",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/218_Glittering Goliath.jpg"
+			}
+		},
+		{
+			"name": "Chronotharch",
+			"rarity": "rare",
+			"mana_cost": "{0}",
+			"type": "Legendary Artifact Creature — Thopter",
+			"collector_number": "200",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/200_Chronotharch.jpg"
+			}
+		},
+		{
+			"name": "Proselyte's Scepter",
+			"rarity": "rare",
+			"mana_cost": "{1}",
+			"type": "Artifact",
+			"collector_number": "240",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/240_Proselyte's Scepter.jpg"
+			}
+		},
+		{
+			"name": "Platinum Savior",
+			"rarity": "rare",
+			"mana_cost": "{7}",
+			"type": "Artifact Creature — Angel",
+			"collector_number": "239",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/239_Platinum Savior.jpg"
+			}
+		},
+		{
+			"name": "Malachrond, Aeonic Arbiter",
+			"rarity": "mythic",
+			"mana_cost": "{8}",
+			"type": "Legendary Artifact Creature — Elder Sphinx",
+			"collector_number": "231",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/231_Malachrond, Aeonic Arbiter.jpg"
+			}
+		},
+		{
+			"name": "Stonesire Agnamus",
+			"rarity": "mythic",
+			"mana_cost": "{5}",
+			"type": "Legendary Artifact Creature — Elder Dwarf",
+			"collector_number": "252",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/252_Stonesire Agnamus.jpg"
+			}
+		},
+		{
+			"name": "Obsilath, the Forge Titan",
+			"rarity": "mythic",
+			"mana_cost": "{9}",
+			"type": "Legendary Artifact Creature — Elder Elemental",
+			"collector_number": "235",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/235_Obsilath, the Forge Titan.jpg"
+			}
+		},
+		{
+			"name": "Kezahn, Crystal Physician",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Legendary Creature — Dwarf Cleric",
+			"collector_number": "173",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/173_Kezahn, Crystal Physician.jpg"
+			}
+		},
+		{
+			"name": "Drill Sergeant Belgrum",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{U}{B}",
+			"type": "Legendary Creature — Dwarf Artificer",
+			"collector_number": "164",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/164_Drill Sergeant Belgrum.jpg"
+			}
+		},
+		{
+			"name": "Aricros, Fire of Deliverance",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{B}{R}",
+			"type": "Legendary Creature — Demon Minotaur",
+			"collector_number": "154",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/154_Aricros, Fire of Deliverance.jpg"
+			}
+		},
+		{
+			"name": "Firekeeper Harumn",
+			"rarity": "uncommon",
+			"mana_cost": "{2}{R}{G}",
+			"type": "Legendary Creature — Minotaur Shaman",
+			"collector_number": "169",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/169_Firekeeper Harumn.jpg"
+			}
+		},
+		{
+			"name": "Brynne, Truelight Martyr",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}{W}",
+			"type": "Legendary Creature — Human Soldier",
+			"collector_number": "160",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/160_Brynne, Truelight Martyr.jpg"
+			}
+		},
+		{
+			"name": "Beretha, Begrudged Widow",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{W}{B}",
+			"type": "Legendary Creature — Spirit",
+			"collector_number": "157",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/157_Beretha, Begrudged Widow.jpg"
+			}
+		},
+		{
+			"name": "Phele, Regent of Rot",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{B}{G}",
+			"type": "Legendary Creature — Fungus Druid",
+			"collector_number": "175",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/175_Phele, Regent of Rot_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/175_Phele, Regent of Rot_front.jpg"
+			}
+		},
+		{
+			"name": "Preservationist Hamley",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{G}{U}",
+			"type": "Legendary Creature — Dwarf Wizard",
+			"collector_number": "176",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/176_Preservationist Hamley.jpg"
+			}
+		},
+		{
+			"name": "Shahrix the Unraveler",
+			"rarity": "uncommon",
+			"mana_cost": "{U}{R}",
+			"type": "Legendary Creature — Spirit Rogue",
+			"collector_number": "180",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/180_Shahrix the Unraveler.jpg"
+			}
+		},
+		{
+			"name": "Therum Dumar, Coresmith",
+			"rarity": "uncommon",
+			"mana_cost": "{1}{R}{W}",
+			"type": "Legendary Creature — Dwarf Shaman",
+			"collector_number": "182",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/182_Therum Dumar, Coresmith.jpg"
+			}
+		},
+		{
+			"name": "Extraplanar Quarantine",
+			"rarity": "rare",
+			"mana_cost": "{1}{W}{U}",
+			"type": "Enchantment",
+			"collector_number": "167",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/167_Extraplanar Quarantine.jpg"
+			}
+		},
+		{
+			"name": "Splintered Image",
+			"rarity": "rare",
+			"mana_cost": "{X}{U}{U}{B}",
+			"type": "Sorcery",
+			"collector_number": "181",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/181_Splintered Image.jpg"
+			}
+		},
+		{
+			"name": "Tribute to the Forge Titan",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{R}",
+			"type": "Sorcery",
+			"collector_number": "184",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/184_Tribute to the Forge Titan.jpg"
+			}
+		},
+		{
+			"name": "Awash in Worldfire",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{G}",
+			"type": "Sorcery",
+			"collector_number": "156",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/156_Awash in Worldfire.jpg"
+			}
+		},
+		{
+			"name": "Anoint With Destiny",
+			"rarity": "rare",
+			"mana_cost": "{X}{X}{G}{W}",
+			"type": "Sorcery",
+			"collector_number": "152",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/152_Anoint With Destiny.jpg"
+			}
+		},
+		{
+			"name": "Deliver From Evil",
+			"rarity": "rare",
+			"mana_cost": "{X}{W}{B}",
+			"type": "Instant",
+			"collector_number": "162",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/162_Deliver From Evil.jpg"
+			}
+		},
+		{
+			"name": "Isolated Extinction",
+			"rarity": "rare",
+			"mana_cost": "{2}{B}{G}",
+			"type": "Instant",
+			"collector_number": "172",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/172_Isolated Extinction.jpg"
+			}
+		},
+		{
+			"name": "Archaeological Adapation",
+			"rarity": "rare",
+			"mana_cost": "{G}{U}",
+			"type": "Sorcery",
+			"collector_number": "153",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/153_Archaeological Adapation.jpg"
+			}
+		},
+		{
+			"name": "Tolbrad, the Seeker",
+			"rarity": "rare",
+			"mana_cost": "{2}{U}{R}",
+			"type": "Legendary Creature — Dwarf Scout",
+			"collector_number": "183",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/183_Tolbrad, the Seeker.jpg"
+			}
+		},
+		{
+			"name": "Reconstruct History",
+			"rarity": "rare",
+			"mana_cost": "{2}{R}{W}",
+			"type": "Sorcery",
+			"collector_number": "177",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/177_Reconstruct History.jpg"
+			}
+		},
+		{
+			"name": "Avert the End-Time",
+			"rarity": "mythic",
+			"mana_cost": "{3}{W}{U}",
+			"type": "Instant",
+			"collector_number": "155",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/155_Avert the End-Time.jpg"
+			}
+		},
+		{
+			"name": "Angrath, the Promised Flame",
+			"rarity": "mythic",
+			"mana_cost": "{3}{B}{R}",
+			"type": "Legendary Planeswalker — Angrath",
+			"collector_number": "151",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/151_Angrath, the Promised Flame.jpg"
+			}
+		},
+		{
+			"name": "High Orator Tormus",
+			"rarity": "mythic",
+			"mana_cost": "{W}{B}",
+			"type": "Legendary Creature — Dwarf Cleric",
+			"collector_number": "170",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/170_High Orator Tormus_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/170_High Orator Tormus_front.jpg"
+			}
+		},
+		{
+			"name": "Borahm Caldegar",
+			"rarity": "mythic",
+			"mana_cost": "{2}{R}{W}",
+			"type": "Legendary Planeswalker — Borahm",
+			"collector_number": "158",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/158_Borahm Caldegar.jpg"
+			}
+		},
+		{
+			"name": "End of Summer",
+			"rarity": "mythic",
+			"mana_cost": "{3}{W}{U}",
+			"type": "Legendary Enchantment — Saga",
+			"collector_number": "165",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/165_End of Summer_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/165_End of Summer_front.jpg"
+			}
+		},
+		{
+			"name": "Fiend's Fetters",
+			"rarity": "mythic",
+			"mana_cost": "{2}{U}{B}",
+			"type": "Legendary Enchantment — Saga",
+			"collector_number": "168",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/168_Fiend's Fetters_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/168_Fiend's Fetters_front.jpg"
+			}
+		},
+		{
+			"name": "Engineered Apocalypse",
+			"rarity": "mythic",
+			"mana_cost": "{1}{B}{R}",
+			"type": "Legendary Enchantment — Saga",
+			"collector_number": "166",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/166_Engineered Apocalypse_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/166_Engineered Apocalypse_front.jpg"
+			}
+		},
+		{
+			"name": "Zendikar's Infernal Rebirth",
+			"rarity": "mythic",
+			"mana_cost": "{2}{R}{G}",
+			"type": "Legendary Enchantment — Saga",
+			"collector_number": "185",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/185_Zendikar's Infernal Rebirth_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/185_Zendikar's Infernal Rebirth_front.jpg"
+			}
+		},
+		{
+			"name": "Seek Creation",
+			"rarity": "mythic",
+			"mana_cost": "{2}{G}{W}",
+			"type": "Legendary Enchantment — Saga",
+			"collector_number": "178",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/178_Seek Creation_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/178_Seek Creation_front.jpg"
+			}
+		},
+		{
+			"name": "The Divine Winds Descend",
+			"rarity": "mythic",
+			"mana_cost": "{1}{W}{B}",
+			"type": "Legendary Enchantment — Saga",
+			"collector_number": "163",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/163_The Divine Winds Descend_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/163_The Divine Winds Descend_front.jpg"
+			}
+		},
+		{
+			"name": "Clutches of the Last Life",
+			"rarity": "mythic",
+			"mana_cost": "{1}{B}{G}",
+			"type": "Legendary Enchantment — Saga",
+			"collector_number": "161",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/161_Clutches of the Last Life_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/161_Clutches of the Last Life_front.jpg"
+			}
+		},
+		{
+			"name": "Setting Sail",
+			"rarity": "mythic",
+			"mana_cost": "{1}{G}{U}",
+			"type": "Legendary Enchantment — Saga",
+			"collector_number": "179",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/179_Setting Sail_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/179_Setting Sail_front.jpg"
+			}
+		},
+		{
+			"name": "Bridge the Blind Eternities",
+			"rarity": "mythic",
+			"mana_cost": "{2}{U}{R}",
+			"type": "Legendary Enchantment — Saga",
+			"collector_number": "159",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/159_Bridge the Blind Eternities_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/159_Bridge the Blind Eternities_front.jpg"
+			}
+		},
+		{
+			"name": "The Interregnum",
+			"rarity": "mythic",
+			"mana_cost": "{3}{R}{W}",
+			"type": "Legendary Enchantment — Saga",
+			"collector_number": "171",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/171_The Interregnum_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/171_The Interregnum_front.jpg"
+			}
+		},
+		{
+			"name": "Meditate Upon Conquest",
+			"rarity": "mythic",
+			"mana_cost": "{2}{U}{B}{R}",
+			"type": "Legendary Enchantment — Saga",
+			"collector_number": "174",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/174_Meditate Upon Conquest_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/174_Meditate Upon Conquest_front.jpg"
+			}
+		},
+		{
+			"name": "Indomitable Armory",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "275",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/275_Indomitable Armory.jpg"
+			}
+		},
+		{
+			"name": "River of Fugue",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "279",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/279_River of Fugue.jpg"
+			}
+		},
+		{
+			"name": "Fungal Hollow",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "274",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/274_Fungal Hollow.jpg"
+			}
+		},
+		{
+			"name": "Abandoned Railroad",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "262",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/262_Abandoned Railroad.jpg"
+			}
+		},
+		{
+			"name": "Diamond Quarry",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "268",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/268_Diamond Quarry.jpg"
+			}
+		},
+		{
+			"name": "Branching Catacombs",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "265",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/265_Branching Catacombs.jpg"
+			}
+		},
+		{
+			"name": "Radiant Fountain",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "278",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/278_Radiant Fountain.jpg"
+			}
+		},
+		{
+			"name": "Titanholm Crucible",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "282",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/282_Titanholm Crucible.jpg"
+			}
+		},
+		{
+			"name": "Perilous Overpass",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "276",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/276_Perilous Overpass.jpg"
+			}
+		},
+		{
+			"name": "Dungeon Hall",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "271",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/271_Dungeon Hall.jpg"
+			}
+		},
+		{
+			"name": "Forge of Life",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "272",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/272_Forge of Life.jpg"
+			}
+		},
+		{
+			"name": "Buried Ruin",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "266",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/266_Buried Ruin.jpg"
+			}
+		},
+		{
+			"name": "Roadside Reliquary",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "280",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/280_Roadside Reliquary.jpg"
+			}
+		},
+		{
+			"name": "Cathedral of Zealotry",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "267",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/267_Cathedral of Zealotry.jpg"
+			}
+		},
+		{
+			"name": "Access Tunnel",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "263",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/263_Access Tunnel.jpg"
+			}
+		},
+		{
+			"name": "Throne of Gildrang",
+			"rarity": "uncommon",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "281",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/281_Throne of Gildrang.jpg"
+			}
+		},
+		{
+			"name": "Petrified Woods",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "277",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/277_Petrified Woods.jpg"
+			}
+		},
+		{
+			"name": "Dismal Confluence",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "269",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/269_Dismal Confluence.jpg"
+			}
+		},
+		{
+			"name": "Dormant Slagheap",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "270",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/270_Dormant Slagheap.jpg"
+			}
+		},
+		{
+			"name": "Blast Zone",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "264",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/264_Blast Zone.jpg"
+			}
+		},
+		{
+			"name": "Frigid Excavation",
+			"rarity": "rare",
+			"mana_cost": "",
+			"type": "Land",
+			"collector_number": "273",
+			"back": {
+				"name": "",
+				"type": "",
+				"image_uris": {
+					"en": "https://Scribbl16.github.io/sets/AND-files/img/273_Frigid Excavation_back.jpg"
+				}
+			},
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/273_Frigid Excavation_front.jpg"
+			}
+		},
+		{
+			"name": "Plains",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Plains",
+			"collector_number": "283",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/283_Plains.jpg"
+			}
+		},
+		{
+			"name": "Island",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Island",
+			"collector_number": "284",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/284_Island.jpg"
+			}
+		},
+		{
+			"name": "Swamp",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Swamp",
+			"collector_number": "285",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/285_Swamp.jpg"
+			}
+		},
+		{
+			"name": "Mountain",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Mountain",
+			"collector_number": "286",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/286_Mountain.jpg"
+			}
+		},
+		{
+			"name": "Forest",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Basic Land — Forest",
+			"collector_number": "287",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/287_Forest.jpg"
+			}
+		},
+		{
+			"name": "Spirit White",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Spirit",
+			"collector_number": "5",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/5_Spirit White.jpg"
+			}
+		},
+		{
+			"name": "Elemental",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact Creature — Elemental",
+			"collector_number": "21",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/21_Elemental.jpg"
+			}
+		},
+		{
+			"name": "Cleric",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Cleric",
+			"collector_number": "3",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/3_Cleric.jpg"
+			}
+		},
+		{
+			"name": "Angel",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Angel",
+			"collector_number": "2",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/2_Angel.jpg"
+			}
+		},
+		{
+			"name": "Key",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact — Key Equipment",
+			"collector_number": "25",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/25_Key.jpg"
+			}
+		},
+		{
+			"name": "Treasure",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact — Treasure",
+			"collector_number": "28",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/28_Treasure.jpg"
+			}
+		},
+		{
+			"name": "Thopter",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact Creature — Thopter",
+			"collector_number": "27",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/27_Thopter.jpg"
+			}
+		},
+		{
+			"name": "Tyr",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Legendary Creature — Illusion",
+			"collector_number": "7",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/7_Tyr.jpg"
+			}
+		},
+		{
+			"name": "Servo",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact Creature — Servo",
+			"collector_number": "26",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/26_Servo.jpg"
+			}
+		},
+		{
+			"name": "Spirit Red",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Spirit",
+			"collector_number": "11",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/11_Spirit Red.jpg"
+			}
+		},
+		{
+			"name": "Dinosaur",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Dinosaur",
+			"collector_number": "10",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/10_Dinosaur.jpg"
+			}
+		},
+		{
+			"name": "Elemental.1",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact Creature — Elemental",
+			"collector_number": "22",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/22_Elemental.1.jpg"
+			}
+		},
+		{
+			"name": "Fungus",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Fungus",
+			"collector_number": "13",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/13_Fungus.jpg"
+			}
+		},
+		{
+			"name": "Elemental Giant",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact Creature — Elemental Giant",
+			"collector_number": "18",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/18_Elemental Giant.jpg"
+			}
+		},
+		{
+			"name": "Elemental.2",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact Creature — Elemental",
+			"collector_number": "23",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/23_Elemental.2.jpg"
+			}
+		},
+		{
+			"name": "Elemental Giant.1",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact Creature — Elemental Giant",
+			"collector_number": "19",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/19_Elemental Giant.1.jpg"
+			}
+		},
+		{
+			"name": "Elemental Horror",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact Creature — Elemental Horror",
+			"collector_number": "20",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/20_Elemental Horror.jpg"
+			}
+		},
+		{
+			"name": "Dwarf Army",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact Creature — Dwarf Army",
+			"collector_number": "17",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/17_Dwarf Army.jpg"
+			}
+		},
+		{
+			"name": "Scout",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Scout",
+			"collector_number": "4",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/4_Scout.jpg"
+			}
+		},
+		{
+			"name": "Grudge",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Enchantment — Aura Curse",
+			"collector_number": "9",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/9_Grudge.jpg"
+			}
+		},
+		{
+			"name": "Gargoyle",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Artifact Creature — Gargoyle",
+			"collector_number": "24",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/24_Gargoyle.jpg"
+			}
+		},
+		{
+			"name": "Lelin",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Legendary Creature — Human Wizard",
+			"collector_number": "14",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/14_Lelin.jpg"
+			}
+		},
+		{
+			"name": "Vosh",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Legendary Creature — Orc Warrior",
+			"collector_number": "16",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/16_Vosh.jpg"
+			}
+		},
+		{
+			"name": "Selvar",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Legendary Creature — Elf Scout",
+			"collector_number": "15",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/15_Selvar.jpg"
+			}
+		},
+		{
+			"name": "Scout.1",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Scout",
+			"collector_number": "6",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/6_Scout.1.jpg"
+			}
+		},
+		{
+			"name": "Wastes",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Basic Land",
+			"collector_number": "1",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/1_Wastes.jpg"
+			}
+		},
+		{
+			"name": "Demon",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Demon",
+			"collector_number": "8",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/8_Demon.jpg"
+			}
+		},
+		{
+			"name": "Spirit Zen",
+			"rarity": "common",
+			"mana_cost": "",
+			"type": "Token Creature — Spirit",
+			"collector_number": "12",
+			"image_uris": {
+				"en": "https://Scribbl16.github.io/sets/AND-files/img/12_Spirit Zen.jpg"
+			}
+		},
+	]
+
+[rare(1)]
+	2 Resplendent Tether
+	2 Unfettered Magister
+	2 Turret Welder
+	2 Executor Algaz
+	2 Soul Embargo
+	2 Shepherd of Atonement
+	1 Anariel, Brimstone Paragon
+	1 The Lunarch Inquisition
+	2 Inescapable Sentence
+	2 Covetous Curator
+	2 Engineered Extraction
+	2 History Unburied
+	2 Loreto, Chief Archaeologist
+	2 Forge the Future
+	1 Hazia the Chronicler
+	1 Search for Meaning
+	2 Phylactery Lich
+	2 Hallowflame Scourge
+	2 Fatal Footing
+	2 Maze Stalker
+	2 Decarburize
+	2 Tyrannic Reawakening
+	1 Archaezus, Dark Salvation
+	1 The Onakke Massacre
+	2 Amplifying Aegisaur
+	2 Anvilwrought Epiphany
+	2 Catacomb Crasher
+	2 Ageless Augurling
+	2 Resounding Regisaur
+	2 Industry
+	1 Gildrang, Mercurial Maw
+	1 Ghostfire Prophecy
+	2 Fertilize
+	2 Alloy Bloom
+	2 Taukalo Magehunter
+	2 Plated Ankheg
+	2 Memory Spiral
+	2 Avaricious Widow
+	1 Ghaleia, Apex Progenitor
+	1 Itari's Reign of Blossoms
+	2 Keening Belltower
+	2 Assembly Warden
+	2 Imposing Kilnkite
+	2 Emberling
+	2 Electric Effigy
+	2 Voltaic Pinion
+	2 Marbled Fusion
+	2 Synapse Scepter
+	2 Hoots, Seeker's Guide
+	2 Chronolith Hulk
+	2 Armillary of Genesis
+	2 Extraplanar Inhibitor
+	2 Retrieval Trieste
+	2 The Brimstone Maiden
+	2 Glittering Goliath
+	2 Chronotharch
+	2 Proselyte's Scepter
+	2 Platinum Savior
+	1 Malachrond, Aeonic Arbiter
+	1 Stonesire Agnamus
+	1 Obsilath, the Forge Titan
+	2 Extraplanar Quarantine
+	2 Splintered Image
+	2 Tribute to the Forge Titan
+	2 Awash in Worldfire
+	2 Anoint With Destiny
+	2 Deliver From Evil
+	2 Isolated Extinction
+	2 Archaeological Adapation
+	2 Tolbrad, the Seeker
+	2 Reconstruct History
+	1 Avert the End-Time
+	1 Angrath, the Promised Flame
+	1 High Orator Tormus
+	1 Borahm Caldegar
+	1 End of Summer
+	1 Fiend's Fetters
+	1 Engineered Apocalypse
+	1 Zendikar's Infernal Rebirth
+	1 Seek Creation
+	1 The Divine Winds Descend
+	1 Clutches of the Last Life
+	1 Setting Sail
+	1 Bridge the Blind Eternities
+	1 The Interregnum
+	1 Meditate Upon Conquest
+	2 Petrified Woods
+	2 Dismal Confluence
+	2 Dormant Slagheap
+	2 Blast Zone
+	2 Frigid Excavation
+[uncommon(4)]
+	4 Dungeon Architect
+	4 Beckoner of the Damned
+	4 Invoker of Angelfire
+	4 Orator of Redemption
+	4 Molten Masterwork
+	4 Dungeon Fatigue
+	4 Seraph of Condemnation
+	4 Domesticated Snubhorn
+	4 Antiquate
+	4 Fettered Figment
+	4 Excavation Embezzler
+	4 Gold-Shackled Wyrm
+	4 Iterative Engineering
+	4 Consign to History
+	4 Salvage Technician
+	4 Beguiling Greed
+	4 Transit Mage
+	4 Into the Labyrinth
+	4 Consecrated Lich
+	4 Deathless Justiciar
+	4 Baleful Tormentor
+	4 Callous Jailer
+	4 Extract Impurity
+	4 Tyrant's Hunger
+	4 Binding Grudge
+	4 Feaster of Forbidden Magics
+	4 Ravenous Marrophax
+	4 Raptor Roost
+	4 Invoker of Hellfire
+	4 Dungeon Liberation
+	4 Spectacular Engineer
+	4 Voracious Slagmaw
+	4 Extract from Amber
+	4 Rockslide Rampage
+	4 Ruinous Rumblings
+	4 Purifying Pyre
+	4 Taukalo Quartermaster
+	4 Stalactite Miner
+	4 Virulent Skulker
+	4 Carnivorous Frenzy
+	4 Tectonic Takedown
+	4 Cadaver Cleansers
+	4 Return to Rubble
+	4 Dungeoneering
+	4 Mesozoology
+	4 Refractling
+	4 Heritage Morningstar
+	4 Mortal Compass
+	4 Cranial Clasp
+	4 Reassembled Orca
+	4 Stonebinder
+	4 Enigmatic Nautlius
+	4 Drill Rig
+	4 Lumbering Mauler
+	4 Hall of the Titans
+	4 Burning-Chain Emissary
+	4 Titanholm Marauder
+	4 Labyrinth Shortcutter
+	4 Solemn Simulacrum
+	4 Armillary of Divinity
+	4 Titanholm Anvil
+	4 Crystal Ravager
+	4 Steel Exemplar
+	4 Castigator Warden
+	4 Foundry Progenitor
+	4 Morphic Mass
+	4 Kezahn, Crystal Physician
+	4 Drill Sergeant Belgrum
+	4 Aricros, Fire of Deliverance
+	4 Firekeeper Harumn
+	4 Brynne, Truelight Martyr
+	4 Beretha, Begrudged Widow
+	4 Phele, Regent of Rot
+	4 Preservationist Hamley
+	4 Shahrix the Unraveler
+	4 Therum Dumar, Coresmith
+	4 Forge of Life
+	4 Buried Ruin
+	4 Roadside Reliquary
+	4 Cathedral of Zealotry
+	4 Access Tunnel
+	4 Throne of Gildrang
+[common(7)]
+	8 Chilling Grudge
+	8 Thoramar Anvilwright
+	8 Wayward Luminoceros
+	8 Heirloom Empath
+	8 Truelight Vindicator
+	8 Goldhearth Taurean
+	8 Calcify
+	8 Purging Light
+	8 Martyrize
+	8 Fiery Cradle
+	8 Bewitched Hexhunters
+	8 Champion of the Paragon
+	8 Moment of Respite
+	8 Owl of the Oubliette
+	8 Maritime Archaeologist
+	8 Glacier Diviner
+	8 Chasmal Lochmere
+	8 Hypnotic Pteron
+	8 Crystallized Chelidae
+	8 Forge Coolant
+	8 Interrogate
+	8 Syncopate
+	8 Scrap for Parts
+	8 Ancient Schematics
+	8 Historical Recovery
+	8 Perished Pilferer
+	8 Grisly Butcher
+	8 Stalking Sensation
+	8 Infernal Binding
+	8 Mourning Banshee
+	8 Cadaver Captive
+	8 Darkfathom Dungeoneers
+	8 Profane Penitence
+	8 Silk Swathe
+	8 Clawing Grudge
+	8 Shape From Tar
+	8 Kagaroth Slagshaper
+	8 Enraptured Orator
+	8 Endless Maw
+	8 Scoriasaur
+	8 Taukalo Maze-Runner
+	8 Hallowflame Outfitter
+	8 Furnace Fledgling
+	8 Smoldering Vizier
+	8 Wax Ignus
+	8 Consecrating Fire
+	8 Magmatic Genesis
+	8 Drill Out
+	8 Candlecleft Prospector
+	8 Toil the Mines
+	8 Unchained Fury
+	8 Lava Spike Trap
+	8 Bloodthirsty Laceryx
+	8 Labyrinth Warden
+	8 Antiquary Arachir
+	8 Covetous Mason
+	8 Quarry Carver
+	8 Mycohulk
+	8 Gilded Greed
+	8 Tectonic Shift
+	8 Terraformation
+	8 Mineral Harvest
+	8 Fernwyr Geologist
+	8 Stone Skin
+	8 Survivalist Captain
+	8 Tarnished Grail
+	8 Armillary of Spirit
+	8 Iron Sentry
+	8 Collapsing Ceiling
+	8 Luminous Latch
+	8 Armillary of Creation
+	8 Volatile Cinder
+	8 Earthwarder
+	8 Refractor Geode
+	8 Gilded Servitor
+	8 Requisition Rope
+	8 Ichor Wellspring
+	8 Voltaic Familiar
+	8 Dredge Scuttler
+	8 Armillary of Antiquity
+	8 Pilgrim's Eye
+	8 Onyx Reaver
+	8 Furnace Stoker
+	8 Crux Auger
+	8 Truelight Castigator
+	8 Foreboding Prism
+	8 Armory Attendant
+	8 Jade Carapace
+	8 Chronite Tunneler
+	8 Salvage Hulk
+	8 Rimethread Recluse
+	8 Clockwork Wyvern
+	8 Petrified Light
+	8 Igneous Harbinger
+	8 Abyssal Shredder
+	8 Glacial Revenant
+	8 Slag Colossus
+	8 Cadaverous Tyrranax
+	8 Titansteel Hellion
+	8 Indomitable Armory
+	8 River of Fugue
+	8 Fungal Hollow
+	8 Abandoned Railroad
+	8 Diamond Quarry
+	8 Branching Catacombs
+	8 Radiant Fountain
+	8 Titanholm Crucible
+	8 Perilous Overpass
+	8 Dungeon Hall
+[wildcard(2)]
+	6 Chilling Grudge
+	6 Thoramar Anvilwright
+	6 Wayward Luminoceros
+	6 Heirloom Empath
+	6 Truelight Vindicator
+	6 Goldhearth Taurean
+	6 Calcify
+	6 Purging Light
+	6 Martyrize
+	6 Fiery Cradle
+	6 Bewitched Hexhunters
+	6 Champion of the Paragon
+	6 Moment of Respite
+	15 Dungeon Architect
+	15 Beckoner of the Damned
+	15 Invoker of Angelfire
+	15 Orator of Redemption
+	15 Molten Masterwork
+	15 Dungeon Fatigue
+	15 Seraph of Condemnation
+	15 Domesticated Snubhorn
+	15 Antiquate
+	7 Resplendent Tether
+	7 Unfettered Magister
+	7 Turret Welder
+	7 Executor Algaz
+	7 Soul Embargo
+	7 Shepherd of Atonement
+	4 Anariel, Brimstone Paragon
+	4 The Lunarch Inquisition
+	6 Owl of the Oubliette
+	6 Maritime Archaeologist
+	6 Glacier Diviner
+	6 Chasmal Lochmere
+	6 Hypnotic Pteron
+	6 Crystallized Chelidae
+	6 Forge Coolant
+	6 Interrogate
+	6 Syncopate
+	6 Scrap for Parts
+	6 Ancient Schematics
+	6 Historical Recovery
+	6 Perished Pilferer
+	15 Fettered Figment
+	15 Excavation Embezzler
+	15 Gold-Shackled Wyrm
+	15 Iterative Engineering
+	15 Consign to History
+	15 Salvage Technician
+	15 Beguiling Greed
+	15 Transit Mage
+	15 Into the Labyrinth
+	7 Inescapable Sentence
+	7 Covetous Curator
+	7 Engineered Extraction
+	7 History Unburied
+	7 Loreto, Chief Archaeologist
+	7 Forge the Future
+	4 Hazia the Chronicler
+	4 Search for Meaning
+	6 Grisly Butcher
+	6 Stalking Sensation
+	6 Infernal Binding
+	6 Mourning Banshee
+	6 Cadaver Captive
+	6 Darkfathom Dungeoneers
+	6 Profane Penitence
+	6 Silk Swathe
+	6 Clawing Grudge
+	6 Shape From Tar
+	6 Kagaroth Slagshaper
+	6 Enraptured Orator
+	6 Endless Maw
+	15 Consecrated Lich
+	15 Deathless Justiciar
+	15 Baleful Tormentor
+	15 Callous Jailer
+	15 Extract Impurity
+	15 Tyrant's Hunger
+	15 Binding Grudge
+	15 Feaster of Forbidden Magics
+	15 Ravenous Marrophax
+	7 Phylactery Lich
+	7 Hallowflame Scourge
+	7 Fatal Footing
+	7 Maze Stalker
+	7 Decarburize
+	7 Tyrannic Reawakening
+	4 Archaezus, Dark Salvation
+	4 The Onakke Massacre
+	6 Scoriasaur
+	6 Taukalo Maze-Runner
+	6 Hallowflame Outfitter
+	6 Furnace Fledgling
+	6 Smoldering Vizier
+	6 Wax Ignus
+	6 Consecrating Fire
+	6 Magmatic Genesis
+	6 Drill Out
+	6 Candlecleft Prospector
+	6 Toil the Mines
+	6 Unchained Fury
+	6 Lava Spike Trap
+	15 Raptor Roost
+	15 Invoker of Hellfire
+	15 Dungeon Liberation
+	15 Spectacular Engineer
+	15 Voracious Slagmaw
+	15 Extract from Amber
+	15 Rockslide Rampage
+	15 Ruinous Rumblings
+	15 Purifying Pyre
+	7 Amplifying Aegisaur
+	7 Anvilwrought Epiphany
+	7 Catacomb Crasher
+	7 Ageless Augurling
+	7 Resounding Regisaur
+	7 Industry
+	4 Gildrang, Mercurial Maw
+	4 Ghostfire Prophecy
+	6 Bloodthirsty Laceryx
+	6 Labyrinth Warden
+	6 Antiquary Arachir
+	6 Covetous Mason
+	6 Quarry Carver
+	6 Mycohulk
+	6 Gilded Greed
+	6 Tectonic Shift
+	6 Terraformation
+	6 Mineral Harvest
+	6 Fernwyr Geologist
+	6 Stone Skin
+	6 Survivalist Captain
+	15 Taukalo Quartermaster
+	15 Stalactite Miner
+	15 Virulent Skulker
+	15 Carnivorous Frenzy
+	15 Tectonic Takedown
+	15 Cadaver Cleansers
+	15 Return to Rubble
+	15 Dungeoneering
+	15 Mesozoology
+	7 Fertilize
+	7 Alloy Bloom
+	7 Taukalo Magehunter
+	7 Plated Ankheg
+	7 Memory Spiral
+	7 Avaricious Widow
+	4 Ghaleia, Apex Progenitor
+	4 Itari's Reign of Blossoms
+	6 Tarnished Grail
+	6 Armillary of Spirit
+	6 Iron Sentry
+	6 Collapsing Ceiling
+	6 Luminous Latch
+	6 Armillary of Creation
+	6 Volatile Cinder
+	6 Earthwarder
+	6 Refractor Geode
+	6 Gilded Servitor
+	6 Requisition Rope
+	6 Ichor Wellspring
+	6 Voltaic Familiar
+	6 Dredge Scuttler
+	6 Armillary of Antiquity
+	6 Pilgrim's Eye
+	6 Onyx Reaver
+	6 Furnace Stoker
+	6 Crux Auger
+	6 Truelight Castigator
+	6 Foreboding Prism
+	6 Armory Attendant
+	6 Jade Carapace
+	6 Chronite Tunneler
+	6 Salvage Hulk
+	6 Rimethread Recluse
+	6 Clockwork Wyvern
+	6 Petrified Light
+	6 Igneous Harbinger
+	6 Abyssal Shredder
+	6 Glacial Revenant
+	6 Slag Colossus
+	6 Cadaverous Tyrranax
+	6 Titansteel Hellion
+	15 Refractling
+	15 Heritage Morningstar
+	15 Mortal Compass
+	15 Cranial Clasp
+	15 Reassembled Orca
+	15 Stonebinder
+	15 Enigmatic Nautlius
+	15 Drill Rig
+	15 Lumbering Mauler
+	15 Hall of the Titans
+	15 Burning-Chain Emissary
+	15 Titanholm Marauder
+	15 Labyrinth Shortcutter
+	15 Solemn Simulacrum
+	15 Armillary of Divinity
+	15 Titanholm Anvil
+	15 Crystal Ravager
+	15 Steel Exemplar
+	15 Castigator Warden
+	15 Foundry Progenitor
+	15 Morphic Mass
+	7 Keening Belltower
+	7 Assembly Warden
+	7 Imposing Kilnkite
+	7 Emberling
+	7 Electric Effigy
+	7 Voltaic Pinion
+	7 Marbled Fusion
+	7 Synapse Scepter
+	7 Hoots, Seeker's Guide
+	7 Chronolith Hulk
+	7 Armillary of Genesis
+	7 Extraplanar Inhibitor
+	7 Retrieval Trieste
+	7 The Brimstone Maiden
+	7 Glittering Goliath
+	7 Chronotharch
+	7 Proselyte's Scepter
+	7 Platinum Savior
+	4 Malachrond, Aeonic Arbiter
+	4 Stonesire Agnamus
+	4 Obsilath, the Forge Titan
+	15 Kezahn, Crystal Physician
+	15 Drill Sergeant Belgrum
+	15 Aricros, Fire of Deliverance
+	15 Firekeeper Harumn
+	15 Brynne, Truelight Martyr
+	15 Beretha, Begrudged Widow
+	15 Phele, Regent of Rot
+	15 Preservationist Hamley
+	15 Shahrix the Unraveler
+	15 Therum Dumar, Coresmith
+	7 Extraplanar Quarantine
+	7 Splintered Image
+	7 Tribute to the Forge Titan
+	7 Awash in Worldfire
+	7 Anoint With Destiny
+	7 Deliver From Evil
+	7 Isolated Extinction
+	7 Archaeological Adapation
+	7 Tolbrad, the Seeker
+	7 Reconstruct History
+	4 Avert the End-Time
+	4 Angrath, the Promised Flame
+	4 High Orator Tormus
+	4 Borahm Caldegar
+	4 End of Summer
+	4 Fiend's Fetters
+	4 Engineered Apocalypse
+	4 Zendikar's Infernal Rebirth
+	4 Seek Creation
+	4 The Divine Winds Descend
+	4 Clutches of the Last Life
+	4 Setting Sail
+	4 Bridge the Blind Eternities
+	4 The Interregnum
+	4 Meditate Upon Conquest
+	6 Indomitable Armory
+	6 River of Fugue
+	6 Fungal Hollow
+	6 Abandoned Railroad
+	6 Diamond Quarry
+	6 Branching Catacombs
+	6 Radiant Fountain
+	6 Titanholm Crucible
+	6 Perilous Overpass
+	6 Dungeon Hall
+	15 Forge of Life
+	15 Buried Ruin
+	15 Roadside Reliquary
+	15 Cathedral of Zealotry
+	15 Access Tunnel
+	15 Throne of Gildrang
+	7 Petrified Woods
+	7 Dismal Confluence
+	7 Dormant Slagheap
+	7 Blast Zone
+	7 Frigid Excavation
