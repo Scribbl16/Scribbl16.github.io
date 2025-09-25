@@ -91,13 +91,13 @@
 			}
 		},
 		{
-			"name": "Turelion Ley-Tower",
+			"name": "Turelion Ley-Pillar",
 			"rarity": "common",
 			"mana_cost": "{3}{W}",
 			"type": "Creature — Wall",
 			"collector_number": "35",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/35_Turelion Ley-Tower.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/35_Turelion Ley-Pillar.jpg"
 			}
 		},
 		{
@@ -321,13 +321,13 @@
 			}
 		},
 		{
-			"name": "Helia Ley-Tower",
+			"name": "Helia Ley-Spire",
 			"rarity": "rare",
 			"mana_cost": "{2}{W}",
 			"type": "Creature — Wall",
 			"collector_number": "12",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/12_Helia Ley-Tower.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/12_Helia Ley-Spire.jpg"
 			}
 		},
 		{
@@ -481,13 +481,13 @@
 			}
 		},
 		{
-			"name": "Zymith Ley-Tower",
+			"name": "Zymith Ley-Pillar",
 			"rarity": "common",
 			"mana_cost": "{4}{U}",
 			"type": "Creature — Wall",
 			"collector_number": "75",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/75_Zymith Ley-Tower.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/75_Zymith Ley-Pillar.jpg"
 			}
 		},
 		{
@@ -711,13 +711,13 @@
 			}
 		},
 		{
-			"name": "Medari Ley-Tower",
+			"name": "Medari Ley-Spire",
 			"rarity": "rare",
 			"mana_cost": "{1}{U}",
 			"type": "Creature — Wall",
 			"collector_number": "59",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/59_Medari Ley-Tower.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/59_Medari Ley-Spire.jpg"
 			}
 		},
 		{
@@ -781,13 +781,13 @@
 			}
 		},
 		{
-			"name": "Phemeros Ley-Tower",
+			"name": "Phemeros Ley-Pillar",
 			"rarity": "common",
 			"mana_cost": "{2}{B}",
 			"type": "Creature — Wall",
 			"collector_number": "104",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/104_Phemeros Ley-Tower.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/104_Phemeros Ley-Pillar.jpg"
 			}
 		},
 		{
@@ -1081,13 +1081,13 @@
 			}
 		},
 		{
-			"name": "Qaraz Ley-Tower",
+			"name": "Qaraz Ley-Spire",
 			"rarity": "rare",
 			"mana_cost": "{3}{B}",
 			"type": "Creature — Wall",
 			"collector_number": "106",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/106_Qaraz Ley-Tower.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/106_Qaraz Ley-Spire.jpg"
 			}
 		},
 		{
@@ -1261,13 +1261,13 @@
 			}
 		},
 		{
-			"name": "Roseaun Ley-Tower",
+			"name": "Roseaun Ley-Pillar",
 			"rarity": "common",
 			"mana_cost": "{2}{R}",
 			"type": "Creature — Wall",
 			"collector_number": "146",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/146_Roseaun Ley-Tower.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/146_Roseaun Ley-Pillar.jpg"
 			}
 		},
 		{
@@ -1423,7 +1423,7 @@
 		{
 			"name": "Perilous Sojourn",
 			"rarity": "rare",
-			"mana_cost": "{2}{R}",
+			"mana_cost": "{2}{R}{R}",
 			"type": "Enchantment",
 			"collector_number": "143",
 			"image_uris": {
@@ -1471,13 +1471,13 @@
 			}
 		},
 		{
-			"name": "Niliscant Ley-Tower",
+			"name": "Niliscant Ley-Spire",
 			"rarity": "rare",
 			"mana_cost": "{3}{R}{R}",
 			"type": "Creature — Wall",
 			"collector_number": "140",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/140_Niliscant Ley-Tower.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/140_Niliscant Ley-Spire.jpg"
 			}
 		},
 		{
@@ -1581,13 +1581,13 @@
 			}
 		},
 		{
-			"name": "Kinox Ley-Tower",
+			"name": "Kinox Ley-Pillar",
 			"rarity": "common",
 			"mana_cost": "{1}{G}",
 			"type": "Creature — Wall",
 			"collector_number": "175",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/175_Kinox Ley-Tower.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/175_Kinox Ley-Pillar.jpg"
 			}
 		},
 		{
@@ -1733,7 +1733,7 @@
 		{
 			"name": "Kinox Naturalist",
 			"rarity": "uncommon",
-			"mana_cost": "{G}",
+			"mana_cost": "{1}{G}",
 			"type": "Creature — Elf Druid",
 			"collector_number": "176",
 			"image_uris": {
@@ -1851,13 +1851,13 @@
 			}
 		},
 		{
-			"name": "Gorion Ley-Tower",
+			"name": "Gorion Ley-Spire",
 			"rarity": "rare",
 			"mana_cost": "{2}{G}{G}",
 			"type": "Creature — Wall",
 			"collector_number": "173",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/173_Gorion Ley-Tower.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/173_Gorion Ley-Spire.jpg"
 			}
 		},
 		{
@@ -2135,9 +2135,9 @@
 			"rarity": "rare",
 			"mana_cost": "{B/R}{B/R}{B/R}{B/R}",
 			"type": "Creature — Elemental Cleric",
-			"collector_number": "263",
+			"collector_number": "262",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/263_Precursor to Calamity.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/262_Precursor to Calamity.jpg"
 			}
 		},
 		{
@@ -2171,13 +2171,13 @@
 			}
 		},
 		{
-			"name": "Pitch Fiend",
+			"name": "Putrevore",
 			"rarity": "rare",
 			"mana_cost": "{B/G}{B/G}{B/G}{B/G}",
-			"type": "Creature — Beast",
-			"collector_number": "262",
+			"type": "Creature — Lhurgoyf",
+			"collector_number": "264",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/262_Pitch Fiend.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/264_Putrevore.jpg"
 			}
 		},
 		{
@@ -2195,9 +2195,9 @@
 			"rarity": "rare",
 			"mana_cost": "{U/R}{U/R}{U/R}{U/R}",
 			"type": "Creature — Horror Wizard",
-			"collector_number": "264",
+			"collector_number": "263",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/264_Psionic Sage.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/263_Psionic Sage.jpg"
 			}
 		},
 		{
@@ -2255,9 +2255,9 @@
 			"rarity": "common",
 			"mana_cost": "{6}{G}{W}",
 			"type": "Creature — Cat Spirit",
-			"collector_number": "219",
+			"collector_number": "218",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/219_Leonis Concitare.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/218_Leonis Concitare.jpg"
 			}
 		},
 		{
@@ -2265,9 +2265,9 @@
 			"rarity": "common",
 			"mana_cost": "{5}{W}{B}",
 			"type": "Creature — Bird Spirit",
-			"collector_number": "229",
+			"collector_number": "228",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/229_Noctere Ascentus.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/228_Noctere Ascentus.jpg"
 			}
 		},
 		{
@@ -2275,9 +2275,9 @@
 			"rarity": "common",
 			"mana_cost": "{6}{B}{G}",
 			"type": "Creature — Serpent Spirit",
-			"collector_number": "235",
+			"collector_number": "234",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/235_Serpens Surectus.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/234_Serpens Surectus.jpg"
 			}
 		},
 		{
@@ -2285,9 +2285,9 @@
 			"rarity": "common",
 			"mana_cost": "{5}{G}{U}",
 			"type": "Creature — Turtle Spirit",
-			"collector_number": "240",
+			"collector_number": "239",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/240_Turintos Fulgeos.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/239_Turintos Fulgeos.jpg"
 			}
 		},
 		{
@@ -2305,9 +2305,9 @@
 			"rarity": "common",
 			"mana_cost": "{5}{R}{W}",
 			"type": "Creature — Cat Spirit",
-			"collector_number": "238",
+			"collector_number": "237",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/238_Tigros Purseus.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/237_Tigros Purseus.jpg"
 			}
 		},
 		{
@@ -2325,9 +2325,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{W}{U}",
 			"type": "Creature — Angel",
-			"collector_number": "230",
+			"collector_number": "229",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/230_Oblivion Dispatcher.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/229_Oblivion Dispatcher.jpg"
 			}
 		},
 		{
@@ -2335,9 +2335,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{U}{B}",
 			"type": "Creature — Moonfolk Wizard",
-			"collector_number": "225",
+			"collector_number": "224",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/225_Medari Darkseer.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/224_Medari Darkseer.jpg"
 			}
 		},
 		{
@@ -2345,9 +2345,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{U}{B}",
 			"type": "Instant",
-			"collector_number": "228",
+			"collector_number": "227",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/228_Nether Invocation.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/227_Nether Invocation.jpg"
 			}
 		},
 		{
@@ -2355,9 +2355,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{B}{R}",
 			"type": "Creature — Horror Warrior",
-			"collector_number": "233",
+			"collector_number": "232",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/233_Reconstructed Flayer.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/232_Reconstructed Flayer.jpg"
 			}
 		},
 		{
@@ -2365,9 +2365,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{B}{R}",
 			"type": "Sorcery",
-			"collector_number": "232",
+			"collector_number": "231",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/232_Psionic Backlash.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/231_Psionic Backlash.jpg"
 			}
 		},
 		{
@@ -2375,19 +2375,19 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}{G}",
 			"type": "Creature — Elf Shaman",
-			"collector_number": "236",
+			"collector_number": "235",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/236_Star-Touched Host.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/235_Star-Touched Host.jpg"
 			}
 		},
 		{
-			"name": "Horizon's Reach",
+			"name": "Wildermoon Compulsion",
 			"rarity": "uncommon",
 			"mana_cost": "{R}{G}",
-			"type": "Enchantment — Aura",
-			"collector_number": "214",
+			"type": "Sorcery",
+			"collector_number": "243",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/214_Horizon's Reach.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/243_Wildermoon Compulsion.jpg"
 			}
 		},
 		{
@@ -2415,9 +2415,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{W}{B}",
 			"type": "Enchantment",
-			"collector_number": "217",
+			"collector_number": "216",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/217_Invasion Campaign.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/216_Invasion Campaign.jpg"
 			}
 		},
 		{
@@ -2445,9 +2445,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{4}{B}{G}",
 			"type": "Sorcery",
-			"collector_number": "237",
+			"collector_number": "236",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/237_Stellar Subjugation.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/236_Stellar Subjugation.jpg"
 			}
 		},
 		{
@@ -2465,9 +2465,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{2}{G}{U}",
 			"type": "Creature — Elk",
-			"collector_number": "231",
+			"collector_number": "230",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/231_Omenmare.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/230_Omenmare.jpg"
 			}
 		},
 		{
@@ -2505,9 +2505,9 @@
 			"rarity": "uncommon",
 			"mana_cost": "{1}{R}{W}",
 			"type": "Creature — Moonfolk Soldier",
-			"collector_number": "227",
+			"collector_number": "226",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/227_Moon-Scarred Champion.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/226_Moon-Scarred Champion.jpg"
 			}
 		},
 		{
@@ -2515,9 +2515,9 @@
 			"rarity": "rare",
 			"mana_cost": "{6}{W}{U}",
 			"type": "Creature — Leviathan Spirit",
-			"collector_number": "220",
+			"collector_number": "219",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/220_Levicta Visio.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/219_Levicta Visio.jpg"
 			}
 		},
 		{
@@ -2525,9 +2525,9 @@
 			"rarity": "rare",
 			"mana_cost": "{1}{W}{U}",
 			"type": "Enchantment",
-			"collector_number": "243",
+			"collector_number": "242",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/243_Waygate Bulwark.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/242_Waygate Bulwark.jpg"
 			}
 		},
 		{
@@ -2535,9 +2535,9 @@
 			"rarity": "rare",
 			"mana_cost": "{5}{U}{B}",
 			"type": "Creature — Otter Spirit",
-			"collector_number": "223",
+			"collector_number": "222",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/223_Lutra Inquisos.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/222_Lutra Inquisos.jpg"
 			}
 		},
 		{
@@ -2555,9 +2555,9 @@
 			"rarity": "rare",
 			"mana_cost": "{5}{B}{R}",
 			"type": "Creature — Phoenix Spirit",
-			"collector_number": "215",
+			"collector_number": "214",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/215_Ignavis Immatus.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/214_Ignavis Immatus.jpg"
 			}
 		},
 		{
@@ -2575,9 +2575,9 @@
 			"rarity": "rare",
 			"mana_cost": "{6}{R}{G}",
 			"type": "Creature — Minotaur Spirit",
-			"collector_number": "224",
+			"collector_number": "223",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/224_Matauros Tyrannos.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/223_Matauros Tyrannos.jpg"
 			}
 		},
 		{
@@ -2615,9 +2615,9 @@
 			"rarity": "rare",
 			"mana_cost": "{7}{W}{B}",
 			"type": "Creature — Specter Spirit",
-			"collector_number": "241",
+			"collector_number": "240",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/241_Umbrus Surectus.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/240_Umbrus Surectus.jpg"
 			}
 		},
 		{
@@ -2625,9 +2625,9 @@
 			"rarity": "rare",
 			"mana_cost": "{1}{W}{B}",
 			"type": "Creature — Moonfolk Zombie",
-			"collector_number": "239",
+			"collector_number": "238",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/239_Turelion Gospel.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/238_Turelion Gospel.jpg"
 			}
 		},
 		{
@@ -2635,9 +2635,9 @@
 			"rarity": "rare",
 			"mana_cost": "{6}{B}{G}",
 			"type": "Creature — Wolf Spirit",
-			"collector_number": "222",
+			"collector_number": "221",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/222_Lupensi Tyrannos.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/221_Lupensi Tyrannos.jpg"
 			}
 		},
 		{
@@ -2645,9 +2645,9 @@
 			"rarity": "rare",
 			"mana_cost": "{2}{B}{G}",
 			"type": "Creature — Hellion",
-			"collector_number": "226",
+			"collector_number": "225",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/226_Meteor Hellion.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/225_Meteor Hellion.jpg"
 			}
 		},
 		{
@@ -2655,9 +2655,9 @@
 			"rarity": "rare",
 			"mana_cost": "{6}{G}{U}",
 			"type": "Creature — Dinosaur Spirit",
-			"collector_number": "234",
+			"collector_number": "233",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/234_Saureus Duplixi.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/233_Saureus Duplixi.jpg"
 			}
 		},
 		{
@@ -2665,9 +2665,9 @@
 			"rarity": "rare",
 			"mana_cost": "{G}{U}",
 			"type": "Creature — Human Wizard",
-			"collector_number": "216",
+			"collector_number": "215",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/216_Interstellar Sage.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/215_Interstellar Sage.jpg"
 			}
 		},
 		{
@@ -2685,9 +2685,9 @@
 			"rarity": "rare",
 			"mana_cost": "{U}{R}",
 			"type": "Instant",
-			"collector_number": "221",
+			"collector_number": "220",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/221_Lunar Awe.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/220_Lunar Awe.jpg"
 			}
 		},
 		{
@@ -2695,9 +2695,9 @@
 			"rarity": "rare",
 			"mana_cost": "{6}{R}{W}",
 			"type": "Creature — Unicorn Spirit",
-			"collector_number": "242",
+			"collector_number": "241",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/242_Uquus Crusaris.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/241_Uquus Crusaris.jpg"
 			}
 		},
 		{
@@ -2725,9 +2725,9 @@
 			"rarity": "mythic",
 			"mana_cost": "{4}{R}{G}",
 			"type": "Sorcery",
-			"collector_number": "218",
+			"collector_number": "217",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/218_Last Wish.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/217_Last Wish.jpg"
 			}
 		},
 		{
@@ -2741,13 +2741,13 @@
 			}
 		},
 		{
-			"name": "Heraldic Ley-Tower",
+			"name": "Heraldic Ley-Pillar",
 			"rarity": "common",
 			"mana_cost": "{3}",
 			"type": "Artifact Creature — Wall",
 			"collector_number": "281",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/281_Heraldic Ley-Tower.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/281_Heraldic Ley-Pillar.jpg"
 			}
 		},
 		{
@@ -3131,13 +3131,13 @@
 			}
 		},
 		{
-			"name": "Prismatic Ley-Tower",
+			"name": "Prismatic Ley-Spire",
 			"rarity": "rare",
 			"mana_cost": "",
 			"type": "Land",
 			"collector_number": "306",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/306_Prismatic Ley-Tower.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/306_Prismatic Ley-Spire.jpg"
 			}
 		},
 		{
@@ -3295,9 +3295,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Fish",
-			"collector_number": "8",
+			"collector_number": "7",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/8_Fish.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/7_Fish.jpg"
 			}
 		},
 		{
@@ -3345,9 +3345,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Fish Spirit",
-			"collector_number": "7",
+			"collector_number": "8",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/7_Fish Spirit.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/8_Fish Spirit.jpg"
 			}
 		},
 		{
@@ -3395,9 +3395,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Elemental",
-			"collector_number": "20",
+			"collector_number": "19",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/20_Elemental.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/19_Elemental.jpg"
 			}
 		},
 		{
@@ -3405,9 +3405,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Elemental",
-			"collector_number": "19",
+			"collector_number": "20",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/19_Elemental.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/20_Elemental.jpg"
 			}
 		},
 		{
@@ -3455,9 +3455,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Elf",
-			"collector_number": "26",
+			"collector_number": "24",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/26_Elf.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/24_Elf.jpg"
 			}
 		},
 		{
@@ -3485,9 +3485,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Elf Druid",
-			"collector_number": "24",
+			"collector_number": "25",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/24_Elf Druid.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/25_Elf Druid.jpg"
 			}
 		},
 		{
@@ -3495,9 +3495,9 @@
 			"rarity": "common",
 			"mana_cost": "",
 			"type": "Token Creature — Elf Horror",
-			"collector_number": "25",
+			"collector_number": "26",
 			"image_uris": {
-				"en": "https://Scribbl16.github.io/sets/SOL-files/img/25_Elf Horror.jpg"
+				"en": "https://Scribbl16.github.io/sets/SOL-files/img/26_Elf Horror.jpg"
 			}
 		},
 		{
@@ -3538,7 +3538,7 @@
 	2 Creation Mythos
 	2 Foreign Frontiers
 	2 Aureola Crusaris
-	2 Helia Ley-Tower
+	2 Helia Ley-Spire
 	2 Nullblade Artisan
 	2 Radiant Pilgrim
 	2 Orbital Vacuum
@@ -3550,7 +3550,7 @@
 	2 Noveire, Omen of the Rift
 	2 Forbidden Treasure
 	2 Draconos Magistus
-	2 Medari Ley-Tower
+	2 Medari Ley-Spire
 	2 Rift Partisan
 	2 Master of Null
 	1 Asulio, the Watchful Star
@@ -3560,7 +3560,7 @@
 	2 Lightless Conquest
 	2 Darkstar Envoy
 	2 Nuillae Exidus
-	2 Qaraz Ley-Tower
+	2 Qaraz Ley-Spire
 	2 Hollow Prophet
 	2 Fleshless Flayer
 	2 Nightfall
@@ -3572,7 +3572,7 @@
 	2 Endlight Crusade
 	2 Stellar Migration
 	2 Manticos Expurgis
-	2 Niliscant Ley-Tower
+	2 Niliscant Ley-Spire
 	2 Fission Feaster
 	2 Emblazoned Prophet
 	2 Divine Repurposing
@@ -3583,7 +3583,7 @@
 	2 Blightstalker
 	2 Reclaimed Cultivator
 	2 Rex Tyrannos
-	2 Gorion Ley-Tower
+	2 Gorion Ley-Spire
 	2 Sire of Greatness
 	2 Andir Wildsoul
 	2 Plaguebane Hulk
@@ -3595,7 +3595,7 @@
 	2 Invasive Progenitor
 	2 Guiding Gladehart
 	2 Transcendent Council
-	2 Pitch Fiend
+	2 Putrevore
 	2 Astraling
 	2 Psionic Sage
 	2 Moon-Scarred Dominus
@@ -3632,7 +3632,7 @@
 	2 Qaraz Refuge
 	2 Caersol Refuge
 	2 Gorion Refuge
-	2 Prismatic Ley-Tower
+	2 Prismatic Ley-Spire
 [uncommon(4)]
 	4 Oblivion's Escort
 	4 Invoker's Guidebeast
@@ -3721,7 +3721,7 @@
 	4 Reconstructed Flayer
 	4 Psionic Backlash
 	4 Star-Touched Host
-	4 Horizon's Reach
+	4 Wildermoon Compulsion
 	4 Halo Tracer
 	4 Cosmic Rebirth
 	4 Invasion Campaign
@@ -3755,7 +3755,7 @@
 	8 Corporeal Benediction
 	8 Stardust Behemoth
 	8 Twilight Legion
-	8 Turelion Ley-Tower
+	8 Turelion Ley-Pillar
 	8 Starlit Sanctuary
 	8 Moon-Scarred Pilgrim
 	8 Star-Touched Stalwart
@@ -3769,12 +3769,12 @@
 	8 Cursory Glance
 	8 Qaraz Doomsayer
 	8 Architect of Ascension
-	8 Zymith Ley-Tower
+	8 Zymith Ley-Pillar
 	8 Unveil
 	8 Qaraz Nullblade
 	8 Discordant Voidling
 	8 Oblivion Surveyor
-	8 Phemeros Ley-Tower
+	8 Phemeros Ley-Pillar
 	8 Mantle of Dusk
 	8 Sarsupei All-Seer
 	8 Nether Ponderings
@@ -3796,14 +3796,14 @@
 	8 Horizon Blotter
 	8 Malignant Moonbeam
 	8 Frenetic Astronomer
-	8 Roseaun Ley-Tower
+	8 Roseaun Ley-Pillar
 	8 Nascent Vessel
 	8 Gorion Gladehart
 	8 Blinding Ambush
 	8 Star-Touched Devout
 	8 Nebulous Rebirth
 	8 Glimmermare
-	8 Kinox Ley-Tower
+	8 Kinox Ley-Pillar
 	8 Step Beyond
 	8 Alwanor's Mark
 	8 Scintillating Vista
@@ -3832,7 +3832,7 @@
 	8 Gomada Lumenos
 	8 Tigros Purseus
 	8 Meteoric Harvester
-	8 Heraldic Ley-Tower
+	8 Heraldic Ley-Pillar
 	8 Waypoint Armillary
 	8 Nascent Star
 	8 Light-Pierced Envoy
@@ -3859,7 +3859,7 @@
 	6 Corporeal Benediction
 	6 Stardust Behemoth
 	6 Twilight Legion
-	6 Turelion Ley-Tower
+	6 Turelion Ley-Pillar
 	6 Starlit Sanctuary
 	6 Moon-Scarred Pilgrim
 	6 Star-Touched Stalwart
@@ -3882,7 +3882,7 @@
 	7 Creation Mythos
 	7 Foreign Frontiers
 	7 Aureola Crusaris
-	7 Helia Ley-Tower
+	7 Helia Ley-Spire
 	7 Nullblade Artisan
 	7 Radiant Pilgrim
 	7 Orbital Vacuum
@@ -3898,7 +3898,7 @@
 	6 Cursory Glance
 	6 Qaraz Doomsayer
 	6 Architect of Ascension
-	6 Zymith Ley-Tower
+	6 Zymith Ley-Pillar
 	6 Unveil
 	6 Qaraz Nullblade
 	15 Scintillation Scion
@@ -3921,14 +3921,14 @@
 	7 Noveire, Omen of the Rift
 	7 Forbidden Treasure
 	7 Draconos Magistus
-	7 Medari Ley-Tower
+	7 Medari Ley-Spire
 	7 Rift Partisan
 	7 Master of Null
 	4 Asulio, the Watchful Star
 	4 Tamiyo, Sun-Seeking
 	6 Discordant Voidling
 	6 Oblivion Surveyor
-	6 Phemeros Ley-Tower
+	6 Phemeros Ley-Pillar
 	6 Mantle of Dusk
 	6 Sarsupei All-Seer
 	6 Nether Ponderings
@@ -3958,7 +3958,7 @@
 	7 Lightless Conquest
 	7 Darkstar Envoy
 	7 Nuillae Exidus
-	7 Qaraz Ley-Tower
+	7 Qaraz Ley-Spire
 	7 Hollow Prophet
 	7 Fleshless Flayer
 	7 Nightfall
@@ -3976,7 +3976,7 @@
 	6 Horizon Blotter
 	6 Malignant Moonbeam
 	6 Frenetic Astronomer
-	6 Roseaun Ley-Tower
+	6 Roseaun Ley-Pillar
 	6 Nascent Vessel
 	15 Instill Absolution
 	15 Nova Ravager
@@ -3997,7 +3997,7 @@
 	7 Endlight Crusade
 	7 Stellar Migration
 	7 Manticos Expurgis
-	7 Niliscant Ley-Tower
+	7 Niliscant Ley-Spire
 	7 Fission Feaster
 	7 Emblazoned Prophet
 	7 Divine Repurposing
@@ -4008,7 +4008,7 @@
 	6 Star-Touched Devout
 	6 Nebulous Rebirth
 	6 Glimmermare
-	6 Kinox Ley-Tower
+	6 Kinox Ley-Pillar
 	6 Step Beyond
 	6 Alwanor's Mark
 	6 Scintillating Vista
@@ -4035,7 +4035,7 @@
 	7 Blightstalker
 	7 Reclaimed Cultivator
 	7 Rex Tyrannos
-	7 Gorion Ley-Tower
+	7 Gorion Ley-Spire
 	7 Sire of Greatness
 	7 Andir Wildsoul
 	7 Plaguebane Hulk
@@ -4067,7 +4067,7 @@
 	7 Invasive Progenitor
 	7 Guiding Gladehart
 	7 Transcendent Council
-	7 Pitch Fiend
+	7 Putrevore
 	7 Astraling
 	7 Psionic Sage
 	7 Moon-Scarred Dominus
@@ -4088,7 +4088,7 @@
 	15 Reconstructed Flayer
 	15 Psionic Backlash
 	15 Star-Touched Host
-	15 Horizon's Reach
+	15 Wildermoon Compulsion
 	15 Halo Tracer
 	15 Cosmic Rebirth
 	15 Invasion Campaign
@@ -4124,7 +4124,7 @@
 	4 Form of the Sun
 	4 Last Wish
 	6 Meteoric Harvester
-	6 Heraldic Ley-Tower
+	6 Heraldic Ley-Pillar
 	6 Waypoint Armillary
 	6 Nascent Star
 	6 Light-Pierced Envoy
@@ -4163,4 +4163,4 @@
 	7 Qaraz Refuge
 	7 Caersol Refuge
 	7 Gorion Refuge
-	7 Prismatic Ley-Tower
+	7 Prismatic Ley-Spire
