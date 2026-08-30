@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="../sets/BOG-files/icon.png"/>
+	<link rel="stylesheet" href="../resources/header.css">
+	<title>BOG visual preview</title>
+	<script title="root">
+		const rootPath = "..";
+	</script>
+	<style>
+		@font-face {
+			font-family: Beleren;
+			src: url('../resources/beleren.ttf');
+		}
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			overscroll-behavior: none;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.main-content {
+			position: relative;
+			width: 100%;
+			float: left;
+			z-index: 2;
+			justify-items: center;
+		}
+		.sidebar {
+			position: sticky;
+			top: 0;
+			display: none;
+			text-align: center;
+			padding-right: 3%;
+			z-index: 1;
+			justify-items: center;
+		}
+		.sidebar-container {
+			width: 80%;
+			max-width: 375px;
+			position: relative;
+		}
+		.sidebar-h-img {
+			opacity: 0;
+			transform: rotateY(0deg) rotate(90deg);
+			position: absolute;
+			left: 10%;
+			top: 10%;
+			width: 85%;
+			border-radius: 3.733% / 2.677%;
+		}
+		.sidebar-img {
+			vertical-align: middle;
+			width: 100%;
+			border-radius: 3.733% / 2.677%;
+		}
+		.close-btn {
+			background: url('../img/close.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 10%;
+			height: 10%;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			right: 4%;
+		}
+		.close-btn:hover {
+			background: url('../img/close-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.grid-container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			gap: 2px;
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-bottom: 1%;
+			justify-items: center;
+			max-width: 1200px;
+		}
+		.grid-container img {
+			width: 100%;
+			height: auto;
+			display: block;
+			visibility: hidden;
+			cursor: pointer;
+			border-radius: 3.733% / 2.677%;
+		}
+		.banner {
+			width: 100%;
+			height: auto;
+			padding-top: 80px;
+			padding-bottom: 50px;
+		}
+		.logo {
+			display: block;
+			margin: auto;
+			max-width: 30%;
+			max-height: 320px;
+		}
+		.container {
+			position: relative;
+			width: 100%;
+		}
+		.container img {
+			width: 100%;
+			height: auto;
+			border-radius: 3.733% / 2.677%;
+		}
+		.flip-btn {
+			background: url('../img/flip.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			width: 15%;
+			height: 11%;
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			left: 50%;
+			top: 48%;
+			transform: translate(-50%, -50%);
+			opacity: 0.5;
+		}
+		.flip-btn:hover {
+			background: url('../img/flip-hover.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+		.dropdown {
+			background: rgba(23, 23, 23, 0.8);
+			border-radius: 8px;
+			position: absolute;
+			left: 5%;
+			width: fit-content;
+			max-width: 90%;
+			margin: 20px 0;
+			padding: 5px 0;
+			display: grid;
+			grid-template-columns: 1fr;
+			z-index: 3;
+		}
+		.dropdown .set-bar {
+			font-family: Beleren;
+			font-size: 20px;
+			text-decoration: none;
+			color: #e3e3e3;
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			padding: 0 12px;
+			margin: 5px;
+		}
+		.dropdown .set-bar:hover {
+			background: rgba(163, 163, 163, 0.5);
+			color: #f3f3f3;
+		}
+		.dropdown .set-bar img {
+			width: 32px;
+		}
+		.dropdown .inactive {
+			height: 0px;
+			overflow: hidden;
+			margin: 0px 5px;
+		}
+		.preload-hidden {
+			display: none;
+		}
+		.addenda-container {
+			text-align: center;
+			width: fit-content;
+			max-width: 1200px;
+			padding: 0 5%;
+		}
+		/* This is here to enable the stickiness in a Float environment. I don't know why it works but it does */
+		.footer {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<img class="preload-hidden" src="../img/dot.png" />
+	<img class="preload-hidden" src="../sets/BOG-files/logo.png" />
+	<img class="preload-hidden" src="../sets/AND-files/icon.png" />
+		<img class="preload-hidden" src="../sets/BOG-files/icon.png" />
+		<img class="preload-hidden" src="../sets/SOL-files/icon.png" />
+		<div class="header">
+		<div class="search-grid">
+			<a onclick="window.location.href = rootPath + '/'"><img class="sg-logo" id="header-banner"></a>
+			<img class="sg-icon" id="header-search" onclick="goToSearch()">
+			<div style="position: relative; width: 100%;">
+				<input type="text" inputmode="search" placeholder="Search ..." name="search" id="search" spellcheck="false" autocomplete="off" autocorrect="off" spellcheck="false">
+				<div id="tag-dropdown" style="display: none; position: absolute; top: 100%; left: 0; width: 100%; background: white; border: 1px solid #d5d9d9; z-index: 1000; max-height: 200px; overflow-y: auto; color: black; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></div>
+			</div>
+			<a onclick="window.location.href = rootPath + '/all-sets'"><img id="header-sets" class="sg-icon">Sets</a>
+			<a id="header-articles-link" onclick="window.location.href = rootPath + '/all-articles'" style="display: none;"><img id="header-articles" class="sg-icon">Articles</a>
+			<a id="header-decks-link" onclick="window.location.href = rootPath + '/decks'" style="display: none;"><img id="header-decks" class="sg-icon">Decks</a>
+			<a onclick="window.location.href = rootPath + '/deckbuilder'"><img id="header-deckbuilder" class="sg-icon">Deckbuilder</a>
+			<a onclick="randomCard()"><img id="header-random" class="sg-icon">Random</a>
+		</div>
+	</div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			document.getElementById("header-banner").src = rootPath + "/img/banner.png";
+			document.getElementById("header-search").src = rootPath + "/img/search.png";
+			document.getElementById("header-sets").src = rootPath + "/img/sets.png";
+			document.getElementById("header-articles").src = rootPath + "/img/articles.png";
+			document.getElementById("header-decks").src = rootPath + "/img/deck.png";
+			document.getElementById("header-deckbuilder").src = rootPath + "/img/deckbuilder.png";
+			document.getElementById("header-random").src = rootPath + "/img/random.png";
+
+			// Hide Articles if none exist
+			fetch(rootPath + '/all-articles.html', { method: 'HEAD' })
+				.then(response => {
+					if (response.ok) document.getElementById('header-articles-link').style.display = 'flex';
+				}).catch(() => {});
+
+			// Hide Decks if none exist
+			fetch(rootPath + '/decks.html', { method: 'HEAD' })
+				.then(response => {
+					if (response.ok) document.getElementById('header-decks-link').style.display = 'flex';
+				}).catch(() => {});
+		});
+
+		function goToSearch() {
+			window.location.href = rootPath + "/search";
+		}
+	</script>
+
+	<div class="dropdown" id="dropdown" onmouseenter="rolldown()" onmouseleave="rollup()">
+	
+		<a class="set-bar" href="../previews/BOG"><img src="../sets/BOG-files/icon.png"></a>
+	
+		<a class="set-bar inactive" href="../previews/AND"><img src="../sets/AND-files/icon.png"></a>
+	
+		<a class="set-bar inactive" href="../previews/SOL"><img src="../sets/SOL-files/icon.png">Solastere</a>
+	
+		</div>
+		<div class="banner">
+		<img class="logo" src="../sets/BOG-files/logo.png">
+		</div>
+		<div class="main-content" id="main-content">
+			<div class="grid-container">
+					<div class="container"><img loading="lazy" alt="sets\BOG-files\img\15_MW01 Ajani.jpg" id="BOG_15_MW01 Ajani" data-flag="@X" onclick="openSidebar('BOG_15_MW01 Ajani',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\56_MU01 Jace.jpg" id="BOG_56_MU01 Jace" data-flag="@X" onclick="openSidebar('BOG_56_MU01 Jace',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\97_MB01 Liliana.jpg" id="BOG_97_MB01 Liliana" data-flag="@X" onclick="openSidebar('BOG_97_MB01 Liliana',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\138_MR01.jpg" id="BOG_138_MR01" data-flag="@X" onclick="openSidebar('BOG_138_MR01',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\179_MG01 Garruk.jpg" id="BOG_179_MG01 Garruk" data-flag="@X" onclick="openSidebar('BOG_179_MG01 Garruk',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\16_MW02 Death's Door.jpg" id="BOG_16_MW02 Deaths Door" data-flag="@X" onclick="openSidebar('BOG_16_MW02 Deaths Door',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\57_MU02.jpg" id="BOG_57_MU02" data-flag="@X" onclick="openSidebar('BOG_57_MU02',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\98_MB02 Boghex Grudge.jpg" id="BOG_98_MB02 Boghex Grudge" data-flag="@X" onclick="openSidebar('BOG_98_MB02 Boghex Grudge',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\139_MR02.jpg" id="BOG_139_MR02" data-flag="@X" onclick="openSidebar('BOG_139_MR02',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\180_MG02.jpg" id="BOG_180_MG02" data-flag="@X" onclick="openSidebar('BOG_180_MG02',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\17_RW01 WU Evershriek.jpg" id="BOG_17_RW01 WU Evershriek" data-flag="@X" onclick="openSidebar('BOG_17_RW01 WU Evershriek',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\58_RU01 UB Diviner.jpg" id="BOG_58_RU01 UB Diviner" data-flag="@X" onclick="openSidebar('BOG_58_RU01 UB Diviner',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\99_RB01 BR Scar 1.jpg" id="BOG_99_RB01 BR Scar 1" data-flag="@X" onclick="openSidebar('BOG_99_RB01 BR Scar 1',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\140_RR01 RG Countryside Crusher.jpg" id="BOG_140_RR01 RG Countryside Crusher" data-flag="@X" onclick="openSidebar('BOG_140_RR01 RG Countryside Crusher',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\181_RG01 GW Reap.jpg" id="BOG_181_RG01 GW Reap" data-flag="@X" onclick="openSidebar('BOG_181_RG01 GW Reap',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\18_RW02 WB Reap.jpg" id="BOG_18_RW02 WB Reap" data-flag="@X" onclick="openSidebar('BOG_18_RW02 WB Reap',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\59_RU02 UR.jpg" id="BOG_59_RU02 UR" data-flag="@X" onclick="openSidebar('BOG_59_RU02 UR',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\100_RB02 BG Embody 1.jpg" id="BOG_100_RB02 BG Embody 1" data-flag="@X" onclick="openSidebar('BOG_100_RB02 BG Embody 1',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\141_RR02 RW Saga.jpg" id="BOG_141_RR02 RW Saga" data-flag="@X" onclick="openSidebar('BOG_141_RR02 RW Saga',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\182_RG02 GU.jpg" id="BOG_182_RG02 GU" data-flag="@X" onclick="openSidebar('BOG_182_RG02 GU',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\19_RW03 RW Saga.jpg" id="BOG_19_RW03 RW Saga" data-flag="@X" onclick="openSidebar('BOG_19_RW03 RW Saga',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\60_RU03 GU.jpg" id="BOG_60_RU03 GU" data-flag="@X" onclick="openSidebar('BOG_60_RU03 GU',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\101_RB03 WB Reap.jpg" id="BOG_101_RB03 WB Reap" data-flag="@X" onclick="openSidebar('BOG_101_RB03 WB Reap',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\142_RR03 UR.jpg" id="BOG_142_RR03 UR" data-flag="@X" onclick="openSidebar('BOG_142_RR03 UR',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\183_RG03 BG Embody.jpg" id="BOG_183_RG03 BG Embody" data-flag="@X" onclick="openSidebar('BOG_183_RG03 BG Embody',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\20_RW04 GW Embody.jpg" id="BOG_20_RW04 GW Embody" data-flag="@X" onclick="openSidebar('BOG_20_RW04 GW Embody',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\61_RU04 WU.jpg" id="BOG_61_RU04 WU" data-flag="@X" onclick="openSidebar('BOG_61_RU04 WU',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\102_RB04 Veesa.jpg" id="BOG_102_RB04 Veesa" data-flag="@X" onclick="openSidebar('BOG_102_RB04 Veesa',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\143_RR04 BR Scar Dragon.jpg" id="BOG_143_RR04 BR Scar Dragon" data-flag="@X" onclick="openSidebar('BOG_143_RR04 BR Scar Dragon',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\184_RG04 RG Flora Shaman.jpg" id="BOG_184_RG04 RG Flora Shaman" data-flag="@X" onclick="openSidebar('BOG_184_RG04 RG Flora Shaman',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\21_RW05 Jack Chierdagh.jpg" id="BOG_21_RW05 Jack Chierdagh" data-flag="@X" onclick="openSidebar('BOG_21_RW05 Jack Chierdagh',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\62_RU05 Iliona the Free.jpg" id="BOG_62_RU05 Iliona the Free" data-flag="@X" onclick="openSidebar('BOG_62_RU05 Iliona the Free',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\103_RB05 BB Legend.jpg" id="BOG_103_RB05 BB Legend" data-flag="@X" onclick="openSidebar('BOG_103_RB05 BB Legend',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\144_RR05 RR Legend.jpg" id="BOG_144_RR05 RR Legend" data-flag="@X" onclick="openSidebar('BOG_144_RR05 RR Legend',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\185_RG05 Sapling, Colfenor's Weapon.jpg" id="BOG_185_RG05 Sapling, Colfenors Weapon" data-flag="@X" onclick="openSidebar('BOG_185_RG05 Sapling, Colfenors Weapon',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\22_RW06 Plainscycler.jpg" id="BOG_22_RW06 Plainscycler" data-flag="@X" onclick="openSidebar('BOG_22_RW06 Plainscycler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\63_RU06 Islandcycler.jpg" id="BOG_63_RU06 Islandcycler" data-flag="@X" onclick="openSidebar('BOG_63_RU06 Islandcycler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\104_RB06 Swampcycler.jpg" id="BOG_104_RB06 Swampcycler" data-flag="@X" onclick="openSidebar('BOG_104_RB06 Swampcycler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\145_RR06 Mountaincycler.jpg" id="BOG_145_RR06 Mountaincycler" data-flag="@X" onclick="openSidebar('BOG_145_RR06 Mountaincycler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\186_RG06 Forestcycler.jpg" id="BOG_186_RG06 Forestcycler" data-flag="@X" onclick="openSidebar('BOG_186_RG06 Forestcycler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\23_RW07 Potion Cycle.jpg" id="BOG_23_RW07 Potion Cycle" data-flag="@X" onclick="openSidebar('BOG_23_RW07 Potion Cycle',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\64_RU07 Mind Potion.jpg" id="BOG_64_RU07 Mind Potion" data-flag="@X" onclick="openSidebar('BOG_64_RU07 Mind Potion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\105_RB07 Wave of Decay.jpg" id="BOG_105_RB07 Wave of Decay" data-flag="@X" onclick="openSidebar('BOG_105_RB07 Wave of Decay',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\146_RR07 Potion Cycle.jpg" id="BOG_146_RR07 Potion Cycle" data-flag="@X" onclick="openSidebar('BOG_146_RR07 Potion Cycle',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\187_RG07 Summoning Potion.jpg" id="BOG_187_RG07 Summoning Potion" data-flag="@X" onclick="openSidebar('BOG_187_RG07 Summoning Potion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\24_RW08 Embody Angel.jpg" id="BOG_24_RW08 Embody Angel" data-flag="@X" onclick="openSidebar('BOG_24_RW08 Embody Angel',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\65_RU08 Glen Elendra Spy.jpg" id="BOG_65_RU08 Glen Elendra Spy" data-flag="@X" onclick="openSidebar('BOG_65_RU08 Glen Elendra Spy',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\106_RB08 Saga Creature.jpg" id="BOG_106_RB08 Saga Creature" data-flag="@X" onclick="openSidebar('BOG_106_RB08 Saga Creature',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\147_RR08 Embody Phoenix.jpg" id="BOG_147_RR08 Embody Phoenix" data-flag="@X" onclick="openSidebar('BOG_147_RR08 Embody Phoenix',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\188_RG08 Bear Umbra.jpg" id="BOG_188_RG08 Bear Umbra" data-flag="@X" onclick="openSidebar('BOG_188_RG08 Bear Umbra',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\25_RW09 Sweeper.jpg" id="BOG_25_RW09 Sweeper" data-flag="@X" onclick="openSidebar('BOG_25_RW09 Sweeper',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\66_RU09 Saga Creature.jpg" id="BOG_66_RU09 Saga Creature" data-flag="@X" onclick="openSidebar('BOG_66_RU09 Saga Creature',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\107_RB09 Embody 2.jpg" id="BOG_107_RB09 Embody 2" data-flag="@X" onclick="openSidebar('BOG_107_RB09 Embody 2',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\148_RR09 Browblight.jpg" id="BOG_148_RR09 Browblight" data-flag="@X" onclick="openSidebar('BOG_148_RR09 Browblight',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\189_RG09 Saga Creature.jpg" id="BOG_189_RG09 Saga Creature" data-flag="@X" onclick="openSidebar('BOG_189_RG09 Saga Creature',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\26_RW10 Medic's Malediction.jpg" id="BOG_26_RW10 Medics Malediction" data-flag="@X" onclick="openSidebar('BOG_26_RW10 Medics Malediction',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\67_RU10.jpg" id="BOG_67_RU10" data-flag="@X" onclick="openSidebar('BOG_67_RU10',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\108_RB10 Scar 2.jpg" id="BOG_108_RB10 Scar 2" data-flag="@X" onclick="openSidebar('BOG_108_RB10 Scar 2',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\149_RR10 Vexing Rambler.jpg" id="BOG_149_RR10 Vexing Rambler" data-flag="@X" onclick="openSidebar('BOG_149_RR10 Vexing Rambler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\190_RG10.jpg" id="BOG_190_RG10" data-flag="@X" onclick="openSidebar('BOG_190_RG10',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\27_UW01 WU Payoff.jpg" id="BOG_27_UW01 WU Payoff" data-flag="@X" onclick="openSidebar('BOG_27_UW01 WU Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\68_UU01 UB Payoff.jpg" id="BOG_68_UU01 UB Payoff" data-flag="@X" onclick="openSidebar('BOG_68_UU01 UB Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\109_UB01 BR Payoff.jpg" id="BOG_109_UB01 BR Payoff" data-flag="@X" onclick="openSidebar('BOG_109_UB01 BR Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\150_UR01 RG Payoff.jpg" id="BOG_150_UR01 RG Payoff" data-flag="@X" onclick="openSidebar('BOG_150_UR01 RG Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\191_UG01 GW Payoff.jpg" id="BOG_191_UG01 GW Payoff" data-flag="@X" onclick="openSidebar('BOG_191_UG01 GW Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\28_UW02 WU Enabler Aura.jpg" id="BOG_28_UW02 WU Enabler Aura" data-flag="@X" onclick="openSidebar('BOG_28_UW02 WU Enabler Aura',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\69_UU02 UB Enabler.jpg" id="BOG_69_UU02 UB Enabler" data-flag="@X" onclick="openSidebar('BOG_69_UU02 UB Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\110_UB02 BR Enabler Scar.jpg" id="BOG_110_UB02 BR Enabler Scar" data-flag="@X" onclick="openSidebar('BOG_110_UB02 BR Enabler Scar',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\151_UR02 RG Enabler.jpg" id="BOG_151_UR02 RG Enabler" data-flag="@X" onclick="openSidebar('BOG_151_UR02 RG Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\192_UG02 GW Enabler Reap.jpg" id="BOG_192_UG02 GW Enabler Reap" data-flag="@X" onclick="openSidebar('BOG_192_UG02 GW Enabler Reap',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\29_UW03 WB Payoff Reap.jpg" id="BOG_29_UW03 WB Payoff Reap" data-flag="@X" onclick="openSidebar('BOG_29_UW03 WB Payoff Reap',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\70_UU03 UR Payoff.jpg" id="BOG_70_UU03 UR Payoff" data-flag="@X" onclick="openSidebar('BOG_70_UU03 UR Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\111_UB03 BG Payoff.jpg" id="BOG_111_UB03 BG Payoff" data-flag="@X" onclick="openSidebar('BOG_111_UB03 BG Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\152_UR03 RW Payoff.jpg" id="BOG_152_UR03 RW Payoff" data-flag="@X" onclick="openSidebar('BOG_152_UR03 RW Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\193_UG03 GU Payoff.jpg" id="BOG_193_UG03 GU Payoff" data-flag="@X" onclick="openSidebar('BOG_193_UG03 GU Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\30_UW04 WB Enabler Embody.jpg" id="BOG_30_UW04 WB Enabler Embody" data-flag="@X" onclick="openSidebar('BOG_30_UW04 WB Enabler Embody',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\71_UU04 UR Enabler.jpg" id="BOG_71_UU04 UR Enabler" data-flag="@X" onclick="openSidebar('BOG_71_UU04 UR Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\112_UB04 BG Enabler Embody.jpg" id="BOG_112_UB04 BG Enabler Embody" data-flag="@X" onclick="openSidebar('BOG_112_UB04 BG Enabler Embody',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\153_UR04 RW Enabler Saga.jpg" id="BOG_153_UR04 RW Enabler Saga" data-flag="@X" onclick="openSidebar('BOG_153_UR04 RW Enabler Saga',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\194_UG04 GU Enabler.jpg" id="BOG_194_UG04 GU Enabler" data-flag="@X" onclick="openSidebar('BOG_194_UG04 GU Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\31_UW05 RW Payoff.jpg" id="BOG_31_UW05 RW Payoff" data-flag="@X" onclick="openSidebar('BOG_31_UW05 RW Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\72_UU05 Loathsome Mimic.jpg" id="BOG_72_UU05 Loathsome Mimic" data-flag="@X" onclick="openSidebar('BOG_72_UU05 Loathsome Mimic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\113_UB05 WB Payoff.jpg" id="BOG_113_UB05 WB Payoff" data-flag="@X" onclick="openSidebar('BOG_113_UB05 WB Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\154_UR05 UR Payoff Fodder.jpg" id="BOG_154_UR05 UR Payoff Fodder" data-flag="@X" onclick="openSidebar('BOG_154_UR05 UR Payoff Fodder',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\195_UG05 BG Payoff.jpg" id="BOG_195_UG05 BG Payoff" data-flag="@X" onclick="openSidebar('BOG_195_UG05 BG Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\32_UW06 RW Enabler Saga.jpg" id="BOG_32_UW06 RW Enabler Saga" data-flag="@X" onclick="openSidebar('BOG_32_UW06 RW Enabler Saga',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\73_UU06 GU Enabler.jpg" id="BOG_73_UU06 GU Enabler" data-flag="@X" onclick="openSidebar('BOG_73_UU06 GU Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\114_UB06 WB Enabler.jpg" id="BOG_114_UB06 WB Enabler" data-flag="@X" onclick="openSidebar('BOG_114_UB06 WB Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\155_UR06 UR Enabler Recall Potion.jpg" id="BOG_155_UR06 UR Enabler Recall Potion" data-flag="@X" onclick="openSidebar('BOG_155_UR06 UR Enabler Recall Potion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\196_UG06 BG Enabler Embody.jpg" id="BOG_196_UG06 BG Enabler Embody" data-flag="@X" onclick="openSidebar('BOG_196_UG06 BG Enabler Embody',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\33_UW07 GW Payoff.jpg" id="BOG_33_UW07 GW Payoff" data-flag="@X" onclick="openSidebar('BOG_33_UW07 GW Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\74_UU07 WU Payoff Curiosity.jpg" id="BOG_74_UU07 WU Payoff Curiosity" data-flag="@X" onclick="openSidebar('BOG_74_UU07 WU Payoff Curiosity',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\115_UB07 UB Payoff.jpg" id="BOG_115_UB07 UB Payoff" data-flag="@X" onclick="openSidebar('BOG_115_UB07 UB Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\156_UR07 BR Payoff.jpg" id="BOG_156_UR07 BR Payoff" data-flag="@X" onclick="openSidebar('BOG_156_UR07 BR Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\197_UG07 RG Payoff.jpg" id="BOG_197_UG07 RG Payoff" data-flag="@X" onclick="openSidebar('BOG_197_UG07 RG Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\34_UW08 GW Enabler.jpg" id="BOG_34_UW08 GW Enabler" data-flag="@X" onclick="openSidebar('BOG_34_UW08 GW Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\75_UU08 WU Enabler Embody.jpg" id="BOG_75_UU08 WU Enabler Embody" data-flag="@X" onclick="openSidebar('BOG_75_UU08 WU Enabler Embody',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\116_UB08 UB Enabler.jpg" id="BOG_116_UB08 UB Enabler" data-flag="@X" onclick="openSidebar('BOG_116_UB08 UB Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\157_UR08 BR Enabler Scar.jpg" id="BOG_157_UR08 BR Enabler Scar" data-flag="@X" onclick="openSidebar('BOG_157_UR08 BR Enabler Scar',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\198_UG08 RG Enabler.jpg" id="BOG_198_UG08 RG Enabler" data-flag="@X" onclick="openSidebar('BOG_198_UG08 RG Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\35_UW09 WW Payoff.jpg" id="BOG_35_UW09 WW Payoff" data-flag="@X" onclick="openSidebar('BOG_35_UW09 WW Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\76_UU09 UU Payoff.jpg" id="BOG_76_UU09 UU Payoff" data-flag="@X" onclick="openSidebar('BOG_76_UU09 UU Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\117_UB09 BB Payoff.jpg" id="BOG_117_UB09 BB Payoff" data-flag="@X" onclick="openSidebar('BOG_117_UB09 BB Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\158_UR09 RR Payoff.jpg" id="BOG_158_UR09 RR Payoff" data-flag="@X" onclick="openSidebar('BOG_158_UR09 RR Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\199_UG09 GG Payoff.jpg" id="BOG_199_UG09 GG Payoff" data-flag="@X" onclick="openSidebar('BOG_199_UG09 GG Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\36_UW10 WW Crib Swap.jpg" id="BOG_36_UW10 WW Crib Swap" data-flag="@X" onclick="openSidebar('BOG_36_UW10 WW Crib Swap',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\77_UU10 UU Counter.jpg" id="BOG_77_UU10 UU Counter" data-flag="@X" onclick="openSidebar('BOG_77_UU10 UU Counter',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\118_UB10 BB Draw.jpg" id="BOG_118_UB10 BB Draw" data-flag="@X" onclick="openSidebar('BOG_118_UB10 BB Draw',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\159_UR10 RR Slash.jpg" id="BOG_159_UR10 RR Slash" data-flag="@X" onclick="openSidebar('BOG_159_UR10 RR Slash',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\200_UG10 GG Bite.jpg" id="BOG_200_UG10 GG Bite" data-flag="@X" onclick="openSidebar('BOG_200_UG10 GG Bite',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\37_UW11 Flicker Reap.jpg" id="BOG_37_UW11 Flicker Reap" data-flag="@X" onclick="openSidebar('BOG_37_UW11 Flicker Reap',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\78_UU11 Spell Pierce.jpg" id="BOG_78_UU11 Spell Pierce" data-flag="@X" onclick="openSidebar('BOG_78_UU11 Spell Pierce',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\119_UB11 Meteor Potion.jpg" id="BOG_119_UB11 Meteor Potion" data-flag="@X" onclick="openSidebar('BOG_119_UB11 Meteor Potion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\160_UR11 Impulse Reap.jpg" id="BOG_160_UR11 Impulse Reap" data-flag="@X" onclick="openSidebar('BOG_160_UR11 Impulse Reap',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\201_UG11 Hunter's Potion.jpg" id="BOG_201_UG11 Hunters Potion" data-flag="@X" onclick="openSidebar('BOG_201_UG11 Hunters Potion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\38_UW12 Meek Potion.jpg" id="BOG_38_UW12 Meek Potion" data-flag="@X" onclick="openSidebar('BOG_38_UW12 Meek Potion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\79_UU12 Mirror Potion.jpg" id="BOG_79_UU12 Mirror Potion" data-flag="@X" onclick="openSidebar('BOG_79_UU12 Mirror Potion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\120_UB12 Weirding Mimic.jpg" id="BOG_120_UB12 Weirding Mimic" data-flag="@X" onclick="openSidebar('BOG_120_UB12 Weirding Mimic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\161_UR12 Blaze.jpg" id="BOG_161_UR12 Blaze" data-flag="@X" onclick="openSidebar('BOG_161_UR12 Blaze',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\202_UG12 Simplify.jpg" id="BOG_202_UG12 Simplify" data-flag="@X" onclick="openSidebar('BOG_202_UG12 Simplify',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\39_UW13 Self-Scar Cycle.jpg" id="BOG_39_UW13 Self-Scar Cycle" data-flag="@X" onclick="openSidebar('BOG_39_UW13 Self-Scar Cycle',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\80_UU13 Self-Scar Cycle.jpg" id="BOG_80_UU13 Self-Scar Cycle" data-flag="@X" onclick="openSidebar('BOG_80_UU13 Self-Scar Cycle',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\121_UB13 Self-Scar Cycle.jpg" id="BOG_121_UB13 Self-Scar Cycle" data-flag="@X" onclick="openSidebar('BOG_121_UB13 Self-Scar Cycle',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\162_UR13 Self-Scar Cycle.jpg" id="BOG_162_UR13 Self-Scar Cycle" data-flag="@X" onclick="openSidebar('BOG_162_UR13 Self-Scar Cycle',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\203_UG13 Self-Scar Cycle.jpg" id="BOG_203_UG13 Self-Scar Cycle" data-flag="@X" onclick="openSidebar('BOG_203_UG13 Self-Scar Cycle',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\40_UW14 Shrine.jpg" id="BOG_40_UW14 Shrine" data-flag="@X" onclick="openSidebar('BOG_40_UW14 Shrine',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\81_UU14 Shrine.jpg" id="BOG_81_UU14 Shrine" data-flag="@X" onclick="openSidebar('BOG_81_UU14 Shrine',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\122_UB14 Shrine.jpg" id="BOG_122_UB14 Shrine" data-flag="@X" onclick="openSidebar('BOG_122_UB14 Shrine',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\163_UR14 Shrine.jpg" id="BOG_163_UR14 Shrine" data-flag="@X" onclick="openSidebar('BOG_163_UR14 Shrine',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\204_UG14 Shrine.jpg" id="BOG_204_UG14 Shrine" data-flag="@X" onclick="openSidebar('BOG_204_UG14 Shrine',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\41_UW15 Generic Kelpie.jpg" id="BOG_41_UW15 Generic Kelpie" data-flag="@X" onclick="openSidebar('BOG_41_UW15 Generic Kelpie',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\82_UU15 Generic Morph Potion.jpg" id="BOG_82_UU15 Generic Morph Potion" data-flag="@X" onclick="openSidebar('BOG_82_UU15 Generic Morph Potion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\123_UB15 Generic.jpg" id="BOG_123_UB15 Generic" data-flag="@X" onclick="openSidebar('BOG_123_UB15 Generic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\164_UR15 Generic Embody.jpg" id="BOG_164_UR15 Generic Embody" data-flag="@X" onclick="openSidebar('BOG_164_UR15 Generic Embody',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\205_UG15 Generic Embody.jpg" id="BOG_205_UG15 Generic Embody" data-flag="@X" onclick="openSidebar('BOG_205_UG15 Generic Embody',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\1_CW01 WU/WB Embody Small.jpg" id="BOG_1_CW01 WU/WB Embody Small" data-flag="@X" onclick="openSidebar('BOG_1_CW01 WU/WB Embody Small',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\42_CU01 UR Polymorph.jpg" id="BOG_42_CU01 UR Polymorph" data-flag="@X" onclick="openSidebar('BOG_42_CU01 UR Polymorph',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\83_CB01 BR/BG Aura.jpg" id="BOG_83_CB01 BR/BG Aura" data-flag="@X" onclick="openSidebar('BOG_83_CB01 BR/BG Aura',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\124_CR01 RG/RW Saga Cycle.jpg" id="BOG_124_CR01 RG/RW Saga Cycle" data-flag="@X" onclick="openSidebar('BOG_124_CR01 RG/RW Saga Cycle',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\165_CG01 RG Beater.jpg" id="BOG_165_CG01 RG Beater" data-flag="@X" onclick="openSidebar('BOG_165_CG01 RG Beater',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\2_CW02 WU/RW Revival Aura.jpg" id="BOG_2_CW02 WU/RW Revival Aura" data-flag="@X" onclick="openSidebar('BOG_2_CW02 WU/RW Revival Aura',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\43_CU02 UB/GU Reap.jpg" id="BOG_43_CU02 UB/GU Reap" data-flag="@X" onclick="openSidebar('BOG_43_CU02 UB/GU Reap',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\84_CB02 BR/WB.jpg" id="BOG_84_CB02 BR/WB" data-flag="@X" onclick="openSidebar('BOG_84_CB02 BR/WB',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\125_CR02 UR Gold Potion.jpg" id="BOG_125_CR02 UR Gold Potion" data-flag="@X" onclick="openSidebar('BOG_125_CR02 UR Gold Potion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\166_CG02 GW/BG Reap.jpg" id="BOG_166_CG02 GW/BG Reap" data-flag="@X" onclick="openSidebar('BOG_166_CG02 GW/BG Reap',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\3_CW03 WU/GW Embody Medium.jpg" id="BOG_3_CW03 WU/GW Embody Medium" data-flag="@X" onclick="openSidebar('BOG_3_CW03 WU/GW Embody Medium',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\44_CU03 WU Big Embody.jpg" id="BOG_44_CU03 WU Big Embody" data-flag="@X" onclick="openSidebar('BOG_44_CU03 WU Big Embody',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\85_CB03 BR Cantrip.jpg" id="BOG_85_CB03 BR Cantrip" data-flag="@X" onclick="openSidebar('BOG_85_CB03 BR Cantrip',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\126_CR03 RG/BR Small Embody.jpg" id="BOG_126_CR03 RG/BR Small Embody" data-flag="@X" onclick="openSidebar('BOG_126_CR03 RG/BR Small Embody',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\167_CG03 RG Cantrip.jpg" id="BOG_167_CG03 RG Cantrip" data-flag="@X" onclick="openSidebar('BOG_167_CG03 RG Cantrip',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\4_CW04 WB/RW Saga Cycle.jpg" id="BOG_4_CW04 WB/RW Saga Cycle" data-flag="@X" onclick="openSidebar('BOG_4_CW04 WB/RW Saga Cycle',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\45_CU04 UR/GU Swarm.jpg" id="BOG_45_CU04 UR/GU Swarm" data-flag="@X" onclick="openSidebar('BOG_45_CU04 UR/GU Swarm',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\86_CB04 BG/WB Small Embody.jpg" id="BOG_86_CB04 BG/WB Small Embody" data-flag="@X" onclick="openSidebar('BOG_86_CB04 BG/WB Small Embody',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\127_CR04 RW/UR.jpg" id="BOG_127_CR04 RW/UR" data-flag="@X" onclick="openSidebar('BOG_127_CR04 RW/UR',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\168_CG04 GU/BG Big Embody.jpg" id="BOG_168_CG04 GU/BG Big Embody" data-flag="@X" onclick="openSidebar('BOG_168_CG04 GU/BG Big Embody',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\5_CW05 WB/GW Crats Reap.jpg" id="BOG_5_CW05 WB/GW Crats Reap" data-flag="@X" onclick="openSidebar('BOG_5_CW05 WB/GW Crats Reap',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\46_CU05 UB/UR Spell Dork.jpg" id="BOG_46_CU05 UB/UR Spell Dork" data-flag="@X" onclick="openSidebar('BOG_46_CU05 UB/UR Spell Dork',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\87_CB05 BG/UB Big Embody.jpg" id="BOG_87_CB05 BG/UB Big Embody" data-flag="@X" onclick="openSidebar('BOG_87_CB05 BG/UB Big Embody',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\128_CR05 RG/RW Retrace.jpg" id="BOG_128_CR05 RG/RW Retrace" data-flag="@X" onclick="openSidebar('BOG_128_CR05 RG/RW Retrace',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\169_CG05 GU/RG Medium Embody.jpg" id="BOG_169_CG05 GU/RG Medium Embody" data-flag="@X" onclick="openSidebar('BOG_169_CG05 GU/RG Medium Embody',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\6_CW06 RW/GW Reap Counter.jpg" id="BOG_6_CW06 RW/GW Reap Counter" data-flag="@X" onclick="openSidebar('BOG_6_CW06 RW/GW Reap Counter',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\47_CU06 GU/WU Small Embody.jpg" id="BOG_47_CU06 GU/WU Small Embody" data-flag="@X" onclick="openSidebar('BOG_47_CU06 GU/WU Small Embody',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\88_CB06 BG Ramp.jpg" id="BOG_88_CB06 BG Ramp" data-flag="@X" onclick="openSidebar('BOG_88_CB06 BG Ramp',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\129_CR06 UR/BR Fire Potion.jpg" id="BOG_129_CR06 UR/BR Fire Potion" data-flag="@X" onclick="openSidebar('BOG_129_CR06 UR/BR Fire Potion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\170_CG06 BG/RG Animate Land.jpg" id="BOG_170_CG06 BG/RG Animate Land" data-flag="@X" onclick="openSidebar('BOG_170_CG06 BG/RG Animate Land',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\7_CW07 WW Lifelink Beater.jpg" id="BOG_7_CW07 WW Lifelink Beater" data-flag="@X" onclick="openSidebar('BOG_7_CW07 WW Lifelink Beater',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\48_CU07 UU.jpg" id="BOG_48_CU07 UU" data-flag="@X" onclick="openSidebar('BOG_48_CU07 UU',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\89_CB07 BB.jpg" id="BOG_89_CB07 BB" data-flag="@X" onclick="openSidebar('BOG_89_CB07 BB',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\130_CR07 RR.jpg" id="BOG_130_CR07 RR" data-flag="@X" onclick="openSidebar('BOG_130_CR07 RR',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\171_CG07 GG.jpg" id="BOG_171_CG07 GG" data-flag="@X" onclick="openSidebar('BOG_171_CG07 GG',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\8_CW08 Fodder.jpg" id="BOG_8_CW08 Fodder" data-flag="@X" onclick="openSidebar('BOG_8_CW08 Fodder',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\49_CU08 Fodder.jpg" id="BOG_49_CU08 Fodder" data-flag="@X" onclick="openSidebar('BOG_49_CU08 Fodder',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\90_CB08 Fodder.jpg" id="BOG_90_CB08 Fodder" data-flag="@X" onclick="openSidebar('BOG_90_CB08 Fodder',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\131_CR08 Fodder.jpg" id="BOG_131_CR08 Fodder" data-flag="@X" onclick="openSidebar('BOG_131_CR08 Fodder',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\172_CG08 Fodder.jpg" id="BOG_172_CG08 Fodder" data-flag="@X" onclick="openSidebar('BOG_172_CG08 Fodder',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\9_CW09 Smite Potion.jpg" id="BOG_9_CW09 Smite Potion" data-flag="@X" onclick="openSidebar('BOG_9_CW09 Smite Potion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\50_CU09 Saga Cycle.jpg" id="BOG_50_CU09 Saga Cycle" data-flag="@X" onclick="openSidebar('BOG_50_CU09 Saga Cycle',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\91_CB09 Edict Potion.jpg" id="BOG_91_CB09 Edict Potion" data-flag="@X" onclick="openSidebar('BOG_91_CB09 Edict Potion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\132_CR09 Small Sweeper.jpg" id="BOG_132_CR09 Small Sweeper" data-flag="@X" onclick="openSidebar('BOG_132_CR09 Small Sweeper',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\173_CG09 Saga Cycle.jpg" id="BOG_173_CG09 Saga Cycle" data-flag="@X" onclick="openSidebar('BOG_173_CG09 Saga Cycle',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\10_CW10 Aura Removal.jpg" id="BOG_10_CW10 Aura Removal" data-flag="@X" onclick="openSidebar('BOG_10_CW10 Aura Removal',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\51_CU10 Quench Potion.jpg" id="BOG_51_CU10 Quench Potion" data-flag="@X" onclick="openSidebar('BOG_51_CU10 Quench Potion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\92_CB10 Saga Cycle.jpg" id="BOG_92_CB10 Saga Cycle" data-flag="@X" onclick="openSidebar('BOG_92_CB10 Saga Cycle',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\133_CR10 Ramp.jpg" id="BOG_133_CR10 Ramp" data-flag="@X" onclick="openSidebar('BOG_133_CR10 Ramp',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\174_CG10 Trick.jpg" id="BOG_174_CG10 Trick" data-flag="@X" onclick="openSidebar('BOG_174_CG10 Trick',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\11_CW11 WU Aura Trick.jpg" id="BOG_11_CW11 WU Aura Trick" data-flag="@X" onclick="openSidebar('BOG_11_CW11 WU Aura Trick',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\52_CU11 Ice Potion.jpg" id="BOG_52_CU11 Ice Potion" data-flag="@X" onclick="openSidebar('BOG_52_CU11 Ice Potion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\93_CB11 Reap Vulture.jpg" id="BOG_93_CB11 Reap Vulture" data-flag="@X" onclick="openSidebar('BOG_93_CB11 Reap Vulture',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\134_CR11 RG Embody.jpg" id="BOG_134_CR11 RG Embody" data-flag="@X" onclick="openSidebar('BOG_134_CR11 RG Embody',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\175_CG11 BG Ramp.jpg" id="BOG_175_CG11 BG Ramp" data-flag="@X" onclick="openSidebar('BOG_175_CG11 BG Ramp',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\12_CW12 Big Saga Creature.jpg" id="BOG_12_CW12 Big Saga Creature" data-flag="@X" onclick="openSidebar('BOG_12_CW12 Big Saga Creature',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\53_CU12 WU Ghostly Aura.jpg" id="BOG_53_CU12 WU Ghostly Aura" data-flag="@X" onclick="openSidebar('BOG_53_CU12 WU Ghostly Aura',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\94_CB12 Dead Weight.jpg" id="BOG_94_CB12 Dead Weight" data-flag="@X" onclick="openSidebar('BOG_94_CB12 Dead Weight',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\135_CR12 RW Saga.jpg" id="BOG_135_CR12 RW Saga" data-flag="@X" onclick="openSidebar('BOG_135_CR12 RW Saga',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\176_CG12 Fighter.jpg" id="BOG_176_CG12 Fighter" data-flag="@X" onclick="openSidebar('BOG_176_CG12 Fighter',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\13_CW13 Big Cycling Creature.jpg" id="BOG_13_CW13 Big Cycling Creature" data-flag="@X" onclick="openSidebar('BOG_13_CW13 Big Cycling Creature',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\54_CU13 Big Cycling Creature.jpg" id="BOG_54_CU13 Big Cycling Creature" data-flag="@X" onclick="openSidebar('BOG_54_CU13 Big Cycling Creature',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\95_CB13 Big Cycling Creature.jpg" id="BOG_95_CB13 Big Cycling Creature" data-flag="@X" onclick="openSidebar('BOG_95_CB13 Big Cycling Creature',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\136_CR13 Big Cycling Creature.jpg" id="BOG_136_CR13 Big Cycling Creature" data-flag="@X" onclick="openSidebar('BOG_136_CR13 Big Cycling Creature',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\177_CG13 Big Cycling Creature.jpg" id="BOG_177_CG13 Big Cycling Creature" data-flag="@X" onclick="openSidebar('BOG_177_CG13 Big Cycling Creature',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\14_CW14 Misc Noncreature.jpg" id="BOG_14_CW14 Misc Noncreature" data-flag="@X" onclick="openSidebar('BOG_14_CW14 Misc Noncreature',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\55_CU14 WU Sea Legs Aura.jpg" id="BOG_55_CU14 WU Sea Legs Aura" data-flag="@X" onclick="openSidebar('BOG_55_CU14 WU Sea Legs Aura',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\96_CB14 Big Removal.jpg" id="BOG_96_CB14 Big Removal" data-flag="@X" onclick="openSidebar('BOG_96_CB14 Big Removal',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\137_CR14 Big Removal.jpg" id="BOG_137_CR14 Big Removal" data-flag="@X" onclick="openSidebar('BOG_137_CR14 Big Removal',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\178_CG14 Fight Aura.jpg" id="BOG_178_CG14 Fight Aura" data-flag="@X" onclick="openSidebar('BOG_178_CG14 Fight Aura',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div id="gold" class="anchor"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\217_RM01 Glamerveil.jpg" id="BOG_217_RM01 Glamerveil" data-flag="@X" onclick="openSidebar('BOG_217_RM01 Glamerveil',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\218_RM02 Oona (Sauron's Ransom-like).jpg" id="BOG_218_RM02 Oona (Saurons Ransom-like)" data-flag="@X" onclick="openSidebar('BOG_218_RM02 Oona (Saurons Ransom-like)',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\219_RM03 Generic.jpg" id="BOG_219_RM03 Generic" data-flag="@X" onclick="openSidebar('BOG_219_RM03 Generic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\220_RM04 Valleymaking.jpg" id="BOG_220_RM04 Valleymaking" data-flag="@X" onclick="openSidebar('BOG_220_RM04 Valleymaking',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\221_RM05 Donal Alloway.jpg" id="BOG_221_RM05 Donal Alloway" data-flag="@X" onclick="openSidebar('BOG_221_RM05 Donal Alloway',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\257_RH01 Generic.jpg" id="BOG_257_RH01 Generic" data-flag="@X" onclick="openSidebar('BOG_257_RH01 Generic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\258_RH02 Generic.jpg" id="BOG_258_RH02 Generic" data-flag="@X" onclick="openSidebar('BOG_258_RH02 Generic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\259_RH03 Generic.jpg" id="BOG_259_RH03 Generic" data-flag="@X" onclick="openSidebar('BOG_259_RH03 Generic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\260_RH04 Generic.jpg" id="BOG_260_RH04 Generic" data-flag="@X" onclick="openSidebar('BOG_260_RH04 Generic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\261_RH05 Generic.jpg" id="BOG_261_RH05 Generic" data-flag="@X" onclick="openSidebar('BOG_261_RH05 Generic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\227_UM01 Payoff.jpg" id="BOG_227_UM01 Payoff" data-flag="@X" onclick="openSidebar('BOG_227_UM01 Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\229_UM03 Payoff.jpg" id="BOG_229_UM03 Payoff" data-flag="@X" onclick="openSidebar('BOG_229_UM03 Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\231_UM05 Payoff.jpg" id="BOG_231_UM05 Payoff" data-flag="@X" onclick="openSidebar('BOG_231_UM05 Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\233_UM07 Payoff.jpg" id="BOG_233_UM07 Payoff" data-flag="@X" onclick="openSidebar('BOG_233_UM07 Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\235_UM09 Payoff.jpg" id="BOG_235_UM09 Payoff" data-flag="@X" onclick="openSidebar('BOG_235_UM09 Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\228_UM02 Enabler.jpg" id="BOG_228_UM02 Enabler" data-flag="@X" onclick="openSidebar('BOG_228_UM02 Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\230_UM04 Enabler.jpg" id="BOG_230_UM04 Enabler" data-flag="@X" onclick="openSidebar('BOG_230_UM04 Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\232_UM06 Enabler.jpg" id="BOG_232_UM06 Enabler" data-flag="@X" onclick="openSidebar('BOG_232_UM06 Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\234_UM08 Enabler.jpg" id="BOG_234_UM08 Enabler" data-flag="@X" onclick="openSidebar('BOG_234_UM08 Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\236_UM10 Enabler.jpg" id="BOG_236_UM10 Enabler" data-flag="@X" onclick="openSidebar('BOG_236_UM10 Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\247_CH01 Tempo Auras.jpg" id="BOG_247_CH01 Tempo Auras" data-flag="@X" onclick="openSidebar('BOG_247_CH01 Tempo Auras',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\248_CH02 Top of Library.jpg" id="BOG_248_CH02 Top of Library" data-flag="@X" onclick="openSidebar('BOG_248_CH02 Top of Library',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\249_CH03 Curses Aggro.jpg" id="BOG_249_CH03 Curses Aggro" data-flag="@X" onclick="openSidebar('BOG_249_CH03 Curses Aggro',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\250_CH04 Lands in GY Aggro.jpg" id="BOG_250_CH04 Lands in GY Aggro" data-flag="@X" onclick="openSidebar('BOG_250_CH04 Lands in GY Aggro',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\251_CH05 Abilities Midrange.jpg" id="BOG_251_CH05 Abilities Midrange" data-flag="@X" onclick="openSidebar('BOG_251_CH05 Abilities Midrange',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\222_RM06 Generic.jpg" id="BOG_222_RM06 Generic" data-flag="@X" onclick="openSidebar('BOG_222_RM06 Generic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\225_RM09 Generic.jpg" id="BOG_225_RM09 Generic" data-flag="@X" onclick="openSidebar('BOG_225_RM09 Generic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\223_RM07 Generic.jpg" id="BOG_223_RM07 Generic" data-flag="@X" onclick="openSidebar('BOG_223_RM07 Generic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\226_RM10 Generic.jpg" id="BOG_226_RM10 Generic" data-flag="@X" onclick="openSidebar('BOG_226_RM10 Generic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\224_RM08 Endry the Fallen.jpg" id="BOG_224_RM08 Endry the Fallen" data-flag="@X" onclick="openSidebar('BOG_224_RM08 Endry the Fallen',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\262_RH06 Generic.jpg" id="BOG_262_RH06 Generic" data-flag="@X" onclick="openSidebar('BOG_262_RH06 Generic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\265_RH09 Generic.jpg" id="BOG_265_RH09 Generic" data-flag="@X" onclick="openSidebar('BOG_265_RH09 Generic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\263_RH07 Generic.jpg" id="BOG_263_RH07 Generic" data-flag="@X" onclick="openSidebar('BOG_263_RH07 Generic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\266_RH10 Generic.jpg" id="BOG_266_RH10 Generic" data-flag="@X" onclick="openSidebar('BOG_266_RH10 Generic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\264_RH08 Generic.jpg" id="BOG_264_RH08 Generic" data-flag="@X" onclick="openSidebar('BOG_264_RH08 Generic',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\237_UM11 Payoff.jpg" id="BOG_237_UM11 Payoff" data-flag="@X" onclick="openSidebar('BOG_237_UM11 Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\243_UM17 Payoff.jpg" id="BOG_243_UM17 Payoff" data-flag="@X" onclick="openSidebar('BOG_243_UM17 Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\239_UM13 Payoff.jpg" id="BOG_239_UM13 Payoff" data-flag="@X" onclick="openSidebar('BOG_239_UM13 Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\245_UM19 Payoff.jpg" id="BOG_245_UM19 Payoff" data-flag="@X" onclick="openSidebar('BOG_245_UM19 Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\241_UM15 Payoff.jpg" id="BOG_241_UM15 Payoff" data-flag="@X" onclick="openSidebar('BOG_241_UM15 Payoff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\238_UM12 Enabler — Rite of Oblivion.jpg" id="BOG_238_UM12 Enabler — Rite of Oblivion" data-flag="@X" onclick="openSidebar('BOG_238_UM12 Enabler — Rite of Oblivion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\244_UM18 Enabler.jpg" id="BOG_244_UM18 Enabler" data-flag="@X" onclick="openSidebar('BOG_244_UM18 Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\240_UM14 Enabler.jpg" id="BOG_240_UM14 Enabler" data-flag="@X" onclick="openSidebar('BOG_240_UM14 Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\246_UM20 Enabler.jpg" id="BOG_246_UM20 Enabler" data-flag="@X" onclick="openSidebar('BOG_246_UM20 Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\242_UM16 Enabler.jpg" id="BOG_242_UM16 Enabler" data-flag="@X" onclick="openSidebar('BOG_242_UM16 Enabler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\252_CH06 Sacrifice Midrange.jpg" id="BOG_252_CH06 Sacrifice Midrange" data-flag="@X" onclick="openSidebar('BOG_252_CH06 Sacrifice Midrange',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\255_CH09 Big Spells Control.jpg" id="BOG_255_CH09 Big Spells Control" data-flag="@X" onclick="openSidebar('BOG_255_CH09 Big Spells Control',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\253_CH07 Land Auras/Ramp.jpg" id="BOG_253_CH07 Land Auras/Ramp" data-flag="@X" onclick="openSidebar('BOG_253_CH07 Land Auras/Ramp',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\256_CH10 Counters Midrange.jpg" id="BOG_256_CH10 Counters Midrange" data-flag="@X" onclick="openSidebar('BOG_256_CH10 Counters Midrange',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\254_CH08 Saboteurs Tempo.jpg" id="BOG_254_CH08 Saboteurs Tempo" data-flag="@X" onclick="openSidebar('BOG_254_CH08 Saboteurs Tempo',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\206_MM01 Sygg, Heir to Morningtide.jpg" id="BOG_206_MM01 Sygg, Heir to Morningtide" data-flag="@X" onclick="openSidebar('BOG_206_MM01 Sygg, Heir to Morningtide',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\207_MM02 Ashling, the Betrayer.jpg" id="BOG_207_MM02 Ashling, the Betrayer" data-flag="@X" onclick="openSidebar('BOG_207_MM02 Ashling, the Betrayer',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\208_MM03 Nibb and Gyik.jpg" id="BOG_208_MM03 Nibb and Gyik" data-flag="@X" onclick="openSidebar('BOG_208_MM03 Nibb and Gyik',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\209_MM04 Bulgo, Awakened Oak.jpg" id="BOG_209_MM04 Bulgo, Awakened Oak" data-flag="@X" onclick="openSidebar('BOG_209_MM04 Bulgo, Awakened Oak',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\210_MM05 Warree Tarcha, Grand Augur.jpg" id="BOG_210_MM05 Warree Tarcha, Grand Augur" data-flag="@X" onclick="openSidebar('BOG_210_MM05 Warree Tarcha, Grand Augur',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\215_MM10 Bre, Arm of Vengeance.jpg" id="BOG_215_MM10 Bre, Arm of Vengeance" data-flag="@X" onclick="openSidebar('BOG_215_MM10 Bre, Arm of Vengeance',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\213_MM08 Wort, Boggart Oracle.jpg" id="BOG_213_MM08 Wort, Boggart Oracle" data-flag="@X" onclick="openSidebar('BOG_213_MM08 Wort, Boggart Oracle',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\211_MM06 Rhys.jpg" id="BOG_211_MM06 Rhys" data-flag="@X" onclick="openSidebar('BOG_211_MM06 Rhys',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\214_MM09 The Source of Mount Kulrath.jpg" id="BOG_214_MM09 The Source of Mount Kulrath" data-flag="@X" onclick="openSidebar('BOG_214_MM09 The Source of Mount Kulrath',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\212_MM07 Maralen.jpg" id="BOG_212_MM07 Maralen" data-flag="@X" onclick="openSidebar('BOG_212_MM07 Maralen',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\216_MM11 Shrine Commander.jpg" id="BOG_216_MM11 Shrine Commander" data-flag="@X" onclick="openSidebar('BOG_216_MM11 Shrine Commander',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="BOG_e" data-flag="@E" onclick="openSidebar('BOG_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="BOG_e" data-flag="@E" onclick="openSidebar('BOG_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="BOG_e" data-flag="@E" onclick="openSidebar('BOG_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="BOG_e" data-flag="@E" onclick="openSidebar('BOG_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div id="colorless" class="anchor"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\282_RA02 Gravehate.jpg" id="BOG_282_RA02 Gravehate" data-flag="@X" onclick="openSidebar('BOG_282_RA02 Gravehate',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\283_RA03 Sword of X and Y.jpg" id="BOG_283_RA03 Sword of X and Y" data-flag="@X" onclick="openSidebar('BOG_283_RA03 Sword of X and Y',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\284_RA04.jpg" id="BOG_284_RA04" data-flag="@X" onclick="openSidebar('BOG_284_RA04',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\285_RA05 Reaper King.jpg" id="BOG_285_RA05 Reaper King" data-flag="@X" onclick="openSidebar('BOG_285_RA05 Reaper King',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\286_Reaperling.jpg" id="BOG_286_Reaperling" data-flag="@X" onclick="openSidebar('BOG_286_Reaperling',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\287_UA01 Lurebound Ripper.jpg" id="BOG_287_UA01 Lurebound Ripper" data-flag="@X" onclick="openSidebar('BOG_287_UA01 Lurebound Ripper',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\288_UA02 Simulacrum.jpg" id="BOG_288_UA02 Simulacrum" data-flag="@X" onclick="openSidebar('BOG_288_UA02 Simulacrum',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\289_UA03 Reaper.jpg" id="BOG_289_UA03 Reaper" data-flag="@X" onclick="openSidebar('BOG_289_UA03 Reaper',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\290_UA04 Warcrawler.jpg" id="BOG_290_UA04 Warcrawler" data-flag="@X" onclick="openSidebar('BOG_290_UA04 Warcrawler',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\291_UA05 Effigy.jpg" id="BOG_291_UA05 Effigy" data-flag="@X" onclick="openSidebar('BOG_291_UA05 Effigy',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\292_UA06 Mantle of the Horde.jpg" id="BOG_292_UA06 Mantle of the Horde" data-flag="@X" onclick="openSidebar('BOG_292_UA06 Mantle of the Horde',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\293_UA07 Tome.jpg" id="BOG_293_UA07 Tome" data-flag="@X" onclick="openSidebar('BOG_293_UA07 Tome',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\294_UA08 Reflecting Stone.jpg" id="BOG_294_UA08 Reflecting Stone" data-flag="@X" onclick="openSidebar('BOG_294_UA08 Reflecting Stone',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\295_UA09 Trap.jpg" id="BOG_295_UA09 Trap" data-flag="@X" onclick="openSidebar('BOG_295_UA09 Trap',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\296_UA10 Noncreature.jpg" id="BOG_296_UA10 Noncreature" data-flag="@X" onclick="openSidebar('BOG_296_UA10 Noncreature',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\267_CA01 WWdread Scarecrow.jpg" id="BOG_267_CA01 WWdread Scarecrow" data-flag="@X" onclick="openSidebar('BOG_267_CA01 WWdread Scarecrow',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\268_CA02 Dreadbane Scarecrow.jpg" id="BOG_268_CA02 Dreadbane Scarecrow" data-flag="@X" onclick="openSidebar('BOG_268_CA02 Dreadbane Scarecrow',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\269_CA03 Banetalon Scarecrow.jpg" id="BOG_269_CA03 Banetalon Scarecrow" data-flag="@X" onclick="openSidebar('BOG_269_CA03 Banetalon Scarecrow',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\270_CA04 Talonraze Scarecrow.jpg" id="BOG_270_CA04 Talonraze Scarecrow" data-flag="@X" onclick="openSidebar('BOG_270_CA04 Talonraze Scarecrow',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\271_CA05 RazeWW Scarecrow.jpg" id="BOG_271_CA05 RazeWW Scarecrow" data-flag="@X" onclick="openSidebar('BOG_271_CA05 RazeWW Scarecrow',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\272_CA06 GW/WB Fodder.jpg" id="BOG_272_CA06 GW/WB Fodder" data-flag="@X" onclick="openSidebar('BOG_272_CA06 GW/WB Fodder',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\273_CA07 BR/WB Perilous.jpg" id="BOG_273_CA07 BR/WB Perilous" data-flag="@X" onclick="openSidebar('BOG_273_CA07 BR/WB Perilous',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\274_CA08 GW/WB/RW Sac.jpg" id="BOG_274_CA08 GW/WB/RW Sac" data-flag="@X" onclick="openSidebar('BOG_274_CA08 GW/WB/RW Sac',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\275_CA09 UB/RG Filter.jpg" id="BOG_275_CA09 UB/RG Filter" data-flag="@X" onclick="openSidebar('BOG_275_CA09 UB/RG Filter',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\276_CA10 WU/BG Shrineguard.jpg" id="BOG_276_CA10 WU/BG Shrineguard" data-flag="@X" onclick="openSidebar('BOG_276_CA10 WU/BG Shrineguard',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\277_CA11 GW/WB/UR Lifestaff.jpg" id="BOG_277_CA11 GW/WB/UR Lifestaff" data-flag="@X" onclick="openSidebar('BOG_277_CA11 GW/WB/UR Lifestaff',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\278_CA12 Unstable Obelisk.jpg" id="BOG_278_CA12 Unstable Obelisk" data-flag="@X" onclick="openSidebar('BOG_278_CA12 Unstable Obelisk',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\279_CA13 Prophetic Prism.jpg" id="BOG_279_CA13 Prophetic Prism" data-flag="@X" onclick="openSidebar('BOG_279_CA13 Prophetic Prism',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\280_CA14 Kunai.jpg" id="BOG_280_CA14 Kunai" data-flag="@X" onclick="openSidebar('BOG_280_CA14 Kunai',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\281_CA15 Colossus.jpg" id="BOG_281_CA15 Colossus" data-flag="@X" onclick="openSidebar('BOG_281_CA15 Colossus',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div id="land" class="anchor"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\319_UL01 Niveous Path.jpg" id="BOG_319_UL01 Niveous Path" data-flag="@X" onclick="openSidebar('BOG_319_UL01 Niveous Path',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\320_UL02 Cerulean Path.jpg" id="BOG_320_UL02 Cerulean Path" data-flag="@X" onclick="openSidebar('BOG_320_UL02 Cerulean Path',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\321_UL03 Aphotic Path.jpg" id="BOG_321_UL03 Aphotic Path" data-flag="@X" onclick="openSidebar('BOG_321_UL03 Aphotic Path',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\322_UL04 Crimson Path.jpg" id="BOG_322_UL04 Crimson Path" data-flag="@X" onclick="openSidebar('BOG_322_UL04 Crimson Path',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\323_UL05 Viridescent Path.jpg" id="BOG_323_UL05 Viridescent Path" data-flag="@X" onclick="openSidebar('BOG_323_UL05 Viridescent Path',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\308_RL01 Mystic Gate.jpg" id="BOG_308_RL01 Mystic Gate" data-flag="@X" onclick="openSidebar('BOG_308_RL01 Mystic Gate',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\309_RL02 Sunken Ruins.jpg" id="BOG_309_RL02 Sunken Ruins" data-flag="@X" onclick="openSidebar('BOG_309_RL02 Sunken Ruins',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\310_RL03 Graven Cairns.jpg" id="BOG_310_RL03 Graven Cairns" data-flag="@X" onclick="openSidebar('BOG_310_RL03 Graven Cairns',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\311_RL04 Fire-Lit Thicket.jpg" id="BOG_311_RL04 Fire-Lit Thicket" data-flag="@X" onclick="openSidebar('BOG_311_RL04 Fire-Lit Thicket',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\312_RL05 Wooded Bastion.jpg" id="BOG_312_RL05 Wooded Bastion" data-flag="@X" onclick="openSidebar('BOG_312_RL05 Wooded Bastion',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\297_CL01 Tranquil Cove.jpg" id="BOG_297_CL01 Tranquil Cove" data-flag="@X" onclick="openSidebar('BOG_297_CL01 Tranquil Cove',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\298_CL02 Dismal Backwater.jpg" id="BOG_298_CL02 Dismal Backwater" data-flag="@X" onclick="openSidebar('BOG_298_CL02 Dismal Backwater',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\299_CL03 Bloodfell Caves.jpg" id="BOG_299_CL03 Bloodfell Caves" data-flag="@X" onclick="openSidebar('BOG_299_CL03 Bloodfell Caves',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\300_CL04 Rugged Highlands.jpg" id="BOG_300_CL04 Rugged Highlands" data-flag="@X" onclick="openSidebar('BOG_300_CL04 Rugged Highlands',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\301_CL05 Blossoming Sands.jpg" id="BOG_301_CL05 Blossoming Sands" data-flag="@X" onclick="openSidebar('BOG_301_CL05 Blossoming Sands',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\313_RL06 Fetid Heath.jpg" id="BOG_313_RL06 Fetid Heath" data-flag="@X" onclick="openSidebar('BOG_313_RL06 Fetid Heath',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\316_RL09 Cascade Bluffs.jpg" id="BOG_316_RL09 Cascade Bluffs" data-flag="@X" onclick="openSidebar('BOG_316_RL09 Cascade Bluffs',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\314_RL07 Twilight Mire.jpg" id="BOG_314_RL07 Twilight Mire" data-flag="@X" onclick="openSidebar('BOG_314_RL07 Twilight Mire',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\317_RL10 Rugged Prairie.jpg" id="BOG_317_RL10 Rugged Prairie" data-flag="@X" onclick="openSidebar('BOG_317_RL10 Rugged Prairie',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\315_RL08 Flooded Grove.jpg" id="BOG_315_RL08 Flooded Grove" data-flag="@X" onclick="openSidebar('BOG_315_RL08 Flooded Grove',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\302_CL06 Scoured Barrens.jpg" id="BOG_302_CL06 Scoured Barrens" data-flag="@X" onclick="openSidebar('BOG_302_CL06 Scoured Barrens',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\305_CL09 Swiftwater Cliffs.jpg" id="BOG_305_CL09 Swiftwater Cliffs" data-flag="@X" onclick="openSidebar('BOG_305_CL09 Swiftwater Cliffs',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\303_CL07 Jungle Hollow.jpg" id="BOG_303_CL07 Jungle Hollow" data-flag="@X" onclick="openSidebar('BOG_303_CL07 Jungle Hollow',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\306_CL10 Wind-Scarred Crag.jpg" id="BOG_306_CL10 Wind-Scarred Crag" data-flag="@X" onclick="openSidebar('BOG_306_CL10 Wind-Scarred Crag',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\304_CL08 Thornwood Falls.jpg" id="BOG_304_CL08 Thornwood Falls" data-flag="@X" onclick="openSidebar('BOG_304_CL08 Thornwood Falls',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\307_ML01 The Great Aurora.jpg" id="BOG_307_ML01 The Great Aurora" data-flag="@X" onclick="openSidebar('BOG_307_ML01 The Great Aurora',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\318_RL11 Hideaway.jpg" id="BOG_318_RL11 Hideaway" data-flag="@X" onclick="openSidebar('BOG_318_RL11 Hideaway',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\324_UL06 Shimmering Path.jpg" id="BOG_324_UL06 Shimmering Path" data-flag="@X" onclick="openSidebar('BOG_324_UL06 Shimmering Path',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\325_UL07 Utility Land.jpg" id="BOG_325_UL07 Utility Land" data-flag="@X" onclick="openSidebar('BOG_325_UL07 Utility Land',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\e.png" id="BOG_e" data-flag="@E" onclick="openSidebar('BOG_e',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\326_Plains.jpg" id="BOG_326_Plains" data-flag="@X" onclick="openSidebar('BOG_326_Plains',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\327_Island.jpg" id="BOG_327_Island" data-flag="@X" onclick="openSidebar('BOG_327_Island',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\328_Swamp.jpg" id="BOG_328_Swamp" data-flag="@X" onclick="openSidebar('BOG_328_Swamp',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\329_Mountain.jpg" id="BOG_329_Mountain" data-flag="@X" onclick="openSidebar('BOG_329_Mountain',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\330_Forest.jpg" id="BOG_330_Forest" data-flag="@X" onclick="openSidebar('BOG_330_Forest',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div id="token" class="anchor"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\1t_Shapeshifter.jpg" id="BOG_1t_Shapeshifter" data-flag="@X" onclick="openSidebar('BOG_1t_Shapeshifter',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\23t_Treasure.jpg" id="BOG_23t_Treasure" data-flag="@X" onclick="openSidebar('BOG_23t_Treasure',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\24t_Weapon.jpg" id="BOG_24t_Weapon" data-flag="@X" onclick="openSidebar('BOG_24t_Weapon',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\25t_Forest.jpg" id="BOG_25t_Forest" data-flag="@X" onclick="openSidebar('BOG_25t_Forest',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\2t_Avatar.jpg" id="BOG_2t_Avatar" data-flag="@X" onclick="openSidebar('BOG_2t_Avatar',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\3t_Kithkin.jpg" id="BOG_3t_Kithkin" data-flag="@X" onclick="openSidebar('BOG_3t_Kithkin',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\4t_Mouse.jpg" id="BOG_4t_Mouse" data-flag="@X" onclick="openSidebar('BOG_4t_Mouse',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\5t_Spirit.jpg" id="BOG_5t_Spirit" data-flag="@X" onclick="openSidebar('BOG_5t_Spirit',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\6t_Beast.jpg" id="BOG_6t_Beast" data-flag="@X" onclick="openSidebar('BOG_6t_Beast',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\7t_Drake.jpg" id="BOG_7t_Drake" data-flag="@X" onclick="openSidebar('BOG_7t_Drake',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\8t_Elemental.jpg" id="BOG_8t_Elemental" data-flag="@X" onclick="openSidebar('BOG_8t_Elemental',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\9t_Elemental.jpg" id="BOG_9t_Elemental" data-flag="@X" onclick="openSidebar('BOG_9t_Elemental',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\10t_Faerie.jpg" id="BOG_10t_Faerie" data-flag="@X" onclick="openSidebar('BOG_10t_Faerie',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\11t_Insect.jpg" id="BOG_11t_Insect" data-flag="@X" onclick="openSidebar('BOG_11t_Insect',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\12t_Rat.jpg" id="BOG_12t_Rat" data-flag="@X" onclick="openSidebar('BOG_12t_Rat',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\13t_Elemental.jpg" id="BOG_13t_Elemental" data-flag="@X" onclick="openSidebar('BOG_13t_Elemental',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\14t_Goblin.jpg" id="BOG_14t_Goblin" data-flag="@X" onclick="openSidebar('BOG_14t_Goblin',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\15t_Goblin.jpg" id="BOG_15t_Goblin" data-flag="@X" onclick="openSidebar('BOG_15t_Goblin',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\16t_Lizard.jpg" id="BOG_16t_Lizard" data-flag="@X" onclick="openSidebar('BOG_16t_Lizard',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\17t_Scar.jpg" id="BOG_17t_Scar" data-flag="@X" onclick="openSidebar('BOG_17t_Scar',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\18t_Beast.jpg" id="BOG_18t_Beast" data-flag="@X" onclick="openSidebar('BOG_18t_Beast',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\19t_Beast.jpg" id="BOG_19t_Beast" data-flag="@X" onclick="openSidebar('BOG_19t_Beast',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\20t_Elf.jpg" id="BOG_20t_Elf" data-flag="@X" onclick="openSidebar('BOG_20t_Elf',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\21t_Snake.jpg" id="BOG_21t_Snake" data-flag="@X" onclick="openSidebar('BOG_21t_Snake',false)"></div>
+				<div class="container"><img loading="lazy" alt="sets\BOG-files\img\22t_Worm.jpg" id="BOG_22t_Worm" data-flag="@X" onclick="openSidebar('BOG_22t_Worm',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+				<div class="container"><img loading="lazy" alt="img\er.png" id="BOG_er" data-flag="@E" onclick="openSidebar('BOG_er',false)"></div>
+	</div>
+	</div>
+	<div class="sidebar" id="sidebar">
+		<div class="sidebar-container">
+			<img id="sidebar_img" class="sidebar-img">
+			<img id="sidebar_h_img" class="sidebar-h-img">
+			<button class="flip-btn" id="sidebar-flip-btn" onclick="imgFlip('sidebar_img')"></button>
+		</div>
+		<button class="close-btn" onclick="closeSidebar()"></button>
+	</div>
+	<div class="footer"></div>
+
+	<script>
+	const delay = ms => new Promise(res => setTimeout(res, ms));
+		let specialchars = "";
+
+	document.addEventListener('DOMContentLoaded', async function() {
+		await fetch(rootPath + '/lists/all-cards.json')
+					.then(response => response.json())
+					.then(json => {
+						card_list = json;
+				}).catch(error => console.error('Error:', error));
+
+				await fetch(rootPath + '/resources/replacechars.txt')
+					.then(response => response.text())
+					.then(text => {
+						specialchars = text; 
+				}).catch(error => console.error('Error:', error));
+
+				card_list_arrayified = card_list.cards;
+
+				let all_tags = new Set();
+				card_list_arrayified.forEach(card => {
+					if (card.notes) {
+						const tagMatches = card.notes.matchAll(/!tag(?:<\w+>)?\s+([^\s\n\b]+)/g);
+						for (const match of tagMatches) {
+							all_tags.add(match[1].toLowerCase());
+						}
+					}
+				});
+
+				const searchInput = document.getElementById("search");
+				const tagDropdown = document.getElementById("tag-dropdown");
+
+				// Create a mirror element for position calculation
+				const mirror = document.createElement("div");
+				Object.assign(mirror.style, {
+					position: "absolute",
+					visibility: "hidden",
+					whiteSpace: "pre",
+					font: getComputedStyle(searchInput).font,
+					padding: "0", // No padding for pure text measurement
+					border: "none",
+					boxSizing: "content-box"
+				});
+				document.body.appendChild(mirror);
+
+				if (searchInput && tagDropdown) {
+					tagDropdown.style.width = "auto";
+					tagDropdown.style.minWidth = "75px";
+					tagDropdown.style.maxWidth = "300px";
+					tagDropdown.style.maxHeight = "200px";
+					tagDropdown.style.overflowY = "auto";
+
+					const updateDropdown = function() {
+						const value = searchInput.value;
+						const cursorPosition = searchInput.selectionStart;
+						
+						// Find the tag: prefix immediately preceding the cursor
+						const lastTagIndex = value.substring(0, cursorPosition).lastIndexOf("tag:");
+						
+						if (lastTagIndex !== -1) {
+							const queryStart = lastTagIndex + 4;
+							const query = value.substring(queryStart, cursorPosition);
+							
+							if (!query.includes(" ")) {
+								const filteredTags = Array.from(all_tags).filter(tag => tag.toLowerCase().startsWith(query.toLowerCase())).sort();
+								if (filteredTags.length > 0) {
+									tagDropdown.innerHTML = "";
+									filteredTags.forEach(tag => {
+										const div = document.createElement("div");
+										div.innerText = tag;
+										div.style.padding = "5px 10px";
+										div.style.cursor = "pointer";
+										div.style.whiteSpace = "nowrap";
+										div.onmouseover = () => div.style.background = "#f0f0f0";
+										div.onmouseout = () => div.style.background = "white";
+										div.onclick = () => {
+											const newValue = value.substring(0, queryStart) + tag + " " + value.substring(cursorPosition);
+											searchInput.value = newValue;
+											tagDropdown.style.display = "none";
+											searchInput.focus();
+											const newCursorPos = queryStart + tag.length + 1;
+											searchInput.setSelectionRange(newCursorPos, newCursorPos);
+										};
+										tagDropdown.appendChild(div);
+									});
+
+									// Calculate position
+									mirror.textContent = value.substring(0, lastTagIndex + 4);
+									const textWidth = mirror.getBoundingClientRect().width;
+									const inputPaddingLeft = parseFloat(getComputedStyle(searchInput).paddingLeft) || 0;
+									
+									tagDropdown.style.left = Math.min(textWidth + inputPaddingLeft, searchInput.offsetWidth - tagDropdown.offsetWidth) + "px";
+									tagDropdown.style.display = "block";
+									return;
+								}
+							}
+						}
+						tagDropdown.style.display = "none";
+					};
+
+					searchInput.addEventListener("input", updateDropdown);
+					searchInput.addEventListener("click", updateDropdown);
+					searchInput.addEventListener("keyup", updateDropdown);
+
+					document.addEventListener("click", function(e) {
+						if (e.target !== searchInput && e.target !== tagDropdown) {
+							tagDropdown.style.display = "none";
+						}
+					});
+				}
+
+		preloadImgs = document.getElementsByClassName('preload-hidden');
+
+		let images_loaded = [];
+
+		do {
+			await delay(100);
+			images_loaded = []
+			for (const img of preloadImgs)
+			{
+				images_loaded.push(isImageOk(img));
+			}
+		}
+		while (images_loaded.includes(false));
+
+		
+		loadImages();
+	});
+
+	function isImageOk(img) {
+		if (!img.complete || img.naturalWidth == 0) {
+			return false;
+		}
+
+		return true;
+	}
+
+	function loadImages() {
+		const images = document.querySelectorAll('.grid-container img');
+
+		images.forEach(img => {
+			const flag = img.getAttribute('data-flag');
+
+			if (flag === '@N') {
+				img.src = rootPath + '/img/card_back.png';
+				img.removeAttribute("onclick");
+				img.style.cursor = 'default';
+			}
+			else
+			{
+				img.src = rootPath + '/' + img.alt;
+				if (img.dataset.alt_src) {
+					img.dataset.alt_src = rootPath + '/' + img.dataset.alt_src;
+				}
+
+				if (flag === '@E') {
+					img.removeAttribute("onclick");
+					img.style.cursor = 'default';
+				}
+			}
+
+			img.style.visibility = 'visible';
+		});
+	}
+
+	window.addEventListener('resize', function(event) {
+		setSidebarTop();
+	}, true);
+
+	function setSidebarTop() {
+		let vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+		let sh = document.getElementById('sidebar').offsetHeight;
+		let height = 100 * ((vh - sh) / 2) / vh;
+		document.getElementById('sidebar').style.top = height + '%';
+	}
+
+	let horizontal = false;
+
+	function imgFlip(num) {
+		const img = document.getElementById(num);
+		const seconds = 0.2;
+		const rotated_img = document.getElementById('sidebar_h_img');
+
+        img.style.transition = seconds.toString() + "s";
+        img.style.transform = "rotateY(90deg)";
+
+        if (num == 'sidebar_img')
+		{
+			const sidebar_img = document.getElementById('sidebar_img');
+
+			if (horizontal)
+            {
+            	rotated_img.style.transition = seconds.toString() + "s";
+           		rotated_img.style.transform = "rotateY(90deg) rotate(90deg)";
+
+           		if (rotated_img.style.opacity != "0") {
+		            setTimeout(() => {
+		                rotated_img.style.opacity = "0";
+		                img.style.filter = "none";
+		            }, (seconds / 2) * 1000);
+		        }
+		        else {
+		        	setTimeout(() => {
+		                rotated_img.style.opacity = "1";
+		                img.style.filter = "blur(2px) brightness(0.7)";
+		            }, (seconds / 2) * 1000);
+		        }
+            }
+		}
+
+         setTimeout(function() {
+            tmp = document.getElementById(num).src;
+			document.getElementById(num).src = document.getElementById(num).dataset.alt_src;
+			document.getElementById(num).dataset.alt_src = tmp;
+
+            img.style.transition = seconds.toString() + "s";
+            img.style.transform = "rotateY(0deg)";
+
+            if (horizontal)
+            {
+            	rotated_img.style.transition = seconds.toString() + "s";
+           		rotated_img.style.transform = "rotateY(0deg) rotate(90deg)";
+            }
+        }, seconds * 1000);
+	}
+
+	function openSidebar(id, h = false) {
+		horizontal = h;
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'grid';
+
+		const rotated_img = document.getElementById('sidebar_h_img');
+		const sidebar_img = document.getElementById('sidebar_img');
+
+		sidebar_img.style.transition = "none";
+		rotated_img.style.transition = "none";
+		sidebar_img.src = document.getElementById(id).src;
+		rotated_img.src = document.getElementById(id).src.replace("_back", "_front");
+
+		if (horizontal && !sidebar_img.src.includes("_back"))
+		{
+			rotated_img.style.opacity = "1";
+			sidebar_img.style.filter = "blur(2px) brightness(0.7)";
+		}
+		else
+		{
+			rotated_img.style.opacity = "0";
+			sidebar_img.style.filter = "";
+		}
+
+		if (document.getElementById(id).dataset.alt_src)
+		{
+			document.getElementById('sidebar_img').dataset.alt_src = document.getElementById(id).dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'block';
+		}
+		else
+		{
+			delete document.getElementById('sidebar_img').dataset.alt_src;
+			document.getElementById('sidebar-flip-btn').style.display = 'none';
+		}
+		document.getElementById('main-content').style.width = '60%';
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+		setSidebarTop();
+	}
+
+	function closeSidebar() {
+		scroll_pct = window.scrollY / document.documentElement.scrollHeight;
+
+		document.getElementById('sidebar').style.display = 'none';
+		document.getElementById('main-content').style.width = '100%';
+
+
+		scroll_pos = scroll_pct * document.documentElement.scrollHeight;
+		window.scrollTo(window.scrollX, scroll_pos);
+	}
+
+	function rolldown() {
+		dropdown.style.gridTemplateColumns = "repeat(3, 1fr)";
+		var sets = document.querySelectorAll('.inactive');
+		for(const set of sets)
+		{
+			set.style.height = "auto";
+			set.style.margin = "5px";
+		}
+	}
+
+	function rollup() {
+		dropdown.style.gridTemplateColumns = "1fr";
+		var sets = document.querySelectorAll('.inactive');
+		for(const set of sets)
+		{
+			set.style.height = "0px";
+			set.style.margin = "0px 5px";
+		}
+	}
+
+	document.getElementById("search").addEventListener("keypress", function(event) {
+		if (event.key === "Enter") {
+			event.preventDefault();
+			search();
+		}
+	});
+
+	function search() {
+		const url = new URL(rootPath + '/search', window.location.href.split('?')[0].split('/').slice(0, -1).join('/') + '/');
+		url.searchParams.append('search', document.getElementById("search").value);
+		window.location.href = url.pathname + url.search;
+	}
+
+		function randomCard() {
+				let i = Math.floor(Math.random() * (card_list_arrayified.length + 1));
+				let random_card = card_list_arrayified[i];
+
+				const url = new URL(rootPath + '/card', window.location.href.split('?')[0].split('/').slice(0, -1).join('/') + '/');
+				const params = {
+					set: random_card.set,
+					num: random_card.number,
+					name: random_card.card_name
+				}
+				for (const key in params) {
+					url.searchParams.append(key, params[key]);
+				}
+
+				window.location.href = url.pathname + url.search;
+			}
+	</script>
+</body>
+</html>
